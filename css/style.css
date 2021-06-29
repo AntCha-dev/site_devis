@@ -1,0 +1,113 @@
+.boder-blue {
+    border: 2px solid blue !important;
+}
+
+/* progressBar */
+
+.progress-bar {
+    background-color: #ff7f00;
+    width: 14%;
+}
+
+.validation_card {
+    position: absolute !important;
+    top: 5px !important;
+    right: 5px !important;
+}
+
+/* Sections */
+
+#icon_nouveau_site {
+    display: none;
+}
+
+.row {
+    display: flex !important;
+    justify-content: center !important;
+    height: 100vw;
+}
+
+/* CATEGORIE */
+#choix_projet {
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+#choix_objectif {
+    display: none;
+}
+
+/* #boutonSuivant {
+    font-size: 75px;
+    border: none;
+    background: none;
+    justify-content: center !important;
+}
+
+#boutonPrecedent {
+    font-size: 75px;
+    border: none;
+    background: none;
+    justify-content: center !important;
+} */
+
+/* LISTE CHOIX PROJET */
+
+#liste_choix_refonte {
+    display: none;
+}
+
+#liste_choix_nouveau_site {
+    display: none;
+}
+
+/* card */
+
+.choix_card {
+    width: 175px !important;
+    height: 175px !important;
+    box-shadow: 0 0.5rem 1rem lightgrey;
+    transition: all 150ms ease-in-out;
+}
+
+.choix_card:hover {
+    box-shadow: 0 1rem 3rem lightgrey;
+    /* width: 180px !important;
+    height: 180px !important; */
+}
+
+.row-choices {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.card-text>a {
+    color: black;
+    text-decoration: none;
+}
+
+.card-text>a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.icon-check {
+    width: 15%;
+    z-index: 1;
+}
+
+.progress_card {
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0.5rem 1rem lightgrey;
+    transition: all 150ms ease-in-out;
+
+}
+
+.progress_card:hover {
+    box-shadow: 0 1rem 3rem lightgrey;
+    width: 101px !important;
+    height: 101px !important;
+
+}
