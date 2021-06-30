@@ -22,6 +22,7 @@
             <div class="col-md-10">
 
                 <!-- Barre des icônes au dessus de la barre de progression -->
+                <!-- TEST ULPOAD -->
                 <div id="barre_icon">
                     <div id="icon_nouveau_site">
                         <div class="progress_card card mt-5 ms-5 container-fluid">
