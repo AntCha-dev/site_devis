@@ -32,6 +32,7 @@ $(document).ready(function() {
             duration: 500
         });
         setProgressBar(++current);
+        $(".steps").text("Étape "+current+ " sur "+steps);
     });
 
     $(".previous").click(function() {
@@ -60,6 +61,7 @@ $(document).ready(function() {
             duration: 500
         });
         setProgressBar(--current);
+        $(".steps").text("Étape "+current+ " sur "+steps);
         if (current==1) $(".previous").css({'display': 'none'});
     });
 
