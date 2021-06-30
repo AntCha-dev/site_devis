@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+html {
+    height: 100%
+}
+
+p {
+    color: grey
+}
+
+#heading {
+    text-transform: uppercase;
+    color: #673AB7;
+    font-weight: normal
+}
+
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 20px
+}
+
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+    position: relative
+}
+
+.form-card {
+    text-align: left
+}
+.center{
+    text-align: center;
+}
+
+#msform fieldset:not(:first-of-type) {
+    display: none
+}
+
+#msform input[type="checkbox"]{
+  position: absolute;
+  top: 15px;
+  display: block;
+  outline: none;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+#msform input,
+#msform textarea {
+    padding: 8px 15px 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    margin-bottom: 25px;
+    margin-top: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2C3E50;
+    background-color: #ECEFF1;
+    font-size: 16px;
+    letter-spacing: 1px
+}
+
+#msform input:focus,
+#msform textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #673AB7;
+    outline-width: 0
+}
+
+#msform .action-button {
+    width: 100px;
+    background: rgb(63, 39, 186);
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 0px 10px 5px;
+    float: right
+}
+
+#msform .action-button:hover,
+#msform .action-button:focus {
+    background-color: #311B92
+}
+
+.card {
+    z-index: 0;
+    border: none;
+    position: relative
+}
+
+.fs-title {
+    font-size: 25px;
+    color: #673AB7;
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-align: left
+}
+
+.steps {
+    color: rgb(44, 44, 44);
+    margin: 0px 0px 1rem;
+    flex: 1 1 auto;
+    padding-top: 1rem;
+    white-space: nowrap;
+    max-width: calc(100vw - 8rem);
+}
+
+.form-header {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    align-items: start;
+    width: 100%;
+    height: min-content;
+    margin-top: 1rem;
+}
+
+.previous:active, .previous:focus, .previous:hover {
+    outline: 0px;
+    color: rgb(51, 6, 145);
+}
+
+.previous:first-of-type {
+    margin-left: -0.75rem;
+}
+
+.previous, .close {
+    all: unset;
+    text-align: center;
+    line-height: 3rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    color: rgb(63, 39, 186);
+    cursor: pointer;
+    flex: 0 0 3rem;
+}
+.previous, .close svg {
+    fill: rgb(63, 39, 186);
+    transform: translateY(0.125rem);
+}
+.previous{
+    display:  none;
+}
+
+.progress {
+    height: 3px
+}
+
+.progress-bar {
+    background-color: #673AB7
+}
+
+.fit-image {
+    width: 100%;
+    object-fit: cover
+}
+
+.card-block {
+    margin:  10px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid lightgrey;
+    padding: 20px;
+    border-radius: 5px !important;
+    background-color: #FAFAFA;
+    
+}
+
+.radio {
+    display: inline-block;
+    border-radius: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: #000;
+    font-weight: 500;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);   
+}
+
+.radio:hover {
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1)
+}
+
+.fa-check {
+    color: #4764af;
+    border-radius: 50%;
+    border: 2px solid #4764af;
+    padding: 2px;
+    display:  none;
+  
+}
+
+.fa-circle {
+    color: #FAFAFA;
+    border-radius: 50%;
+    border: 2px solid #BDBDBD;
+    padding: 2px 3.155px
+}
+
+.pic,
+.pic-0 {
+    height: 80px;
+    width: 80px;
+    margin-top: -38px;
+}
+
+.pic {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+.checkbox:checked ~ .radio {
+    border: 1px solid #4764af;
+    box-shadow: 0px 8px 16px 0px #EEEEEE;
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    filter: grayscale(0%)
+}
+
+.checkbox:checked ~ .radio .unchecked{
+    display: none;
+}
+.checkbox:checked ~ .radio .checked {
+    display: inline-block;
+}
+
+
+.label-checkbox{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+}
+
+.boder-blue {
+    border: 2px solid blue !important;
+}
+
+.validation_card {
+    position: absolute !important;
+    top: 5px !important;
+    right: 5px !important;
+}
+
+/* Sectionx */
+
+#icon_nouveau_site {
+    display: none;
+}
+
+.row {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+/* CATEGORIE */
+#choix_projet {
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+#choix_objectif {
+    display: none;
+}
+
+/* #boutonSuivant {
+    font-size: 75px;
+    border: none;
+    background: none;
+    justify-content: center !important;
+}
+
+#boutonPrecedent {
+    font-size: 75px;
+    border: none;
+    background: none;
+    justify-content: center !important;
+} */
+
+/* LISTE CHOIX PROJET */
+
+#liste_choix_refonte {
+    display: none;
+}
+
+#liste_choix_nouveau_site {
+    display: none;
+}
+
+/* card */
+
+.choix_card {
+    width: 175px !important;
+    height: 175px !important;
+    box-shadow: 0 0.5rem 1rem lightgrey;
+    transition: all 150ms ease-in-out;
+}
+
+.choix_card:hover {
+    box-shadow: 0 1rem 3rem lightgrey;
+    /* width: 180px !important;
+    height: 180px !important; */
+}
+
+.row-choices {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.card-text>a {
+    color: black;
+    text-decoration: none;
+}
+
+.card-text>a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.icon-check {
+    width: 15%;
+    z-index: 1;
+}
+
+.progress_card {
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0.5rem 1rem lightgrey;
+    transition: all 150ms ease-in-out;
+
+}
+
+.progress_card:hover {
+    box-shadow: 0 1rem 3rem lightgrey;
+    width: 101px !important;
+    height: 101px !important;
+
+}
