@@ -54,7 +54,6 @@ p {
   background: none;
   padding: 0;
   margin: 0;
-
 }
 
 #msform input,
@@ -91,7 +90,7 @@ p {
     border-radius: 0px;
     cursor: pointer;
     padding: 10px 5px;
-    margin: 10px 0px 10px 5px;
+    margin: 40px 0px 10px 5px;
     float: right
 }
 
@@ -273,57 +272,37 @@ p {
 
 /* Sectionx */
 
-#icon_nouveau_site {
-    display: none;
-}
-
 .row {
     display: flex !important;
     justify-content: center !important;
 }
 
 /* CATEGORIE */
-#choix_projet {
+#project_choice {
     display: flex;
     justify-content: center;
-    padding-top: 10%;
+    margin: 10px 0px 0px 0px;
 }
 
-#choix_objectif {
+/*#choix_objectif {
     display: none;
-}
-
-/* #boutonSuivant {
-    font-size: 75px;
-    border: none;
-    background: none;
-    justify-content: center !important;
-}
-
-#boutonPrecedent {
-    font-size: 75px;
-    border: none;
-    background: none;
-    justify-content: center !important;
-} */
+}*/
 
 /* LISTE CHOIX PROJET */
 
-#liste_choix_refonte {
-    display: none;
-}
-
-#liste_choix_nouveau_site {
+#new_site_choice, #design_site_choice {
     display: none;
 }
 
 /* card */
 
-.choix_card {
-    width: 175px !important;
-    height: 175px !important;
+.card_choice {
+    width: 145px !important;
+    height: 145px !important;
+    margin: 30px 30px;
     box-shadow: 0 0.5rem 1rem lightgrey;
     transition: all 150ms ease-in-out;
+    cursor: pointer;
 }
 
 .choix_card:hover {
@@ -337,14 +316,10 @@ p {
     padding-right: 200px;
 }
 
-.card-text>a {
+.card-text{
+    font-size: 16px; 
+    text-align: center;
     color: black;
-    text-decoration: none;
-}
-
-.card-text>a:hover {
-    color: black;
-    text-decoration: none;
 }
 
 .icon-check {
@@ -352,17 +327,38 @@ p {
     z-index: 1;
 }
 
-.progress_card {
-    width: 100px;
-    height: 100px;
-    box-shadow: 0 0.5rem 1rem lightgrey;
-    transition: all 150ms ease-in-out;
-
+#icon-bar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 15px 0px;
+    z-index: 1;
 }
 
-.progress_card:hover {
-    box-shadow: 0 1rem 3rem lightgrey;
-    width: 101px !important;
-    height: 101px !important;
 
+.icon-item {
+    position: relative;
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 0.5rem 1rem lightgrey;
+    transition: .5s ease;
+}
+
+#icon-bar > :first-of-type {
+    margin-left: 0px;
+}
+#icon-bar > :lastt-of-type {
+    margin-right: 0px;
+}
+
+.icon-item img {
+    width:  50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
 }

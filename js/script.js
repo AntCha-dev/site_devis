@@ -3,13 +3,13 @@ $(document).ready(function() {
     var current_fs, next_fs, previous_fs; //fieldsets
     var opacity;
     var current = 1;
-    var steps = $("fieldset").length;
+    var steps = $("fieldset").length; //=4
 
     setProgressBar(current);
 
     $(".next").click(function() {
         current_fs = $(this).parent();
-        next_fs = $(this).parent().next();
+        next_fs = current.next();
         $(".previous").css({'display': 'block'});
 
         //show the next fieldset
@@ -49,6 +49,7 @@ $(document).ready(function() {
             step: function(now) {
                 // for making fielset appear animation
                 opacity = 1 - now;
+                console.log(opacity);
 
                 current_fs.css({
                     'display': 'none',
@@ -77,39 +78,34 @@ $(document).ready(function() {
     })
 
 
-        let carte_nouveau_site;
+    let carte_nouveau_site;
     let carte_refonte;
     let carte_langues;
 
 
     // LISTE CHOIX CAT 1
-    // $("#liste_choix_nouveau_site").children();
+    // $("#new_site_choice").children();
 
 
     // GESTION DES ICONES EN HAUT DE LA BARRE DE PROGRESSION
 
-
-    // CHOIX CAT 1
-    $("#carte_nouveau_site").click(function () {
+    $("#new_site").click(function () {
 
 
-        $("#liste_choix_nouveau_site").toggle(1000);
-        $("#liste_choix_nouveau_site").css("display", "flex", "!important");
-        $("#liste_choix_nouveau_site").css("justify-content", "center", "!important");
-        $("#carte_refonte").toggle(1000);
-
-
-
+        $("#new_site_choice").toggle(1000);
+        $("#new_site_choice").css("display", "flex", "!important");
+        $("#new_site_choice").css("justify-content", "center", "!important");
+        $("#design_site").toggle(1000);
 
     })
 
-    $("#carte_refonte").click(function () {
+    $("#design_site").click(function () {
 
 
-        $("#liste_choix_refonte").toggle(1000);
-        $("#liste_choix_refonte").css("display", "flex", "!important");
-        $("#liste_choix_refonte").css("justify-content", "center", "!important");
-        $("#carte_nouveau_site").toggle(1000);
+        $("#design_site_choice").toggle(1000);
+        $("#design_site_choice").css("display", "flex", "!important");
+        $("#design_site_choice").css("justify-content", "center", "!important");
+        $("#new_site").toggle(1000);
 
     })
 

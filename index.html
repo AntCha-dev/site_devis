@@ -25,141 +25,117 @@
                         <path d="M193.94 256 296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"></path>
                     </svg>
                 </button>
-            </header>  
+            </header>
+            <!-- progressbar -->   
             <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>  
-            <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <!--  icon bar -->
+            <div id="icon-bar">
+                <div class="icon-item" id="icon_new">
+                    <img src="icon/globe.svg">
+                </div>
+                <div class="icon-item" id="icon_design">
+                    <img src="icon/rouleau-de-peinture.svg">
+                </div>
+            </div>                
+            <!-- multistep-form -->
+            <div class="card">
                 <form id="msform">
-                    <!-- progressbar --> 
                     <!-- fieldsets -->
                     <fieldset>
-                        <div class="container">
+                        <div class="row">                               
+                            <!-- project choice -->
+                            <div id="project_choice">
+                                <div id="new_site">
+                                    <div class="card_choice card container-fluid">
+                                        <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" style="width: 40%;">
+                                        <div class="card-body">
+                                            <p class="card-text">Nouveau site</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="design_site">
+                                    <div class="card_choice card container-fluid">
+                                        <img src="icon/rouleau-de-peinture.svg" class="card-img-top align-self-center mt-3" style="width: 40%;">
+                                        <div class="card-body">
+                                            <p class="card-text">Refonte de site</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                    
+<!--                                 <div id="choix_objectif">
+                                    <div id="objectif">
+                                        <div class="card_choice card mt-5 ms-5 container-fluid">
+                                            <img src="icon/" class="card-img-top align-self-center mt-3" style="width: 40%;" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text" style="font-size: 16px; text-align: center;"><a
+                                                        class="stretched-link" href="#">Objectif du site</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->                
+                                <!-- new site choice -->
+                                <div id="new_site_choice">
+                                    <div class="choixx" id="carte_langues" value="25">
+                                        <div class="card_choice card mt-5 ms-5 container-fluid">
+                                            <span><i class="validation_card far fa-circle"></i></span>
+                                            <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" style="width: 40%;"
+                                                alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text" style="font-size: 16px; text-align: center;"><a
+                                                        class="stretched-link" href="#">En plusieurs langues?</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="choixx" id="carte_domaine">
+                                        <div class="card_choice card mt-5 ms-5 container-fluid">
+                                            <span><i class="validation_card far fa-circle"></i></span>
+                                            <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" style="width: 40%;"
+                                                alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text" style="font-size: 16px; text-align: center;"><a
+                                                        class="stretched-link" href="#">Déjà un domaine?</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                
 
-        <div class="row">
-
-
-            <div class="col-md-10">
-
-                <!-- Barre des icônes au dessus de la barre de progression -->
-                <div id="barre_icon">
-                    <div id="icon_nouveau_site">
-                        <div class="progress_card card mt-5 ms-5 container-fluid">
-                            <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" style="width: 100%;"
-                                alt="...">
+                                <!-- design site choice -->
+                                <div id="design_site_choice">
+                                    <div class="choixx" id="carte_techno_obsolète">
+                                        <div class="card_choice card mt-5 ms-5 container-fluid">
+                                            <img src="icon/rouleau-de-peinture.svg" class="card-img-top align-self-center mt-3"
+                                                style="width: 40%;" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text" style="font-size: 16px; text-align: center;"><a
+                                                        class="stretched-link" href="#">Refonte de site</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="choixx" id="carte_graphismes_depassés">
+                                        <div class="card_choice card mt-5 ms-5 container-fluid">
+                                            <img src="icon/rouleau-de-peinture.svg" class="card-img-top align-self-center mt-3"
+                                                style="width: 40%;" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text" style="font-size: 16px; text-align: center;"><a
+                                                        class="stretched-link" href="#">Refonte de site</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="choixx" id="carte_repositionnement">
+                                        <div class="card_choice card mt-5 ms-5 container-fluid">
+                                            <img src="icon/rouleau-de-peinture.svg" class="card-img-top align-self-center mt-3"
+                                                style="width: 40%;" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text" style="font-size: 16px; text-align: center;"><a
+                                                        class="stretched-link" href="#">Refonte de site</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                         </div>
-                    </div>
-                </div>
-
-                <!-- CHOIX CAT 1 -->
-                <div id="choix_projet">
-                    <div id="carte_nouveau_site">
-                        <div class="choix_card card mt-5 ms-5 container-fluid">
-                            <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" style="width: 40%;"
-                                alt="...">
-                            <div class="card-body">
-                                <p class="card-text" style="font-size: 16px; text-align: center;"><a
-                                        class="stretched-link" href="#">Nouveau site</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="carte_refonte">
-                        <div class="choix_card card mt-5 ms-5 container-fluid">
-                            <img src="icon/rouleau-de-peinture.svg" class="card-img-top align-self-center mt-3"
-                                style="width: 40%;" alt="...">
-                            <div class="card-body">
-                                <p class="card-text" style="font-size: 16px; text-align: center;"><a
-                                        class="stretched-link" href="#">Refonte de site</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- CHOIX CAT 2 -->
-                <div id="choix_objectif">
-                    <div id="objectif">
-                        <div class="choix_card card mt-5 ms-5 container-fluid">
-                            <img src="icon/" class="card-img-top align-self-center mt-3" style="width: 40%;" alt="...">
-                            <div class="card-body">
-                                <p class="card-text" style="font-size: 16px; text-align: center;"><a
-                                        class="stretched-link" href="#">Objectif du site</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- <button type="submit" id="submit">envoyer</button>
-
-
-                            <div id="result"></div> -->
-
-
-
-                <!-- LISTE CHOIX NOUVEAU SITE -->
-                <div id="liste_choix_nouveau_site">
-                    <div class="choixx" id="carte_langues" value="25">
-                        <div class="choix_card card mt-5 ms-5 container-fluid">
-                            <span><i class="validation_card far fa-circle"></i></span>
-                            <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" style="width: 40%;"
-                                alt="...">
-                            <div class="card-body">
-                                <p class="card-text" style="font-size: 16px; text-align: center;"><a
-                                        class="stretched-link" href="#">En plusieurs langues?</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="choixx" id="carte_domaine">
-                        <div class="choix_card card mt-5 ms-5 container-fluid">
-                            <span><i class="validation_card far fa-circle"></i></span>
-                            <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" style="width: 40%;"
-                                alt="...">
-                            <div class="card-body">
-                                <p class="card-text" style="font-size: 16px; text-align: center;"><a
-                                        class="stretched-link" href="#">Déjà un domaine?</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- LISTE CHOIX REFONTE -->
-                <div id="liste_choix_refonte">
-                    <div class="choixx" id="carte_techno_obsolète">
-                        <div class="choix_card card mt-5 ms-5 container-fluid">
-                            <img src="icon/rouleau-de-peinture.svg" class="card-img-top align-self-center mt-3"
-                                style="width: 40%;" alt="...">
-                            <div class="card-body">
-                                <p class="card-text" style="font-size: 16px; text-align: center;"><a
-                                        class="stretched-link" href="#">Refonte de site</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="choixx" id="carte_graphismes_depassés">
-                        <div class="choix_card card mt-5 ms-5 container-fluid">
-                            <img src="icon/rouleau-de-peinture.svg" class="card-img-top align-self-center mt-3"
-                                style="width: 40%;" alt="...">
-                            <div class="card-body">
-                                <p class="card-text" style="font-size: 16px; text-align: center;"><a
-                                        class="stretched-link" href="#">Refonte de site</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="choixx" id="carte_repositionnement">
-                        <div class="choix_card card mt-5 ms-5 container-fluid">
-                            <img src="icon/rouleau-de-peinture.svg" class="card-img-top align-self-center mt-3"
-                                style="width: 40%;" alt="...">
-                            <div class="card-body">
-                                <p class="card-text" style="font-size: 16px; text-align: center;"><a
-                                        class="stretched-link" href="#">Refonte de site</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-                    <input type="button" name="next" class="next action-button" value="Next" />
+                        <input type="button" name="next" class="next action-button" value="Next" />
                     </fieldset>
                     <fieldset>
                         <div class="form-card">
