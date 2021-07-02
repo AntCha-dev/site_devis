@@ -9,7 +9,7 @@ $(document).ready(function() {
 
     $(".next").click(function() {
         current_fs = $(this).parent();
-        next_fs = current.next();
+        next_fs = current_fs.next();
         $(".previous").css({'display': 'block'});
 
         //show the next fieldset
