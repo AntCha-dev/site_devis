@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+    <script src="https://kit.fontawesome.com/065a94aab4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-11 col-sm-10 col-md-10 col-lg-7 col-xl-7 p-0 mt-3 mb-2">
+                <header class="form-header">
+                    <button type="button" aria-label="Retour à l’étape précédente" class="previous">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" height="24" aria-hidden="true">
+                            <path
+                                d="m231.293 473.899 19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z">
+                            </path>
+                        </svg>
+                    </button>
+                    <p class="steps">Étape 1 sur 10</p>
+                    <button type="button" aria-label="Fermer" class="close">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" height="24" aria-hidden="true">
+                            <path
+                                d="M193.94 256 296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z">
+                            </path>
+                        </svg>
+                    </button>
+                </header>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+                    <form id="msform">
+                        <!-- progressbar -->
+                        <!-- fieldsets -->
+
+                        <!-- PROJECT -->
+                        <fieldset>
+                            <div class="container">
+
+                                <div class="row">
+
+
+                                    <div class="col-md-10">
+
+                                        <!-- Barre des icônes au dessus de la barre de progression -->
+                                        <div id="barre_icon">
+                                            <div id="icon_nouveau_site">
+                                                <div class="progress_card card mt-5 ms-5 container-fluid">
+                                                    <img src="icon/globe.svg"
+                                                        class="card-img-top align-self-center mt-3" style="width: 100%;"
+                                                        alt="...">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- CHOIX CAT 1 -->
+                                        <div id="choix_projet">
+                                            <div id="carte_nouveau_site">
+                                                <div class="choix_card card mt-5 ms-5 container-fluid">
+                                                    <img src="icon/globe.svg"
+                                                        class="card-img-top align-self-center mt-3" style="width: 40%;"
+                                                        alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"
+                                                            style="font-size: 16px; text-align: center;"><a
+                                                                class="stretched-link" href="#">Nouveau site</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="carte_refonte">
+                                                <div class="choix_card card mt-5 ms-5 container-fluid">
+                                                    <img src="icon/rouleau-de-peinture.svg"
+                                                        class="card-img-top align-self-center mt-3" style="width: 40%;"
+                                                        alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"
+                                                            style="font-size: 16px; text-align: center;"><a
+                                                                class="stretched-link" href="#">Refonte de site</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- CHOIX CAT 2 -->
+                                        <div id="choix_objectif">
+                                            <div id="objectif">
+                                                <div class="choix_card card mt-5 ms-5 container-fluid">
+                                                    <img src="icon/" class="card-img-top align-self-center mt-3"
+                                                        style="width: 40%;" alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"
+                                                            style="font-size: 16px; text-align: center;"><a
+                                                                class="stretched-link" href="#">Objectif du site</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- <button type="submit" id="submit">envoyer</button>
+
+
+                            <div id="result"></div> -->
+
+
+
+                                        <!-- LISTE CHOIX NOUVEAU SITE -->
+                                        <div id="liste_choix_nouveau_site">
+                                            <div class="choixx" id="carte_langues" value="25">
+                                                <div class="choix_card card mt-5 ms-5 container-fluid">
+                                                    <span><i class="validation_card far fa-circle"></i></span>
+                                                    <img src="icon/globe.svg"
+                                                        class="card-img-top align-self-center mt-3" style="width: 40%;"
+                                                        alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"
+                                                            style="font-size: 16px; text-align: center;"><a
+                                                                class="stretched-link" href="#">En plusieurs
+                                                                langues?</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="choixx" id="carte_domaine">
+                                                <div class="choix_card card mt-5 ms-5 container-fluid">
+                                                    <span><i class="validation_card far fa-circle"></i></span>
+                                                    <img src="icon/globe.svg"
+                                                        class="card-img-top align-self-center mt-3" style="width: 40%;"
+                                                        alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"
+                                                            style="font-size: 16px; text-align: center;"><a
+                                                                class="stretched-link" href="#">Déjà un domaine?</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- LISTE CHOIX REFONTE -->
+                                        <div id="liste_choix_refonte">
+                                            <div class="choixx" id="carte_techno_obsolète">
+                                                <div class="choix_card card mt-5 ms-5 container-fluid">
+                                                    <span><i class="validation_card far fa-circle"></i></span>
+                                                    <img src="icon/rouleau-de-peinture.svg"
+                                                        class="card-img-top align-self-center mt-3" style="width: 40%;"
+                                                        alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"
+                                                            style="font-size: 16px; text-align: center;"><a
+                                                                class="stretched-link" href="#">Technologie obsolète</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="choixx" id="carte_graphismes_depassés">
+                                                <div class="choix_card card mt-5 ms-5 container-fluid">
+                                                    <span><i class="validation_card far fa-circle"></i></span>
+                                                    <img src="icon/rouleau-de-peinture.svg"
+                                                        class="card-img-top align-self-center mt-3" style="width: 40%;"
+                                                        alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"
+                                                            style="font-size: 16px; text-align: center;"><a
+                                                                class="stretched-link" href="#">Graphismes depassés</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="choixx" id="carte_repositionnement">
+                                                <div class="choix_card card mt-5 ms-5 container-fluid">
+                                                    <span><i class="validation_card far fa-circle"></i></span>
+                                                    <img src="icon/rouleau-de-peinture.svg"
+                                                        class="card-img-top align-self-center mt-3" style="width: 40%;"
+                                                        alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"
+                                                            style="font-size: 16px; text-align: center;"><a
+                                                                class="stretched-link" href="#">Repositionnement de
+                                                                l'entreprise</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+
+                                </div>
+
+
+
+                            </div>
+
+                            <input type="button" name="next" class="next action-button" value="Next" />
+                        </fieldset>
+
+                        <!-- GOAL -->
+                        <fieldset>
+                            <div class="container">
+
+                                <div class="row">
+
+
+                                    <div class="col-md-10">
+
+                                        <!-- Barre des icônes au dessus de la barre de progression -->
+                                        <div id="barre_icon">
+                                            <div id="icon_nouveau_site">
+                                                <div class="progress_card card mt-5 ms-5 container-fluid">
+                                                    <img src="icon/globe.svg"
+                                                        class="card-img-top align-self-center mt-3" style="width: 100%;"
+                                                        alt="...">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- CHOIX CAT 1 -->
+                                        <div id="choix_projet">
+                                            <div id="carte_objectifs">
+                                                <div class="choix_card card mt-5 ms-5 container-fluid">
+                                                    <img src="icon/goal.svg" class="card-img-top align-self-center mt-3"
+                                                        style="width: 40%;" alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"
+                                                            style="font-size: 16px; text-align: center;">
+                                                            <a class="stretched-link" href="#">Objectifs du site</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- LISTE CHOIX OBJECTIFS -->
+                                        <div id="liste_choix_objectifs">
+                                            <div class="choixx" id="carte_vente" value="25">
+                                                <div class="choix_card card mt-5 ms-5 container-fluid">
+                                                    <span><i class="validation_card far fa-circle"></i></span>
+                                                    <img src="icon/globe.svg"
+                                                        class="card-img-top align-self-center mt-3" style="width: 40%;"
+                                                        alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"
+                                                            style="font-size: 16px; text-align: center;">
+                                                            <a class="stretched-link" href="#">Vente</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="choixx" id="carte_site_vitrine">
+                                                <div class="choix_card card mt-5 ms-5 container-fluid">
+                                                    <span><i class="validation_card far fa-circle"></i></span>
+                                                    <img src="icon/globe.svg"
+                                                        class="card-img-top align-self-center mt-3" style="width: 40%;"
+                                                        alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"
+                                                            style="font-size: 16px; text-align: center;">
+                                                            <a class="stretched-link" href="#">Site vitrine</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="choixx" id="carte_monetiser">
+                                                <div class="choix_card card mt-5 ms-5 container-fluid">
+                                                    <span><i class="validation_card far fa-circle"></i></span>
+                                                    <img src="icon/globe.svg"
+                                                        class="card-img-top align-self-center mt-3" style="width: 40%;"
+                                                        alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"
+                                                            style="font-size: 16px; text-align: center;">
+                                                            <a class="stretched-link" href="#">Monétiser du contenu</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="choixx" id="carte_mise_en_relation">
+                                                <div class="choix_card card mt-5 ms-5 container-fluid">
+                                                    <span><i class="validation_card far fa-circle"></i></span>
+                                                    <img src="icon/globe.svg"
+                                                        class="card-img-top align-self-center mt-3" style="width: 40%;"
+                                                        alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"
+                                                            style="font-size: 16px; text-align: center;">
+                                                            <a class="stretched-link" href="#">Mise en relation</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="choixx" id="carte_presenter_activite">
+                                                <div class="choix_card card mt-5 ms-5 container-fluid">
+                                                    <span><i class="validation_card far fa-circle"></i></span>
+                                                    <img src="icon/globe.svg"
+                                                        class="card-img-top align-self-center mt-3" style="width: 40%;"
+                                                        alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"
+                                                            style="font-size: 16px; text-align: center;">
+                                                            <a class="stretched-link" href="#">Déjà un domaine?</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="choixx" id="carte_recruter">
+                                                <div class="choix_card card mt-5 ms-5 container-fluid">
+                                                    <span><i class="validation_card far fa-circle"></i></span>
+                                                    <img src="icon/globe.svg"
+                                                        class="card-img-top align-self-center mt-3" style="width: 40%;"
+                                                        alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"
+                                                            style="font-size: 16px; text-align: center;">
+                                                            <a class="stretched-link" href="#">Recruter et faciliter les
+                                                                échanges</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+
+                                </div>
+
+
+
+                            </div>
+
+                            <input type="button" name="next" class="next action-button" value="Next" />
+                        </fieldset>
+
+                        <!-- SUIVI -->
+                        <fieldset>
+                            <div class="container">
+
+                                <div class="row">
+
+
+                                    <div class="col-md-10">
+
+                                        <!-- Barre des icônes au dessus de la barre de progression -->
+                                        <div id="barre_icon">
+                                            <div id="icon_nouveau_site">
+                                                <div class="progress_card card mt-5 ms-5 container-fluid">
+                                                    <img src="icon/globe.svg"
+                                                        class="card-img-top align-self-center mt-3" style="width: 100%;"
+                                                        alt="...">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- CHOIX CAT 1 -->
+                                        <div id="choix_projet">
+                                            <div id="carte_suivi">
+                                                <div class="choix_card card mt-5 ms-5 container-fluid">
+                                                    <img src="icon/goal.svg" class="card-img-top align-self-center mt-3"
+                                                        style="width: 40%;" alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"
+                                                            style="font-size: 16px; text-align: center;">
+                                                            <a class="stretched-link" href="#">Suivi souhaité</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- LISTE CHOIX SUIVI -->
+                                        <div id="liste_choix_suivi">
+                                            <div class="choixx" id="carte_rapport" value="25">
+                                                <div class="choix_card card mt-5 ms-5 container-fluid">
+                                                    <span><i class="validation_card far fa-circle"></i></span>
+                                                    <img src="icon/globe.svg"
+                                                        class="card-img-top align-self-center mt-3" style="width: 40%;"
+                                                        alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"
+                                                            style="font-size: 16px; text-align: center;">
+                                                            <a class="stretched-link" href="#">Rapport mensuel sur les
+                                                                statistiques</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="choixx" id="carte_assistance_technique">
+                                                <div class="choix_card card mt-5 ms-5 container-fluid">
+                                                    <span><i class="validation_card far fa-circle"></i></span>
+                                                    <img src="icon/globe.svg"
+                                                        class="card-img-top align-self-center mt-3" style="width: 40%;"
+                                                        alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"
+                                                            style="font-size: 16px; text-align: center;">
+                                                            <a class="stretched-link" href="#">Assistance technique
+                                                                mensuelle</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="choixx" id="carte_aide_referencement">
+                                                <div class="choix_card card mt-5 ms-5 container-fluid">
+                                                    <span><i class="validation_card far fa-circle"></i></span>
+                                                    <img src="icon/globe.svg"
+                                                        class="card-img-top align-self-center mt-3" style="width: 40%;"
+                                                        alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"
+                                                            style="font-size: 16px; text-align: center;">
+                                                            <a class="stretched-link" href="#">Aide au référencement</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="choixx" id="carte_redaction">
+                                                <div class="choix_card card mt-5 ms-5 container-fluid">
+                                                    <span><i class="validation_card far fa-circle"></i></span>
+                                                    <img src="icon/globe.svg"
+                                                        class="card-img-top align-self-center mt-3" style="width: 40%;"
+                                                        alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"
+                                                            style="font-size: 16px; text-align: center;">
+                                                            <a class="stretched-link" href="#">Rédaction des textes</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+
+                                </div>
+
+
+
+                            </div>
+
+                            <input type="button" name="next" class="next action-button" value="Next" />
+                        </fieldset>
+
+                        <!-- CIBLE -->
+                        <fieldset>
+                            <div class="container">
+
+                                <div class="row">
+
+
+                                    <div class="col-md-10">
+
+                                        <!-- Barre des icônes au dessus de la barre de progression -->
+                                        <div id="barre_icon">
+                                            <div id="icon_nouveau_site">
+                                                <div class="progress_card card mt-5 ms-5 container-fluid">
+                                                    <img src="icon/globe.svg"
+                                                        class="card-img-top align-self-center mt-3" style="width: 100%;"
+                                                        alt="...">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- CHOIX CIBLE -->
+                                        <div id="choix_projet">
+                                            <div id="carte_cible">
+                                                <div class="choix_card card mt-5 ms-5 container-fluid">
+                                                    <img src="icon/goal.svg" class="card-img-top align-self-center mt-3"
+                                                        style="width: 40%;" alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"
+                                                            style="font-size: 16px; text-align: center;">
+                                                            <a class="stretched-link" href="#">Cible de votre site</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- LISTE CHOIX SUIVI -->
+                                        <div id="liste_choix_cible">
+                                            <div class="choixx" id="carte_grand_publique" value="25">
+                                                <div class="choix_card card mt-5 ms-5 container-fluid">
+                                                    <span><i class="validation_card far fa-circle"></i></span>
+                                                    <img src="icon/globe.svg"
+                                                        class="card-img-top align-self-center mt-3" style="width: 40%;"
+                                                        alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"
+                                                            style="font-size: 16px; text-align: center;">
+                                                            <a class="stretched-link" href="#">Grand publique</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="choixx" id="carte_clients_particuliers">
+                                                <div class="choix_card card mt-5 ms-5 container-fluid">
+                                                    <span><i class="validation_card far fa-circle"></i></span>
+                                                    <img src="icon/globe.svg"
+                                                        class="card-img-top align-self-center mt-3" style="width: 40%;"
+                                                        alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"
+                                                            style="font-size: 16px; text-align: center;">
+                                                            <a class="stretched-link" href="#">Clients particuliers</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="choixx" id="carte_partenaire">
+                                                <div class="choix_card card mt-5 ms-5 container-fluid">
+                                                    <span><i class="validation_card far fa-circle"></i></span>
+                                                    <img src="icon/globe.svg"
+                                                        class="card-img-top align-self-center mt-3" style="width: 40%;"
+                                                        alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"
+                                                            style="font-size: 16px; text-align: center;">
+                                                            <a class="stretched-link" href="#">Partenaires /
+                                                                Spécialistes du secteur</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="choixx" id="carte_clients_professionnel">
+                                                <div class="choix_card card mt-5 ms-5 container-fluid">
+                                                    <span><i class="validation_card far fa-circle"></i></span>
+                                                    <img src="icon/globe.svg"
+                                                        class="card-img-top align-self-center mt-3" style="width: 40%;"
+                                                        alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"
+                                                            style="font-size: 16px; text-align: center;">
+                                                            <a class="stretched-link" href="#">Client professionnel</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="choixx" id="carte_personnel_de_lentreprise">
+                                                <div class="choix_card card mt-5 ms-5 container-fluid">
+                                                    <span><i class="validation_card far fa-circle"></i></span>
+                                                    <img src="icon/globe.svg"
+                                                        class="card-img-top align-self-center mt-3" style="width: 40%;"
+                                                        alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"
+                                                            style="font-size: 16px; text-align: center;">
+                                                            <a class="stretched-link" href="#">Personnel de
+                                                                l'entreprise</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+
+                                </div>
+
+
+
+                            </div>
+
+                            <input type="button" name="next" class="next action-button" value="Next" />
+                        </fieldset>
+
+                        <!-- CONTENU -->
+                        <fieldset>
+                            <div class="container">
+
+                                <div class="row">
+
+
+                                    <div class="col-md-10">
+
+                                        <!-- Barre des icônes au dessus de la barre de progression -->
+                                        <div id="barre_icon">
+                                            <div id="icon_nouveau_site">
+                                                <div class="progress_card card mt-5 ms-5 container-fluid">
+                                                    <img src="icon/globe.svg"
+                                                        class="card-img-top align-self-center mt-3" style="width: 100%;"
+                                                        alt="...">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- CHOIX CIBLE -->
+                                        <div id="choix_projet">
+                                            <div id="carte_contenu">
+                                                <div class="choix_card card mt-5 ms-5 container-fluid">
+                                                    <img src="icon/goal.svg" class="card-img-top align-self-center mt-3"
+                                                        style="width: 40%;" alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"
+                                                            style="font-size: 16px; text-align: center;">
+                                                            <a class="stretched-link" href="#">Votre site doit contenir
+                                                                :</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- LISTE CHOIX CONTENANCE -->
+                                        <div id="liste_choix_contenance">
+                                            <div class="choixx" id="carte_lien_reseau" value="25">
+                                                <div class="choix_card card mt-5 ms-5 container-fluid">
+                                                    <span><i class="validation_card far fa-circle"></i></span>
+                                                    <img src="icon/globe.svg"
+                                                        class="card-img-top align-self-center mt-3" style="width: 40%;"
+                                                        alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"
+                                                            style="font-size: 16px; text-align: center;">
+                                                            <a class="stretched-link" href="#">Des liens vers vos
+                                                                réseaux sociaux</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="choixx" id="carte_gallerie">
+                                                <div class="choix_card card mt-5 ms-5 container-fluid">
+                                                    <span><i class="validation_card far fa-circle"></i></span>
+                                                    <img src="icon/globe.svg"
+                                                        class="card-img-top align-self-center mt-3" style="width: 40%;"
+                                                        alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"
+                                                            style="font-size: 16px; text-align: center;">
+                                                            <a class="stretched-link" href="#">Une gallerie de photo</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="choixx" id="carte_moteur_de_recherche">
+                                                <div class="choix_card card mt-5 ms-5 container-fluid">
+                                                    <span><i class="validation_card far fa-circle"></i></span>
+                                                    <img src="icon/globe.svg"
+                                                        class="card-img-top align-self-center mt-3" style="width: 40%;"
+                                                        alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"
+                                                            style="font-size: 16px; text-align: center;">
+                                                            <a class="stretched-link" href="#">Un moteur de recherche
+                                                                interne</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="choixx" id="carte_calendrier">
+                                                <div class="choix_card card mt-5 ms-5 container-fluid">
+                                                    <span><i class="validation_card far fa-circle"></i></span>
+                                                    <img src="icon/globe.svg"
+                                                        class="card-img-top align-self-center mt-3" style="width: 40%;"
+                                                        alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"
+                                                            style="font-size: 16px; text-align: center;">
+                                                            <a class="stretched-link" href="#">Un calendrier de vos
+                                                                activitées</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="choixx" id="carte_calendrier">
+                                                <div class="choix_card card mt-5 ms-5 container-fluid">
+                                                    <span><i class="validation_card far fa-circle"></i></span>
+                                                    <img src="icon/globe.svg"
+                                                        class="card-img-top align-self-center mt-3" style="width: 40%;"
+                                                        alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"
+                                                            style="font-size: 16px; text-align: center;">
+                                                            <a class="stretched-link" href="#">Personnel de
+                                                                l'entreprise</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="choixx" id="carte_slider">
+                                                <div class="choix_card card mt-5 ms-5 container-fluid">
+                                                    <span><i class="validation_card far fa-circle"></i></span>
+                                                    <img src="icon/globe.svg"
+                                                        class="card-img-top align-self-center mt-3" style="width: 40%;"
+                                                        alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"
+                                                            style="font-size: 16px; text-align: center;">
+                                                            <a class="stretched-link" href="#">Une animation avec des
+                                                                photos</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="choixx" id="carte_newsletter">
+                                                <div class="choix_card card mt-5 ms-5 container-fluid">
+                                                    <span><i class="validation_card far fa-circle"></i></span>
+                                                    <img src="icon/globe.svg"
+                                                        class="card-img-top align-self-center mt-3" style="width: 40%;"
+                                                        alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"
+                                                            style="font-size: 16px; text-align: center;">
+                                                            <a class="stretched-link" href="#">Une inscription à une
+                                                                newsletter</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="choixx" id="carte_article">
+                                                <div class="choix_card card mt-5 ms-5 container-fluid">
+                                                    <span><i class="validation_card far fa-circle"></i></span>
+                                                    <img src="icon/globe.svg"
+                                                        class="card-img-top align-self-center mt-3" style="width: 40%;"
+                                                        alt="...">
+                                                    <div class="card-body">
+                                                        <p class="card-text"
+                                                            style="font-size: 16px; text-align: center;">
+                                                            <a class="stretched-link" href="#">Des articles</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+
+                                </div>
+
+
+
+                            </div>
+
+                            <input type="button" name="next" class="next action-button" value="Next" />
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-card">
+                                <label class="fieldlabels">Nom du site / de l'entreprise souhaitée :</label> <input
+                                    type="text" name="nom_du_site" placeholder="Ex : EXHER" /> <label
+                                    class="fieldlabels">Nom :</label> <input type="text" name="nom"
+                                    placeholder="Nom de famille" /> <label class="fieldlabels">Prénom :</label>
+                                <input type="text" name="prenom" placeholder="Prénom" /> <label
+                                    class="fieldlabels">Adresse mail : </label> <input type="text" name="email"
+                                    placeholder="Votre adresse mail de contact" />
+                                <label class="fieldlabels">Votre situation : </label> <input type="text" name="email"
+                                    placeholder="Particulier / Association / Entreprise" />
+                                <label class="fieldlabels">Numéro de téléphone : </label> <input type="text"
+                                    name="email" placeholder="06 XX XX XX XX" />
+                                <label class="fieldlabels">Présentation de l'entreprise : </label> <input type="text"
+                                    name="email" placeholder="Votre projet" />
+                            </div> <input type="button" name="next" class="next action-button" value="Next" />
+                        </fieldset>
+                        <fieldset>
+                            <div class="form-card">
+                                <label class="fieldlabels">Upload Your Photo:</label> <input type="file" name="pic"
+                                    accept="image/*"> <label class="fieldlabels">Upload Signature Photo:</label> <input
+                                    type="file" name="pic" accept="image/*">
+                            </div>
+                            <input type="button" name="next" class="next action-button" value="Submit" />
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
