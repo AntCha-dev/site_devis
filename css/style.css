@@ -37,7 +37,8 @@ p {
 .form-card {
     text-align: left
 }
-.center{
+
+.center {
     text-align: center;
 }
 
@@ -45,15 +46,15 @@ p {
     display: none
 }
 
-#msform input[type="checkbox"]{
-  position: absolute;
-  top: 15px;
-  display: block;
-  outline: none;
-  border: none;
-  background: none;
-  padding: 0;
-  margin: 0;
+#msform input[type="checkbox"] {
+    position: absolute;
+    top: 15px;
+    display: block;
+    outline: none;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
 }
 
 #msform input,
@@ -135,7 +136,9 @@ p {
     margin-top: 1rem;
 }
 
-.previous:active, .previous:focus, .previous:hover {
+.previous:active,
+.previous:focus,
+.previous:hover {
     outline: 0px;
     color: rgb(51, 6, 145);
 }
@@ -144,7 +147,8 @@ p {
     margin-left: -0.75rem;
 }
 
-.previous, .close {
+.previous,
+.close {
     all: unset;
     text-align: center;
     line-height: 3rem;
@@ -155,12 +159,15 @@ p {
     cursor: pointer;
     flex: 0 0 3rem;
 }
-.previous, .close svg {
+
+.previous,
+.close svg {
     fill: rgb(63, 39, 186);
     transform: translateY(0.125rem);
 }
-.previous{
-    display:  none;
+
+.previous {
+    display: none;
 }
 
 .progress {
@@ -177,14 +184,14 @@ p {
 }
 
 .card-block {
-    margin:  10px;
+    margin: 10px;
     width: 150px;
     height: 150px;
     border: 1px solid lightgrey;
     padding: 20px;
     border-radius: 5px !important;
     background-color: #FAFAFA;
-    
+
 }
 
 .radio {
@@ -198,7 +205,7 @@ p {
     -moz-filter: grayscale(100%);
     -o-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
-    filter: grayscale(100%);   
+    filter: grayscale(100%);
 }
 
 .radio:hover {
@@ -227,7 +234,7 @@ p {
 }
 
 
-.checkbox:checked ~ .radio {
+.checkbox:checked~.radio {
     border: 1px solid #4764af;
     box-shadow: 0px 8px 16px 0px #EEEEEE;
     -webkit-filter: grayscale(0%);
@@ -237,15 +244,16 @@ p {
     filter: grayscale(0%)
 }
 
-.checkbox:checked ~ .radio .unchecked{
+.checkbox:checked~.radio .unchecked {
     display: none;
 }
-.checkbox:checked ~ .radio .checked {
+
+.checkbox:checked~.radio .checked {
     display: inline-block;
 }
 
 
-.label-checkbox{
+.label-checkbox {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -283,8 +291,15 @@ p {
 
 /* LISTE CHOIX PROJET */
 
-#new_site_choice, #design_site_choice {
+#new_site_choice,
+#design_site_choice,
+#list_goal_choice,
+#list_help_choice,
+#list_goal_choice,
+#list_content_choice {
     display: none;
+    /* justify-content: center;
+    flex-wrap: wrap; */
 }
 
 /* card */
@@ -309,8 +324,8 @@ p {
     padding-right: 200px;
 }
 
-.card-text{
-    font-size: 16px; 
+.card-text {
+    font-size: 16px;
     text-align: center;
     color: black;
 }
@@ -320,7 +335,7 @@ p {
     z-index: 1;
 }
 
-#icon-bar{
+#icon-bar {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -339,15 +354,16 @@ p {
     transition: .5s ease;
 }
 
-#icon-bar > :first-of-type {
+#icon-bar> :first-of-type {
     margin-left: 0px;
 }
-#icon-bar > :lastt-of-type {
+
+#icon-bar> :lastt-of-type {
     margin-right: 0px;
 }
 
 .icon-item img {
-    width:  50%;
+    width: 50%;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -359,16 +375,17 @@ p {
 /* Début Menu estimation */
 
 .menu h2 {
-    color: white; 
-    background-color:#418ACA; 
-    text-align:center; 
-    font-size:20px; 
+    color: white;
+    background-color: #418ACA;
+    text-align: center;
+    font-size: 20px;
     line-height: 38px;
-    padding-top:5px;
+    padding-top: 5px;
     padding-bottom: 5px;
-    
+
 }
-.menu-estimation{
+
+.menu-estimation {
     top: 80px;
     bottom: auto;
     position: absolute;
@@ -377,8 +394,7 @@ p {
     background-color: #f0f0f0;
 }
 
-.list-item
-{
+.list-item {
     list-style: none;
     cursor: pointer;
     padding-bottom: 10px;
@@ -405,10 +421,11 @@ a {
     transition: .5s ease;
 }
 
-.fa-circle {
+/* .fa-circle {
     color: #fafafa;
     border-radius: 50%;
     border: 2px solid #bdbdbd;
     margin-right: 10px;
-}
+} */
+
 /* Fin Menu estimation */
