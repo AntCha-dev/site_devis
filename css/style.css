@@ -279,7 +279,11 @@ p {
 }
 
 /* CATEGORIE */
-#project_choice {
+#project_choice,
+#goal_choice,
+#help_choice,
+#cible_choice,
+#content_choice {
     display: flex;
     justify-content: center;
     margin: 10px 0px 0px 0px;
