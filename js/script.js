@@ -158,13 +158,6 @@ $(document).ready(function () {
         $("#list_help_choice").css("flex-wrap", "wrap", "!important");
     })
 
-    $("#goal_choice").click(function () {
-        $("#list_goal_choice").toggle(1000);
-        $("#list_goal_choice").css("display", "flex", "!important");
-        $("#list_goal_choice").css("justify-content", "center", "!important");
-        $("#list_goal_choice").css("flex-wrap", "wrap", "!important");
-    })
-
     $("#content_choice").click(function () {
         $("#list_content_choice").toggle(1000);
         $("#list_content_choice").css("display", "flex", "!important");
