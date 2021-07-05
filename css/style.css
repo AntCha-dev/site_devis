@@ -83,7 +83,7 @@ p {
 
 #msform .action-button {
     width: 100px;
-    background: rgb(63, 39, 186);
+    background:  #418aca;
     font-weight: bold;
     color: white;
     border: 0 none;
@@ -168,7 +168,7 @@ p {
 }
 
 .progress-bar {
-    background-color: #673AB7
+    background-color: #418aca
 }
 
 .fit-image {
