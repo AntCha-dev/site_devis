@@ -31,8 +31,11 @@ $(document).ready(function() {
             },
             duration: 500
         });
+        $( "#nav-list li:nth-child("+current+") i" ).removeClass("fa-circle").addClass("fa-check-circle");
         setProgressBar(++current);
         $(".steps").text("Étape "+current+ " sur "+steps);
+        //replace fa-circle by fa-check
+        
     });
 
     $(".previous").click(function() {
@@ -49,8 +52,6 @@ $(document).ready(function() {
             step: function(now) {
                 // for making fielset appear animation
                 opacity = 1 - now;
-                console.log(opacity);
-
                 current_fs.css({
                     'display': 'none',
                     'position': 'relative'
@@ -61,10 +62,44 @@ $(document).ready(function() {
             },
             duration: 500
         });
-        setProgressBar(--current);
+        setProgressBar(--current); // curent = current-1
         $(".steps").text("Étape "+current+ " sur "+steps);
         if (current==1) $(".previous").css({'display': 'none'});
     });
+
+     $("#nav-list li").click(function() {
+        var n = $(this).index() + 1;
+        if ( n<current) {
+            current_fs = $( "fieldset:nth-child("+current+")" );
+            step_fs =  $( "fieldset:nth-child("+n+")" );
+
+            //show the previous fieldset
+            step_fs.show();
+
+            //hide the current fieldset with style
+            current_fs.animate({
+                opacity: 0
+            }, {
+                step: function(now) {
+                    // for making fielset appear animation
+                    opacity = 1 - now;
+                    current_fs.css({
+                        'display': 'none',
+                        'position': 'relative'
+                    });
+                    step_fs.css({
+                        'opacity': opacity
+                    });
+                },
+                duration: 500
+            });
+            current=n;
+            //setProgressBar(n);
+            $(".steps").text("Étape "+n+ " sur "+steps);
+            if (n==1) $(".previous").css({'display': 'none'});
+        }
+    });
+
 
     function setProgressBar(curStep) {
         var percent = parseFloat(100 / steps) * curStep;
