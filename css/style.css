@@ -160,7 +160,7 @@ html {
 
 .progress {
     height: 3px;
-    
+
 }
 
 .progress-bar {
@@ -296,6 +296,12 @@ html {
     flex-wrap: wrap; */
 }
 
+.question {
+    text-align: left;
+    /* margin-left: 100px; */
+    margin: 10px 0px 25px 100px;
+}
+
 /* card */
 
 .card_choice {
@@ -314,6 +320,11 @@ html {
 
 .card_choices {
     background-color: white !important;
+    margin-right: -30px !important;
+    margin-top: -5px !important;
+}
+
+.card_choices:hover {
     box-shadow: 0 0.5rem 1rem #4764af !important;
 }
 
@@ -340,7 +351,7 @@ html {
     z-index: 0;
     border: none;
     position: relative;
-    
+
 }
 
 .card img {

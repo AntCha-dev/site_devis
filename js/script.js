@@ -108,20 +108,20 @@ $(document).ready(function () {
 
     // NAV BAR 
 
-    $("#icon-bar div").click(function() {
+    $("#icon-bar div").click(function () {
         var m = $(this).index() + 1;
-        if ( m<current) {
-            current_fs = $( "fieldset:nth-child("+current+")" );
-            step_fs =  $( "fieldset:nth-child("+m+")" );
-    
+        if (m < current) {
+            current_fs = $("fieldset:nth-child(" + current + ")");
+            step_fs = $("fieldset:nth-child(" + m + ")");
+
             //show the previous fieldset
             step_fs.show();
-    
+
             //hide the current fieldset with style
             current_fs.animate({
                 opacity: 0
             }, {
-                step: function(now) {
+                step: function (now) {
                     // for making fielset appear animation
                     opacity = 1 - now;
                     current_fs.css({
@@ -134,10 +134,12 @@ $(document).ready(function () {
                 },
                 duration: 500
             });
-            current=m;
+            current = m;
             //setProgressBar(n);
-            $(".steps").text("Étape "+m+ " sur "+steps);
-            if (m==1) $(".previous").css({'display': 'none'});
+            $(".steps").text("Étape " + m + " sur " + steps);
+            if (m == 1) $(".previous").css({
+                'display': 'none'
+            });
         }
     });
 
@@ -160,42 +162,42 @@ $(document).ready(function () {
     $("#new_site").click(function () {
         $("#new_site_choice").toggle(1000);
         $("#new_site_choice").css("display", "flex", "!important");
-        $("#new_site_choice").css("justify-content", "center", "!important");
+        $("#new_site_choice").css("justify-content", "right", "!important");
         $("#design_site").toggle(1000);
     })
 
     $("#design_site").click(function () {
         $("#design_site_choice").toggle(1000);
         $("#design_site_choice").css("display", "flex", "!important");
-        $("#design_site_choice").css("justify-content", "center", "!important");
+        $("#design_site_choice").css("justify-content", "right", "!important");
         $("#new_site").toggle(1000);
     })
 
     $("#goal_choice").click(function () {
         $("#list_goal_choice").toggle(1000);
         $("#list_goal_choice").css("display", "flex", "!important");
-        $("#list_goal_choice").css("justify-content", "center", "!important");
+        $("#list_goal_choice").css("justify-content", "right", "!important");
         $("#list_goal_choice").css("flex-wrap", "wrap", "!important");
     })
 
     $("#cible_choice").click(function () {
         $("#list_cible_choice").toggle(1000);
         $("#list_cible_choice").css("display", "flex", "!important");
-        $("#list_cible_choice").css("justify-content", "center", "!important");
+        $("#list_cible_choice").css("justify-content", "right", "!important");
         $("#list_cible_choice").css("flex-wrap", "wrap", "!important");
     })
 
     $("#help_choice").click(function () {
         $("#list_help_choice").toggle(1000);
         $("#list_help_choice").css("display", "flex", "!important");
-        $("#list_help_choice").css("justify-content", "center", "!important");
+        $("#list_help_choice").css("justify-content", "right", "!important");
         $("#list_help_choice").css("flex-wrap", "wrap", "!important");
     })
 
     $("#content_choice").click(function () {
         $("#list_content_choice").toggle(1000);
         $("#list_content_choice").css("display", "flex", "!important");
-        $("#list_content_choice").css("justify-content", "center", "!important");
+        $("#list_content_choice").css("justify-content", "right", "!important");
         $("#list_content_choice").css("flex-wrap", "wrap", "!important");
     })
 
