@@ -209,5 +209,6 @@ $(document).ready(function () {
         $("#" + this.id + " .card").toggleClass("border-3 border-primary");
     })
 
+    
 
 });
