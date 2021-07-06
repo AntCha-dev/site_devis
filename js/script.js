@@ -118,17 +118,7 @@ $(document).ready(function () {
         return false;
     })
 
-
-    let carte_nouveau_site;
-    let carte_refonte;
-    let carte_langues;
-
-
-    // LISTE CHOIX CAT 1
-    // $("#new_site_choice").children();
-
-
-    // GESTION DES ICONES EN HAUT DE LA BARRE DE PROGRESSION
+    // TOGGLE ANIMATION WHEN CLICK ON SECTION
 
     $("#new_site").click(function () {
         $("#new_site_choice").toggle(1000);
@@ -166,7 +156,7 @@ $(document).ready(function () {
     })
 
 
-    // LIST CHOIX CAT 1
+    // CHANGE VALIDATION CIRCLE
 
     $(".choixx").click(function (e) {
         console.log(this)

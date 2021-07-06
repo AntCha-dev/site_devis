@@ -16,7 +16,7 @@
     <div class="container-fluid">
         <div class="row justify-content-center">
             <!-- Menu estimation -->
-            <div class="col-4 col-sm-4 col-md-4 col-lg-2 col-xl-2 p-0 mt-3 mb-2 menu">
+            <!-- <div class="col-4 col-sm-4 col-md-4 col-lg-2 col-xl-2 p-0 mt-3 mb-2 menu">
                 <div class="menu-estimation">
                     <h2>Avancement</h2>
                     <div id="list_categ">
@@ -30,9 +30,9 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- Fin Menu estimation -->
-            <div class="col-10 col-sm-10 col-md-10 col-lg-6 col-xl-6 p-0 mt-3 mb-2">
+            <div class="col-10 col-sm-10 col-md-10 col-lg-8 col-xl-8 p-0 mt-3 mb-2">
                 <header class="form-header">
                     <button type="button" aria-label="Retour à l’étape précédente" class="previous">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" height="24" aria-hidden="true">
@@ -68,6 +68,8 @@
                 <div class="card">
                     <form id="msform">
                         <!-- fieldsets -->
+
+
                         <!-- Field project -->
                         <fieldset>
                             <div class="row">
@@ -92,6 +94,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <p>Quelle est la nature de votre projet ?</p>
                                 <div id="new_site_choice">
                                     <div class="choixx" id="carte_langues" value="25">
                                         <div class="card_choice card mt-5 ms-5 container-fluid">
@@ -99,8 +102,8 @@
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
                                                 style="width: 40%;" alt="...">
                                             <div class="card-body">
-                                                <p class="card-text" style="font-size: 16px; text-align: center;"><a
-                                                        class="stretched-link" href="#">En plusieurs langues?</a></p>
+                                                <p class="card-text" style="font-size: 16px; text-align: center;">En
+                                                    plusieurs langues?</p>
                                             </div>
                                         </div>
                                     </div>
@@ -110,8 +113,8 @@
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
                                                 style="width: 40%;" alt="...">
                                             <div class="card-body">
-                                                <p class="card-text" style="font-size: 16px; text-align: center;"><a
-                                                        class="stretched-link" href="#">Déjà un domaine?</a></p>
+                                                <p class="card-text" style="font-size: 16px; text-align: center;">Déjà
+                                                    un domaine?</p>
                                             </div>
                                         </div>
                                     </div>
@@ -119,34 +122,37 @@
                                 <div id="design_site_choice">
                                     <div class="choixx" id="carte_techno_obsolète">
                                         <div class="card_choice card mt-5 ms-5 container-fluid">
+                                            <span><i class="validation_card far fa-circle"></i></span>
                                             <img src="icon/rouleau-de-peinture.svg"
                                                 class="card-img-top align-self-center mt-3" style="width: 40%;"
                                                 alt="...">
                                             <div class="card-body">
-                                                <p class="card-text" style="font-size: 16px; text-align: center;"><a
-                                                        class="stretched-link" href="#">Techno</a></p>
+                                                <p class="card-text" style="font-size: 16px; text-align: center;">
+                                                    Techno</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="choixx" id="carte_graphismes_depassés">
                                         <div class="card_choice card mt-5 ms-5 container-fluid">
+                                            <span><i class="validation_card far fa-circle"></i></span>
                                             <img src="icon/rouleau-de-peinture.svg"
                                                 class="card-img-top align-self-center mt-3" style="width: 40%;"
                                                 alt="...">
                                             <div class="card-body">
-                                                <p class="card-text" style="font-size: 16px; text-align: center;"><a
-                                                        class="stretched-link" href="#">Graphisme</a></p>
+                                                <p class="card-text" style="font-size: 16px; text-align: center;">
+                                                    Graphisme</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="choixx" id="carte_repositionnement">
                                         <div class="card_choice card mt-5 ms-5 container-fluid">
+                                            <span><i class="validation_card far fa-circle"></i></span>
                                             <img src="icon/rouleau-de-peinture.svg"
                                                 class="card-img-top align-self-center mt-3" style="width: 40%;"
                                                 alt="...">
                                             <div class="card-body">
-                                                <p class="card-text" style="font-size: 16px; text-align: center;"><a
-                                                        class="stretched-link" href="#">carte_repositionnement</a></p>
+                                                <p class="card-text" style="font-size: 16px; text-align: center;">
+                                                    Repositionnement</p>
                                             </div>
                                         </div>
                                     </div>
@@ -271,8 +277,7 @@
                                     <div class="choixx" id="carte_statistiques" value="25">
                                         <div class="card_choice card mt-5 ms-5 container-fluid">
                                             <span><i class="validation_card far fa-circle"></i></span>
-                                            <span><i class="validation_card far fa-circle"></i></span>
-                                            <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
+                                            <img src="icon/globe.svg" class="card-img-top align-self-center"
                                                 style="width: 40%;" alt="...">
                                             <div class="card-body">
                                                 <p class="card-text" style="font-size: 16px; text-align: center;">
@@ -282,7 +287,6 @@
                                     </div>
                                     <div class="choixx" id="carte_technique">
                                         <div class="card_choice card mt-5 ms-5 container-fluid">
-                                            <span><i class="validation_card far fa-circle"></i></span>
                                             <span><i class="validation_card far fa-circle"></i></span>
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
                                                 style="width: 40%;" alt="...">
@@ -295,7 +299,6 @@
                                     <div class="choixx" id="carte_referencement">
                                         <div class="card_choice card mt-5 ms-5 container-fluid">
                                             <span><i class="validation_card far fa-circle"></i></span>
-                                            <span><i class="validation_card far fa-circle"></i></span>
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
                                                 style="width: 40%;" alt="...">
                                             <div class="card-body">
@@ -306,7 +309,6 @@
                                     </div>
                                     <div class="choixx" id="carte_redaction">
                                         <div class="card_choice card mt-5 ms-5 container-fluid">
-                                            <span><i class="validation_card far fa-circle"></i></span>
                                             <span><i class="validation_card far fa-circle"></i></span>
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
                                                 style="width: 40%;" alt="...">
@@ -431,7 +433,7 @@
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
                                                 style="width: 40%;" alt="...">
                                             <div class="card-body">
-                                                <p class="card-text" style="font-size: 16px; text-align: center;">
+                                                <p class="card-text">
                                                     Réseaux sociaux</p>
                                             </div>
                                         </div>
