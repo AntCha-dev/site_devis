@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
 html {
@@ -159,7 +159,8 @@ html {
 }
 
 .progress {
-    height: 3px
+    height: 3px;
+    
 }
 
 .progress-bar {
@@ -324,7 +325,8 @@ html {
 .card {
     z-index: 0;
     border: none;
-    position: relative
+    position: relative;
+    
 }
 
 .card img {
@@ -369,16 +371,20 @@ html {
     justify-content: flex-start;
     margin: 15px 0px;
     z-index: 1;
+    justify-content: space-around;
+    cursor: pointer;
+    margin-top: auto;
 }
 
 
 .icon-item {
     position: relative;
     margin: 0 10px;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     box-shadow: 0 0.5rem 1rem lightgrey;
     transition: .5s ease;
+    background-color: #4764af;
 }
 
 #icon-bar> :first-of-type {
