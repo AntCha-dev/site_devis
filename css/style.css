@@ -288,6 +288,7 @@ html {
 #list_goal_choice,
 #list_help_choice,
 #list_goal_choice,
+#list_cible_choice,
 #list_content_choice {
     display: none;
     /* justify-content: center;
@@ -300,10 +301,24 @@ html {
     width: 165px !important;
     height: 165px !important;
     margin: 20px 20px;
-    box-shadow: 0 0.5rem 1rem lightgrey;
-    transition: all 150ms ease-in-out;
     cursor: pointer;
-    background-color: #4764af;
+    background-color: #4764af !important;
+    box-shadow: 0 0.5rem 1rem lightgray !important;
+    transition: all 150ms ease-in-out;
+    -webkit-transition: all 150ms ease-in-out;
+    -moz-transition: all 150ms ease-in-out;
+    -ms-transition: all 150ms ease-in-out;
+    -o-transition: all 150ms ease-in-out;
+}
+
+.card_choices {
+    background-color: white !important;
+    box-shadow: 0 0.5rem 1rem #4764af !important;
+}
+
+.card_choices p {
+    color: inherit !important;
+
 }
 
 .card_choice p {
@@ -318,7 +333,6 @@ html {
 
 .card-body {
     padding: 1rem 0rem 0rem 0rem !important;
-    ;
 }
 
 .card {
