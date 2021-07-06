@@ -78,7 +78,7 @@ html {
     -moz-box-shadow: none !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
-    border: 1px solid #673AB7;
+    border: 1px solid #418aca;
     outline-width: 0
 }
 
@@ -97,7 +97,7 @@ html {
 
 #msform .action-button:hover,
 #msform .action-button:focus {
-    background-color: #311B92
+    background-color: #418aca
 }
 
 
@@ -150,7 +150,7 @@ html {
 
 .previous,
 .close svg {
-    fill: rgb(63, 39, 186);
+    fill: #418aca;
     transform: translateY(0.125rem);
 }
 
