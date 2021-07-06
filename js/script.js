@@ -106,6 +106,43 @@ $(document).ready(function () {
         }
     });
 
+    // NAV BAR 
+
+    $("#icon-bar div").click(function() {
+        var m = $(this).index() + 1;
+        if ( m<current) {
+            current_fs = $( "fieldset:nth-child("+current+")" );
+            step_fs =  $( "fieldset:nth-child("+m+")" );
+    
+            //show the previous fieldset
+            step_fs.show();
+    
+            //hide the current fieldset with style
+            current_fs.animate({
+                opacity: 0
+            }, {
+                step: function(now) {
+                    // for making fielset appear animation
+                    opacity = 1 - now;
+                    current_fs.css({
+                        'display': 'none',
+                        'position': 'relative'
+                    });
+                    step_fs.css({
+                        'opacity': opacity
+                    });
+                },
+                duration: 500
+            });
+            current=m;
+            //setProgressBar(n);
+            $(".steps").text("Étape "+m+ " sur "+steps);
+            if (m==1) $(".previous").css({'display': 'none'});
+        }
+    });
+
+    // FUNCTION PROGRESS BAR
+
 
     function setProgressBar(curStep) {
         var percent = parseFloat(100 / steps) * curStep;
@@ -139,6 +176,13 @@ $(document).ready(function () {
         $("#list_goal_choice").css("display", "flex", "!important");
         $("#list_goal_choice").css("justify-content", "center", "!important");
         $("#list_goal_choice").css("flex-wrap", "wrap", "!important");
+    })
+
+    $("#cible_choice").click(function () {
+        $("#list_cible_choice").toggle(1000);
+        $("#list_cible_choice").css("display", "flex", "!important");
+        $("#list_cible_choice").css("justify-content", "center", "!important");
+        $("#list_cible_choice").css("flex-wrap", "wrap", "!important");
     })
 
     $("#help_choice").click(function () {
