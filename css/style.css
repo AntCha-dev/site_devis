@@ -390,26 +390,28 @@ html {
 }
 
 #icon-bar {
-    display: none;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     margin: 15px 0px;
     z-index: 1;
-    /* justify-content: space-around; */
+    justify-content: start;
     cursor: pointer;
     margin-top: auto;
 }
 
 
+
 .icon-item {
     position: relative;
-    margin: 0 10px;
+    margin: 0 80px;
     width: 60px;
     height: 60px;
     box-shadow: 0 0.5rem 1rem lightgrey;
     transition: .5s ease;
     background-color: #4764af;
+    display: none;
 }
 
 #icon-bar> :first-of-type {
