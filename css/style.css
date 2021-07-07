@@ -575,7 +575,19 @@ top: 50%;
 right: calc(100% + 5px);
 transform: translate(-.5em, -50%);
 }
-
+/* FLOW: RIGHT */
+[tooltip][flow^="right"]::before {
+    top: 50%;
+    border-left-width: 0;
+    border-right-color: #333;
+    right: calc(0em - 5px);
+    transform: translate(.5em, -50%);
+  }
+  [tooltip][flow^="right"]::after {
+    top: 50%;
+    left: calc(100% + 5px);
+    transform: translate(.5em, -50%);
+  }
 
 /* KEYFRAMES */
 @keyframes tooltips-vert {
