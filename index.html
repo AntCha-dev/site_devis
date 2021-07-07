@@ -15,25 +15,6 @@
 <body>
     <div class="container-fluid">
         <div class="row justify-content-center">
-            <!-- START - MENU ESTIMATION -->
-            <!-- <div class="col-4 col-sm-4 col-md-4 col-lg-2 col-xl-2 p-0 mt-3 mb-2 menu">
-                <div class="menu-estimation">
-                    <h2>Avancement</h2>
-                    <div id="list_categ">
-                        <ul id="nav-list">
-                            <li class="list-item"><i class="fa fa-circle"></i>Contexte du projet</li>
-                            <li class="list-item"><i class="fa fa-circle"></i>Objectif du site</li>
-                            <li class="list-item"><i class="fa fa-circle"></i>Suivi souhaité</li>
-                            <li class="list-item"><i class="fa fa-circle"></i>Cible du site</li>
-                            <li class="list-item"><i class="fa fa-circle"></i>Contenu du site</li>
-                            <li class="list-item"><i class="fa fa-circle"></i>Vous</li>
-                        </ul>
-                    </div>
-                </div>
-            </div> -->
-            <!-- END - Menu estimation -->
-
-            <!-- START - BUTTON PREVIOUS, PARAGRAPH STEP AND BUTTON CLOSE -->
             <div class="col-10 col-sm-10 col-md-10 col-lg-8 col-xl-8 p-0 mt-3 mb-2">
                 <header class="form-header">
                     <button type="button" aria-label="Retour à l’étape précédente" class="previous">
@@ -53,7 +34,6 @@
                     </button>
                 </header>
                 <!-- END - BUTTON PREVIOUS, PARAGRAPH STEP AND BUTTON CLOSE -->
-
                 <!-- START - icon bar -->
                 <div id="icon-bar">
                     <div class="icon-item">
@@ -96,8 +76,10 @@
                             <div class="row">
                                 <!-- project choice -->
                                 <div id="project_choice">
-                                    <div id="new_site" data-toggle="tooltip" data-placement="bottom"
-                                        title="est-ce-que vous voulez faire un nouveau site ?">
+                                    
+                                        
+                                    <div id="new_site" tooltip="Votre site doit il etre traduit en plusieurs langues ? " flow="left">
+                                        
                                         <div class="card_choice card container-fluid">
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
                                                 style="width: 40%;">
@@ -106,7 +88,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div id="design_site">
+                                    <div id="design_site" tooltip="Votre site doit il etre traduit en plusieurs langues ? " flow="right">
                                         <div class="card_choice card container-fluid">
                                             <img src="icon/rouleau-de-peinture.svg"
                                                 class="card-img-top align-self-center mt-3" style="width: 40%;">
@@ -116,8 +98,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p class="question">Quelle est la nature de votre projet
-                                    ?</p>
+                                <p>Quelle est la nature de votre projet ?</p>
                                 <div id="new_site_choice">
                                     <div class="choixx" id="carte_langues" value="25">
                                         <div class="card_choice card_choices card mt-5 ms-5 container-fluid">
@@ -144,7 +125,7 @@
                                 </div>
                                 <div id="design_site_choice">
                                     <div class="choixx" id="carte_techno_obsolète">
-                                        <div class="card_choice card_choices  card mt-5 ms-5 container-fluid">
+                                        <div class="card_choice card mt-5 ms-5 container-fluid">
                                             <span><i class="validation_card far fa-circle"></i></span>
                                             <img src="icon/rouleau-de-peinture.svg"
                                                 class="card-img-top align-self-center mt-3" style="width: 40%;"
@@ -156,7 +137,7 @@
                                         </div>
                                     </div>
                                     <div class="choixx" id="carte_graphismes_depassés">
-                                        <div class="card_choice card_choices  card mt-5 ms-5 container-fluid">
+                                        <div class="card_choice card mt-5 ms-5 container-fluid">
                                             <span><i class="validation_card far fa-circle"></i></span>
                                             <img src="icon/rouleau-de-peinture.svg"
                                                 class="card-img-top align-self-center mt-3" style="width: 40%;"
@@ -168,14 +149,14 @@
                                         </div>
                                     </div>
                                     <div class="choixx" id="carte_repositionnement">
-                                        <div class="card_choice card_choices  card mt-5 ms-5 container-fluid">
+                                        <div class="card_choice card mt-5 ms-5 container-fluid">
                                             <span><i class="validation_card far fa-circle"></i></span>
                                             <img src="icon/rouleau-de-peinture.svg"
                                                 class="card-img-top align-self-center mt-3" style="width: 40%;"
                                                 alt="...">
                                             <div class="card-body">
                                                 <p class="card-text" style="font-size: 16px; text-align: center;">
-                                                    Reposition</p>
+                                                    Repositionnement</p>
                                             </div>
                                         </div>
                                     </div>
@@ -199,7 +180,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p class="question">Quels sont les différents objectifs de votre site ?</p>
+                                <p>Quels sont les différents objectifs de votre site ?</p>
                                 <!-- list goal choice -->
                                 <div id="list_goal_choice">
                                     <div class="choixx" id="carte_vente" value="25">
@@ -296,7 +277,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p class="question">Le suivi mensuel que vous souhaitez sur votre site :</p>
+                                <p>Le suivi mensuel que vous souhaitez sur votre site :</p>
                                 <!-- list goal choice -->
                                 <div id="list_help_choice">
                                     <div class="choixx" id="carte_statistiques" value="25">
@@ -365,7 +346,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p class="question">La ou les cibles pricipales de viotre site</p>
+                                <p>La ou les cibles pricipales de viotre site</p>
                                 <!-- list cible choice -->
                                 <div id="list_cible_choice">
                                     <div class="choixx" id="carte_tout_publique" value="25">
@@ -450,7 +431,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p class="question">Les différents éléments que votre site doit contenir :</p>
+                                <p>Les différents éléments que votre site doit contenir :</p>
                                 <!-- list goal choice -->
                                 <div id="list_content_choice">
                                     <div class="choixx" id="carte_statistiques" value="25">
@@ -543,7 +524,6 @@
                             </div>
                             <input type="button" name="next" class="next action-button" value="Next" />
                         </fieldset>
-                         
 
                         <!-- Field contact -->
                         <fieldset>
@@ -575,7 +555,6 @@
                         <button data-appearance="start" data-size="large" class="continue_creating">Non, je souhaite continuer à le compléter</button>
                         </section>    
                     </div>
-
                 </div>
 
             </div>
