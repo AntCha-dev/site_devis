@@ -15,7 +15,7 @@
 <body>
     <div class="container-fluid">
         <div class="row justify-content-center">
-            <!-- Menu estimation -->
+            <!-- START - MENU ESTIMATION -->
             <!-- <div class="col-4 col-sm-4 col-md-4 col-lg-2 col-xl-2 p-0 mt-3 mb-2 menu">
                 <div class="menu-estimation">
                     <h2>Avancement</h2>
@@ -31,7 +31,9 @@
                     </div>
                 </div>
             </div> -->
-            <!-- Fin Menu estimation -->
+            <!-- END - Menu estimation -->
+
+            <!-- START - BUTTON PREVIOUS, PARAGRAPH STEP AND BUTTON CLOSE -->
             <div class="col-10 col-sm-10 col-md-10 col-lg-8 col-xl-8 p-0 mt-3 mb-2">
                 <header class="form-header">
                     <button type="button" aria-label="Retour à l’étape précédente" class="previous">
@@ -50,8 +52,9 @@
                         </svg>
                     </button>
                 </header>
+                <!-- END - BUTTON PREVIOUS, PARAGRAPH STEP AND BUTTON CLOSE -->
 
-                <!-- icon bar -->
+                <!-- START - icon bar -->
                 <div id="icon-bar">
                     <div class="icon-item">
                         <img src="icon/globe.svg">
@@ -72,16 +75,19 @@
                         <img src="icon/rouleau-de-peinture.svg">
                     </div>
                 </div>
+                <!-- END - icon bar -->
 
-                <!-- progressbar -->
-                <!-- progressbar -test -->
+                
+                <!-- START - progressbar -->
                 <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
+                <!-- END - progressbar -->
 
                 <!-- multistep-form -->
                 <div class="card">
                     <form id="msform">
+                        
                         <!-- fieldsets -->
 
 
@@ -559,13 +565,14 @@
                             </div> <input type="button" name="next" class="next action-button" value="Next" />
                         </fieldset>
                     </form>
-
+                    
+                    <!-- ALERT WHEN CLICK ON THE CROSS -->
                     <div class="alert alert-danger alert-dismissible fade show" role="alert">
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         <section class="css_alert_delete_project">
                         <h2>Êtes-vous sûr de vouloir supprimer votre projet ?</h2>
-                        <button data-appearance="start" data-size="large" class="delete_project">Oui, je souhaite effacer ce projet</button>
-                        <button data-appearance="start" data-size="large" class="delete_project">Non, je souhaite continuer à le compléter</button>
+                        <a href="https://www.exher.fr/"><button data-appearance="start" data-size="large" class="delete_project">Oui, je souhaite effacer ce projet</button></a>
+                        <button data-appearance="start" data-size="large" class="continue_creating">Non, je souhaite continuer à le compléter</button>
                         </section>    
                     </div>
 
@@ -577,8 +584,7 @@
     </div>
     </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>    
 </body>
 
 </html>
