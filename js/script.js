@@ -4,6 +4,7 @@ $(document).ready(function () {
     var opacity;
     var current = 1;
     var steps = $("fieldset").length; //=4
+    
 
     setProgressBar(current);
 
@@ -211,6 +212,30 @@ $(document).ready(function () {
         $("#" + this.id + " .card").toggleClass("border-3 border-primary");
     })
 
+
+    // ALERT WHEN CLICK ON THE CROSS 
+
+    $(".close").click(function() {
+        
+        $(".alert").show();
+        
+        
+    });
+
+    $(".btn-close").click(function() {
+
+        $(".alert").hide();
+
+    });
+
+    $(".continue_creating").click(function(){
+
+        $(".alert").hide();
+
+    });
+    
     
 
 });
+
+

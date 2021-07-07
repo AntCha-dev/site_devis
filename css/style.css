@@ -493,6 +493,12 @@ a {
 
 /* Start Alert delete project */
 
+.alert {
+
+    display: none;
+
+}
+
 .css_alert_delete_project {
 
     text-align: center;
