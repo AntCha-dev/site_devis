@@ -390,7 +390,7 @@ html {
 }
 
 #icon-bar {
-    display: flex;
+    display: none;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
