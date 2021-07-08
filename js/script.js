@@ -192,8 +192,10 @@ $(document).ready(function () {
     // ALERT WHEN CLICK ON THE CROSS 
 
     $(".close").click(function() {
-        
+
+        $(".css_background_alert").show();
         $(".alert").show();
+        
         
         
     });
@@ -201,12 +203,14 @@ $(document).ready(function () {
     $(".btn-close").click(function() {
 
         $(".alert").hide();
+        $(".css_background_alert").hide();
 
     });
 
     $(".continue_creating").click(function(){
 
         $(".alert").hide();
+        $(".css_background_alert").hide();
 
     });
 
