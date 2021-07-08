@@ -404,7 +404,7 @@ html {
 
 .icon-item {
     position: relative;
-    margin: 0 80px;
+    margin: 0 55px;
     width: 60px;
     height: 60px;
     box-shadow: 0 0.5rem 1rem lightgrey;
@@ -495,16 +495,69 @@ a {
 /* Start Alert delete project */
 
 .alert {
-
     display: none;
-
+    max-width: 40rem;
+    margin-top: 1rem;
+    position: fixed;
+    background: rgb(249, 248, 246);
+    padding: 1rem;
+    top: 50%;
+    left: 50%;
+    width: 640px;
+    height: 377px;
+    transform: translate(-50%, -50%);
 }
 
 .css_alert_delete_project {
-
     text-align: center;
+    isolation: isolate;
+    padding-bottom: 2rem;
+}
+
+.css_background_alert {
+    display: none;
+    background-color: rgba(44, 44, 44, 0.3);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out 0s, visibility 0.3s ease-in-out 0s;
+}
+
+.css_alert_delete_project h2 {
+
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 
 }
+
+.css_alert_delete_project .delete_project {
+    color: rgb(255, 255, 255);
+    background-color: #418ACA;
+    
+}
+
+.css_alert_delete_project .continue_creating {
+    color: rgb(255, 255, 255);
+    background-color: rgb(22, 163, 97);  
+}
+
+
+
+
+
+
+
+
+    
+
+
+/* End Alert delete project */
 
 
 
