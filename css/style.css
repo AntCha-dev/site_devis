@@ -95,6 +95,10 @@ html {
     margin: 40px 0px 10px 5px;
 }
 
+.next {
+    display: none;
+}
+
 #msform .action-button:hover,
 #msform .action-button:focus {
     background-color: #418aca
@@ -223,21 +227,20 @@ html {
 }
 
 
-.checkbox:checked~.radio {
+.checkbox:checked~.card {
     border: 1px solid #4764af;
-    box-shadow: 0px 8px 16px 0px #EEEEEE;
-    -webkit-filter: grayscale(0%);
-    -moz-filter: grayscale(0%);
-    -o-filter: grayscale(0%);
-    -ms-filter: grayscale(0%);
-    filter: grayscale(0%)
-}
+  box-shadow: 0 0.5rem 1rem #4764af !important;
+}  
 
-.checkbox:checked~.radio .unchecked {
+.fa-check-circle {
     display: none;
 }
 
-.checkbox:checked~.radio .checked {
+.checkbox:checked~.card .unchecked {
+    display: none;
+}
+
+.checkbox:checked~.card .checked  {
     display: inline-block;
 }
 
@@ -268,11 +271,7 @@ html {
 }
 
 /* CATEGORIE */
-#project_choice,
-#goal_choice,
-#help_choice,
-#cible_choice,
-#content_choice {
+.choice {
     display: flex;
     justify-content: center;
     margin: 10px 0px 0px 0px;
@@ -307,7 +306,7 @@ html {
 .card_choice {
     width: 165px !important;
     height: 165px !important;
-    margin: 20px 20px;
+    margin: 10px 10px;
     cursor: pointer;
     background-color: #4764af !important;
     box-shadow: 0 0.5rem 1rem lightgray !important;
@@ -320,8 +319,8 @@ html {
 
 .card_choices {
     background-color: white !important;
-    margin-right: -30px !important;
-    margin-top: -5px !important;
+/*    margin-right: -30px !important;
+    margin-top: -5px !important;*/
 }
 
 .card_choices:hover {
@@ -630,4 +629,6 @@ animation: tooltips-horz 300ms ease-out forwards;
 }
 /* UNRELATED to tooltips */
 
-
+.choixx {
+    position: relative;
+}
