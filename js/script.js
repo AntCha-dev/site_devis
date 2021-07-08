@@ -136,21 +136,25 @@ $(document).ready(function () {
     // TOGGLE ANIMATION WHEN CLICK ON SECTION
 
     $("#new_site").click(function () {
-        $("#new_site_choice").toggle(1000);
-        $("#new_site_choice").css("display", "flex", "!important");
-        $("#new_site_choice").css("justify-content", "right", "!important");
-        $("#design_site").toggle(1000); 
-        $(".next").toggle(1000);
-
+        toggle_project_choice("new_site", "design_site");
     })
 
     $("#design_site").click(function () {
-        $("#design_site_choice").toggle(1000);
-        $("#design_site_choice").css("display", "flex", "!important");
-        $("#design_site_choice").css("justify-content", "right", "!important");
-        $("#new_site").toggle(1000);
-        $(".next").toggle(1500);
-    })
+        toggle_project_choice("design_site", "new_site");
+
+    });
+
+    //function to toogle choice
+    function toggle_project_choice(id1, id2) {
+        $("#"+id1+"_choice").toggle(1000);
+        $("#"+id1+"_choice").css("display", "flex", "!important");
+        $("#"+id1+"_choice").css("justify-content", "right", "!important");
+        $("#"+id2).toggle(1000);
+        $(".next").toggle(1000);
+        $("#"+id2+"_choice").find(':input').each(function(index,element) {  //reset input
+            element.checked = false;
+        });
+    }
 
 
      $(".choice").click(function (e) {
