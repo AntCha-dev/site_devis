@@ -69,17 +69,14 @@
                     <form id="msform">
                         
                         <!-- fieldsets -->
-
-
                         <!-- Field project -->
                         <fieldset>
                             <div class="row">
+                                <h5>Quelle est la nature de votre projet ?</5>
                                 <!-- project choice -->
-                                <div id="project_choice">
-                                    
+                                <div class="choice" id="project_choice">
                                         
-                                    <div id="new_site" tooltip="Votre site doit il etre traduit en plusieurs langues ? " flow="left">
-                                        
+                                    <div id="new_site" tooltip="Votre site doit il etre traduit en plusieurs langues ? " flow="left">   
                                         <div class="card_choice card container-fluid">
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
                                                 style="width: 40%;">
@@ -98,11 +95,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p>Quelle est la nature de votre projet ?</p>
                                 <div id="new_site_choice">
-                                    <div class="choixx" id="carte_langues" value="25">
-                                        <div class="card_choice card_choices card mt-5 ms-5 container-fluid">
-                                            <span><i class="validation_card far fa-circle"></i></span>
+                                    <!-- comment -->
+                                        <label class="choixx" id="carte_langues">
+                                        <input type="checkbox" name="" class="checkbox">
+                                        <div class="card_choice card_choices card ">
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
                                                 style="width: 40%;" alt="...">
                                             <div class="card-body">
@@ -110,10 +109,12 @@
                                                     plusieurs langues?</p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="choixx" id="carte_domaine">
-                                        <div class="card_choice card_choices card mt-5 ms-5 container-fluid">
-                                            <span><i class="validation_card far fa-circle"></i></span>
+                                    </label>
+                                    <label class="choixx" id="carte_domaine">
+                                        <input type="checkbox" name="" class="checkbox">
+                                        <div class="card_choice card_choices card ">
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
                                                 style="width: 40%;" alt="...">
                                             <div class="card-body">
@@ -121,12 +122,14 @@
                                                     un domaine?</p>
                                             </div>
                                         </div>
-                                    </div>
+                                    </label>
                                 </div>
                                 <div id="design_site_choice">
-                                    <div class="choixx" id="carte_techno_obsolète">
-                                        <div class="card_choice card mt-5 ms-5 container-fluid">
-                                            <span><i class="validation_card far fa-circle"></i></span>
+                                    <label class="choixx" id="carte_techno">
+                                        <input type="checkbox" name="" class="checkbox">
+                                        <div class="card_choice card ">
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/rouleau-de-peinture.svg"
                                                 class="card-img-top align-self-center mt-3" style="width: 40%;"
                                                 alt="...">
@@ -135,10 +138,12 @@
                                                     Techno</p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="choixx" id="carte_graphismes_depassés">
-                                        <div class="card_choice card mt-5 ms-5 container-fluid">
-                                            <span><i class="validation_card far fa-circle"></i></span>
+                                    </label>
+                                    <label class="choixx" id="carte_graphismes">
+                                        <input type="checkbox" name="" class="checkbox">
+                                        <div class="card_choice card ">
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/rouleau-de-peinture.svg"
                                                 class="card-img-top align-self-center mt-3" style="width: 40%;"
                                                 alt="...">
@@ -147,10 +152,12 @@
                                                     Graphisme</a>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="choixx" id="carte_repositionnement">
-                                        <div class="card_choice card mt-5 ms-5 container-fluid">
-                                            <span><i class="validation_card far fa-circle"></i></span>
+                                    </label>
+                                    <label class="choixx" id="carte_repositionnement">
+                                        <input type="checkbox" name="" class="checkbox">
+                                        <div class="card_choice card ">
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/rouleau-de-peinture.svg"
                                                 class="card-img-top align-self-center mt-3" style="width: 40%;"
                                                 alt="...">
@@ -159,17 +166,17 @@
                                                     Repositionnement</p>
                                             </div>
                                         </div>
-                                    </div>
+                                    </label>
                                 </div>
                             </div>
-                            <input type="button" name="next" class="next action-button" value="Next" />
+                            <input type="button" name="next" class="action-button next" value="Next" />
                         </fieldset>
 
                         <!-- Field goal -->
                         <fieldset>
                             <div class="row">
                                 <!-- goal choice -->
-                                <div id="goal_choice">
+                                <div class="choice" id="goal_choice">
                                     <div id="new_site">
                                         <div class="card_choice card container-fluid">
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
@@ -183,10 +190,13 @@
                                 <p>Quels sont les différents objectifs de votre site ?</p>
                                 <!-- list goal choice -->
                                 <div id="list_goal_choice">
-                                    <div class="choixx" id="carte_vente" value="25">
-                                        <div class="card_choice card_choices card mt-5 ms-5 container-fluid">
-                                            <span><i class="validation_card far fa-circle"></i></span>
-                                            <span><i class="validation_card far fa-circle"></i></span>
+                                    <label class="choixx" id="carte_vente">
+                                        <input type="checkbox" name="" class="checkbox">
+                                        <div class="card_choice card_choices card ">
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
                                                 style="width: 40%;" alt="...">
                                             <div class="card-body">
@@ -194,11 +204,14 @@
                                                     Vente</p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="choixx" id="carte_vitrine">
-                                        <div class="card_choice card_choices card mt-5 ms-5 container-fluid">
-                                            <span><i class="validation_card far fa-circle"></i></span>
-                                            <span><i class="validation_card far fa-circle"></i></span>
+                                    </label>
+                                    <label class="choixx" id="carte_vitrine">
+                                        <input type="checkbox" name="" class="checkbox">
+                                        <div class="card_choice card_choices card ">
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
                                                 style="width: 40%;" alt="...">
                                             <div class="card-body">
@@ -206,11 +219,14 @@
                                                     Site vitrine</p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="choixx" id="carte_contenu">
-                                        <div class="card_choice card_choices card mt-5 ms-5 container-fluid">
-                                            <span><i class="validation_card far fa-circle"></i></span>
-                                            <span><i class="validation_card far fa-circle"></i></span>
+                                    </label>
+                                    <label class="choixx" id="carte_contenu">
+                                        <input type="checkbox" name="" class="checkbox">
+                                        <div class="card_choice card_choices card ">
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
                                                 style="width: 40%;" alt="...">
                                             <div class="card-body">
@@ -218,11 +234,14 @@
                                                     Contenu</p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="choixx" id="carte_relation">
-                                        <div class="card_choice card_choices card mt-5 ms-5 container-fluid">
-                                            <span><i class="validation_card far fa-circle"></i></span>
-                                            <span><i class="validation_card far fa-circle"></i></span>
+                                    </label>
+                                    <label class="choixx" id="carte_relation">
+                                        <input type="checkbox" name="" class="checkbox">
+                                        <div class="card_choice card_choices card ">
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
                                                 style="width: 40%;" alt="...">
                                             <div class="card-body">
@@ -230,11 +249,14 @@
                                                     Mise en relation</p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="choixx" id="carte_presenter">
-                                        <div class="card_choice card_choices card mt-5 ms-5 container-fluid">
-                                            <span><i class="validation_card far fa-circle"></i></span>
-                                            <span><i class="validation_card far fa-circle"></i></span>
+                                    </label>
+                                    <label class="choixx" id="carte_presenter">
+                                        <input type="checkbox" name="" class="checkbox">
+                                        <div class="card_choice card_choices card ">
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
                                                 style="width: 40%;" alt="...">
                                             <div class="card-body">
@@ -242,11 +264,14 @@
                                                     Présenter</p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="choixx" id="carte_recruter">
-                                        <div class="card_choice card_choices card mt-5 ms-5 container-fluid">
-                                            <span><i class="validation_card far fa-circle"></i></span>
-                                            <span><i class="validation_card far fa-circle"></i></span>
+                                    </label>
+                                    <label class="choixx" id="carte_recruter">
+                                        <input type="checkbox" name="" class="checkbox">
+                                        <div class="card_choice card_choices card ">
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
                                                 style="width: 40%;" alt="...">
                                             <div class="card-body">
@@ -254,7 +279,7 @@
                                                     Recruter</p>
                                             </div>
                                         </div>
-                                    </div>
+                                    </label>
                                 </div>
 
 
@@ -266,7 +291,7 @@
                         <fieldset>
                             <div class="row">
                                 <!-- goal choice -->
-                                <div id="help_choice">
+                                <div class="choice" id="help_choice">
                                     <div id="new_site">
                                         <div class="card_choice card container-fluid">
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
@@ -280,9 +305,11 @@
                                 <p>Le suivi mensuel que vous souhaitez sur votre site :</p>
                                 <!-- list goal choice -->
                                 <div id="list_help_choice">
-                                    <div class="choixx" id="carte_statistiques" value="25">
-                                        <div class="card_choice card_choices card mt-5 ms-5 container-fluid">
-                                            <span><i class="validation_card far fa-circle"></i></span>
+                                    <label class="choixx" id="carte_statistiques">
+                                        <input type="checkbox" name="" class="checkbox">
+                                        <div class="card_choice card_choices card ">
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
                                                 style="width: 40%;" alt="...">
                                             <div class="card-body">
@@ -290,10 +317,12 @@
                                                     Statistiques</p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="choixx" id="carte_technique">
-                                        <div class="card_choice card_choices card mt-5 ms-5 container-fluid">
-                                            <span><i class="validation_card far fa-circle"></i></span>
+                                    </label>
+                                    <label class="choixx" id="carte_technique">
+                                        <input type="checkbox" name="" class="checkbox">
+                                        <div class="card_choice card_choices card ">
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
                                                 style="width: 40%;" alt="...">
                                             <div class="card-body">
@@ -301,10 +330,12 @@
                                                     Technique</p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="choixx" id="carte_referencement">
-                                        <div class="card_choice card_choices card mt-5 ms-5 container-fluid">
-                                            <span><i class="validation_card far fa-circle"></i></span>
+                                    </label>
+                                    <label class="choixx" id="carte_referencement">
+                                        <input type="checkbox" name="" class="checkbox">
+                                        <div class="card_choice card_choices card ">
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
                                                 style="width: 40%;" alt="...">
                                             <div class="card-body">
@@ -312,10 +343,12 @@
                                                     Référencement</p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="choixx" id="carte_redaction">
-                                        <div class="card_choice card_choices card mt-5 ms-5 container-fluid">
-                                            <span><i class="validation_card far fa-circle"></i></span>
+                                    </label>
+                                    <label class="choixx" id="carte_redaction">
+                                        <input type="checkbox" name="" class="checkbox">
+                                        <div class="card_choice card_choices card ">
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
                                                 style="width: 40%;" alt="...">
                                             <div class="card-body">
@@ -323,7 +356,7 @@
                                                     Rédaction</p>
                                             </div>
                                         </div>
-                                    </div>
+                                    </label>
                                 </div>
 
 
@@ -335,7 +368,7 @@
                         <fieldset>
                             <div class="row">
                                 <!-- cible choice -->
-                                <div id="cible_choice">
+                                <div class="choice" id="cible_choice">
                                     <div id="new_site">
                                         <div class="card_choice card container-fluid">
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
@@ -349,10 +382,13 @@
                                 <p>La ou les cibles pricipales de viotre site</p>
                                 <!-- list cible choice -->
                                 <div id="list_cible_choice">
-                                    <div class="choixx" id="carte_tout_publique" value="25">
-                                        <div class="card_choice card_choices card mt-5 ms-5 container-fluid">
-                                            <span><i class="validation_card far fa-circle"></i></span>
-                                            <span><i class="validation_card far fa-circle"></i></span>
+                                    <label class="choixx" id="carte_tout_publique">
+                                        <input type="checkbox" name="" class="checkbox">
+                                        <div class="card_choice card_choices card ">
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
                                                 style="width: 40%;" alt="...">
                                             <div class="card-body">
@@ -360,11 +396,14 @@
                                                     Tout publique</p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="choixx" id="carte_particulier">
-                                        <div class="card_choice card_choices card mt-5 ms-5 container-fluid">
-                                            <span><i class="validation_card far fa-circle"></i></span>
-                                            <span><i class="validation_card far fa-circle"></i></span>
+                                    </label>
+                                    <label class="choixx" id="carte_particulier">
+                                        <input type="checkbox" name="" class="checkbox">
+                                        <div class="card_choice card_choices card ">
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
                                                 style="width: 40%;" alt="...">
                                             <div class="card-body">
@@ -372,11 +411,14 @@
                                                     Particulier</p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="choixx" id="carte_partenaire">
-                                        <div class="card_choice card_choices card mt-5 ms-5 container-fluid">
-                                            <span><i class="validation_card far fa-circle"></i></span>
-                                            <span><i class="validation_card far fa-circle"></i></span>
+                                    </label>
+                                    <label class="choixx" id="carte_partenaire">
+                                        <input type="checkbox" name="" class="checkbox">
+                                        <div class="card_choice card_choices card ">
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
                                                 style="width: 40%;" alt="...">
                                             <div class="card-body">
@@ -384,11 +426,14 @@
                                                     Partenaires</p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="choixx" id="carte_pro">
-                                        <div class="card_choice card_choices card mt-5 ms-5 container-fluid">
-                                            <span><i class="validation_card far fa-circle"></i></span>
-                                            <span><i class="validation_card far fa-circle"></i></span>
+                                    </label>
+                                    <label class="choixx" id="carte_pro">
+                                        <input type="checkbox" name="" class="checkbox">
+                                        <div class="card_choice card_choices card ">
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
                                                 style="width: 40%;" alt="...">
                                             <div class="card-body">
@@ -396,11 +441,14 @@
                                                     Professionnels</p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="choixx" id="carte_interne">
-                                        <div class="card_choice card_choices card mt-5 ms-5 container-fluid">
-                                            <span><i class="validation_card far fa-circle"></i></span>
-                                            <span><i class="validation_card far fa-circle"></i></span>
+                                    </label>
+                                    <label class="choixx" id="carte_interne">
+                                        <input type="checkbox" name="" class="checkbox">
+                                        <div class="card_choice card_choices card ">
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
                                                 style="width: 40%;" alt="...">
                                             <div class="card-body">
@@ -408,7 +456,7 @@
                                                     Interne</p>
                                             </div>
                                         </div>
-                                    </div>
+                                    </label>
                                 </div>
 
 
@@ -420,7 +468,7 @@
                         <fieldset>
                             <div class="row">
                                 <!-- goal choice -->
-                                <div id="content_choice">
+                                <div class="choice" id="content_choice">
                                     <div id="new_site">
                                         <div class="card_choice card container-fluid">
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
@@ -434,10 +482,13 @@
                                 <p>Les différents éléments que votre site doit contenir :</p>
                                 <!-- list goal choice -->
                                 <div id="list_content_choice">
-                                    <div class="choixx" id="carte_statistiques" value="25">
-                                        <div class="card_choice card_choices card mt-5 ms-5 container-fluid">
-                                            <span><i class="validation_card far fa-circle"></i></span>
-                                            <span><i class="validation_card far fa-circle"></i></span>
+                                    <label class="choixx" id="carte_statistiques">
+                                        <input type="checkbox" name="" class="checkbox">
+                                        <div class="card_choice card_choices card ">
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
                                                 style="width: 40%;" alt="...">
                                             <div class="card-body">
@@ -445,11 +496,14 @@
                                                     Réseaux sociaux</p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="choixx" id="carte_slider">
-                                        <div class="card_choice card_choices card mt-5 ms-5 container-fluid">
-                                            <span><i class="validation_card far fa-circle"></i></span>
-                                            <span><i class="validation_card far fa-circle"></i></span>
+                                    </label>
+                                    <label class="choixx" id="carte_slider">
+                                        <input type="checkbox" name="" class="checkbox">
+                                        <div class="card_choice card_choices card ">
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
                                                 style="width: 40%;" alt="...">
                                             <div class="card-body">
@@ -457,11 +511,14 @@
                                                     Slider</p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="choixx" id="carte_newsletter">
-                                        <div class="card_choice card_choices card mt-5 ms-5 container-fluid">
-                                            <span><i class="validation_card far fa-circle"></i></span>
-                                            <span><i class="validation_card far fa-circle"></i></span>
+                                    </label>
+                                    <label class="choixx" id="carte_newsletter">
+                                        <input type="checkbox" name="" class="checkbox">
+                                        <div class="card_choice card_choices card ">
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
                                                 style="width: 40%;" alt="...">
                                             <div class="card-body">
@@ -469,11 +526,14 @@
                                                     Newsletter</p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="choixx" id="carte_articles">
-                                        <div class="card_choice card_choices card mt-5 ms-5 container-fluid">
-                                            <span><i class="validation_card far fa-circle"></i></span>
-                                            <span><i class="validation_card far fa-circle"></i></span>
+                                    </label>
+                                    <label class="choixx" id="carte_articles">
+                                        <input type="checkbox" name="" class="checkbox">
+                                        <div class="card_choice card_choices card ">
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
                                                 style="width: 40%;" alt="...">
                                             <div class="card-body">
@@ -481,11 +541,14 @@
                                                     Articles</p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="choixx" id="carte_calendar">
-                                        <div class="card_choice card_choices card mt-5 ms-5 container-fluid">
-                                            <span><i class="validation_card far fa-circle"></i></span>
-                                            <span><i class="validation_card far fa-circle"></i></span>
+                                    </label>
+                                    <label class="choixx" id="carte_calendar">
+                                        <input type="checkbox" name="" class="checkbox">
+                                        <div class="card_choice card_choices card ">
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
                                                 style="width: 40%;" alt="...">
                                             <div class="card-body">
@@ -493,11 +556,14 @@
                                                     Calendrier</p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="choixx" id="carte_search">
-                                        <div class="card_choice card_choices card mt-5 ms-5 container-fluid">
-                                            <span><i class="validation_card far fa-circle"></i></span>
-                                            <span><i class="validation_card far fa-circle"></i></span>
+                                    </label>
+                                    <label class="choixx" id="carte_search">
+                                        <input type="checkbox" name="" class="checkbox">
+                                        <div class="card_choice card_choices card ">
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
                                                 style="width: 40%;" alt="...">
                                             <div class="card-body">
@@ -505,11 +571,14 @@
                                                     Recherche</p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="choixx" id="carte_gallery">
-                                        <div class="card_choice card_choices card mt-5 ms-5 container-fluid">
-                                            <span><i class="validation_card far fa-circle"></i></span>
-                                            <span><i class="validation_card far fa-circle"></i></span>
+                                    </label>
+                                    <label class="choixx" id="carte_gallery">
+                                        <input type="checkbox" name="" class="checkbox">
+                                        <div class="card_choice card_choices card ">
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
+                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3"
                                                 style="width: 40%;" alt="...">
                                             <div class="card-body">
@@ -517,7 +586,7 @@
                                                     Gallerie</p>
                                             </div>
                                         </div>
-                                    </div>
+                                    </label>
                                 </div>
 
 

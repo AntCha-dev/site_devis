@@ -139,7 +139,9 @@ $(document).ready(function () {
         $("#new_site_choice").toggle(1000);
         $("#new_site_choice").css("display", "flex", "!important");
         $("#new_site_choice").css("justify-content", "right", "!important");
-        $("#design_site").toggle(1000);       
+        $("#design_site").toggle(1000); 
+        $(".next").toggle(1000);
+
     })
 
     $("#design_site").click(function () {
@@ -147,45 +149,16 @@ $(document).ready(function () {
         $("#design_site_choice").css("display", "flex", "!important");
         $("#design_site_choice").css("justify-content", "right", "!important");
         $("#new_site").toggle(1000);
-    })
-
-    $("#goal_choice").click(function () {
-        $("#list_goal_choice").toggle(1000);
-        $("#list_goal_choice").css("display", "flex", "!important");
-        $("#list_goal_choice").css("justify-content", "right", "!important");
-        $("#list_goal_choice").css("flex-wrap", "wrap", "!important");
-       
-    })
-
-    $("#cible_choice").click(function () {
-        $("#list_cible_choice").toggle(1000);
-        $("#list_cible_choice").css("display", "flex", "!important");
-        $("#list_cible_choice").css("justify-content", "right", "!important");
-        $("#list_cible_choice").css("flex-wrap", "wrap", "!important");
-    })
-
-    $("#help_choice").click(function () {
-        $("#list_help_choice").toggle(1000);
-        $("#list_help_choice").css("display", "flex", "!important");
-        $("#list_help_choice").css("justify-content", "right", "!important");
-        $("#list_help_choice").css("flex-wrap", "wrap", "!important");
-    })
-
-    $("#content_choice").click(function () {
-        $("#list_content_choice").toggle(1000);
-        $("#list_content_choice").css("display", "flex", "!important");
-        $("#list_content_choice").css("justify-content", "right", "!important");
-        $("#list_content_choice").css("flex-wrap", "wrap", "!important");
+        $(".next").toggle(1500);
     })
 
 
-    // CHANGE VALIDATION CIRCLE
-
-    $(".choixx").click(function (e) {
-        console.log(this)
-        $("#" + this.id + " .far").toggleClass("fa-circle");
-        $("#" + this.id + " .far").toggleClass("fa-check-circle");
-        $("#" + this.id + " .card").toggleClass("border-3 border-primary");
+     $(".choice").click(function (e) {
+        console.log(this);
+        $("#list_" + this.id).toggle(1000);
+        $("#list_" + this.id).css("display", "flex", "!important");
+        $("#list_" + this.id).css("justify-content", "right", "!important");
+        $("#list_" + this.id).css("flex-wrap", "wrap", "!important");
     })
 
 
