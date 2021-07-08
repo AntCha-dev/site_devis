@@ -573,7 +573,7 @@ display: none !important;
 [tooltip][flow^="left"]::before {
 top: 50%;
 border-right-width: 0;
-border-left-color: #c2d4e5;
+border-left-color: #333;
 left: calc(0em - 5px);
 transform: translate(-.5em, -50%);
 }
