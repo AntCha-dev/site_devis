@@ -161,7 +161,7 @@ $(document).ready(function () {
         console.log(this);
         $("#list_" + this.id).toggle(1000);
         $("#list_" + this.id).css("display", "flex", "!important");
-        $("#list_" + this.id).css("justify-content", "center", "!important");
+        $("#list_" + this.id).css("justify-content", "left", "!important");
         $("#list_" + this.id).css("flex-wrap", "wrap", "!important");
     })
 
