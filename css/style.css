@@ -512,6 +512,8 @@ a {
     text-align: center;
     isolation: isolate;
     padding-bottom: 2rem;
+    text-align: -webkit-center;
+    
 }
 
 .css_background_alert {
@@ -539,12 +541,28 @@ a {
 .css_alert_delete_project .delete_project {
     color: rgb(255, 255, 255);
     background-color: #418ACA;
+    margin: 4rem 0px;
     
 }
 
 .css_alert_delete_project .continue_creating {
     color: rgb(255, 255, 255);
-    background-color: rgb(22, 163, 97);  
+    background-color: rgb(22, 163, 97);
+    margin: 1rem 0px;  
+}
+
+.css_bouton {
+    width: 300px;
+    height: 56px;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    border-radius: 3.125rem;
+    border: 0;
+    font-size: 15px;
+    font-family: "Moderat-Bold","Helvetica Neue",Arial,sans-serif;
 }
 
 
