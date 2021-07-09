@@ -148,7 +148,7 @@ $(document).ready(function () {
     function toggle_project_choice(id1, id2) {
         $("#"+id1+"_choice").toggle(1000);
         $("#"+id1+"_choice").css("display", "flex", "!important");
-        $("#"+id1+"_choice").css("justify-content", "right", "!important");
+        $("#"+id1+"_choice").css("justify-content", "center", "!important");
         $("#"+id2).toggle(1000);
         $(".next").toggle(1000);
         $("#"+id2+"_choice").find(':input').each(function(index,element) {  //reset input
@@ -161,7 +161,7 @@ $(document).ready(function () {
         console.log(this);
         $("#list_" + this.id).toggle(1000);
         $("#list_" + this.id).css("display", "flex", "!important");
-        $("#list_" + this.id).css("justify-content", "right", "!important");
+        $("#list_" + this.id).css("justify-content", "left", "!important");
         $("#list_" + this.id).css("flex-wrap", "wrap", "!important");
     })
 
@@ -169,31 +169,24 @@ $(document).ready(function () {
     // ALERT WHEN CLICK ON THE CROSS 
 
     $(".close").click(function() {
-
         $(".css_background_alert").show();
-        $(".alert").show();
-        
-        
-        
+        $(".alert").show();   
     });
 
     $(".btn-close").click(function() {
-
         $(".alert").hide();
         $(".css_background_alert").hide();
-
     });
 
     $(".continue_creating").click(function(){
-
         $(".alert").hide();
         $(".css_background_alert").hide();
-
     });
 
-
-    // 
-    
+    // $(".css_background_alert").click(function(){
+    //     $(".alert").hide();
+    //     $(".css_background_alert").hide();
+    // });
     
 
 });

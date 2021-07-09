@@ -512,6 +512,8 @@ a {
     text-align: center;
     isolation: isolate;
     padding-bottom: 2rem;
+    text-align: -webkit-center;
+    
 }
 
 .css_background_alert {
@@ -539,12 +541,28 @@ a {
 .css_alert_delete_project .delete_project {
     color: rgb(255, 255, 255);
     background-color: #418ACA;
+    margin: 4rem 0px;
     
 }
 
 .css_alert_delete_project .continue_creating {
     color: rgb(255, 255, 255);
-    background-color: rgb(22, 163, 97);  
+    background-color: rgb(22, 163, 97);
+    margin: 1rem 0px;  
+}
+
+.css_bouton {
+    width: 300px;
+    height: 56px;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    border-radius: 3.125rem;
+    border: 0;
+    font-size: 15px;
+    font-family: "Moderat-Bold","Helvetica Neue",Arial,sans-serif;
 }
 
 
@@ -648,6 +666,52 @@ transform: translate(-.5em, -50%);
     left: calc(100% + 5px);
     transform: translate(.5em, -50%);
   }
+ [tooltip][flow^="down"]::before {
+  top: 100%;
+  border-top-width: 0;
+  border-bottom-color: #333;
+}
+[tooltip][flow^="down"]::after {
+  top: calc(100% + 5px);
+}
+[tooltip][flow^="down"]::before,
+[tooltip][flow^="down"]::after {
+  left: 50%;
+  transform: translate(-50%, .5em);
+}
+/* FLOW: DOWN */
+[tooltip][flow^="down"]::before {
+    top: 100%;
+    border-top-width: 0;
+    border-bottom-color: #333;
+  }
+  [tooltip][flow^="down"]::after {
+    top: calc(100% + 5px);
+  }
+  [tooltip][flow^="down"]::before,
+  [tooltip][flow^="down"]::after {
+    left: 50%;
+    transform: translate(-50%, .5em);
+  }
+/* FLOW: UP */
+[tooltip]:not([flow])::before,
+[tooltip][flow^="up"]::before {
+  bottom: 100%;
+  border-bottom-width: 0;
+  border-top-color: #333;
+}
+[tooltip]:not([flow])::after,
+[tooltip][flow^="up"]::after {
+  bottom: calc(100% + 5px);
+}
+[tooltip]:not([flow])::before,
+[tooltip]:not([flow])::after,
+[tooltip][flow^="up"]::before,
+[tooltip][flow^="up"]::after {
+  left: 50%;
+  transform: translate(-50%, -.5em);
+}
+  
 
 /* KEYFRAMES */
 @keyframes tooltips-vert {
