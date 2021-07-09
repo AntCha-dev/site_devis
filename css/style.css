@@ -233,6 +233,13 @@ html {
     box-shadow: 0 0 0.5rem var(--primary) !important
 }  
 
+.checked {
+    color: var(--secondary);
+}
+
+.unchecked {
+    color: lightgrey;
+}
 .fa-check-circle {
     display: none;
 }
