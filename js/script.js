@@ -169,18 +169,15 @@ $(document).ready(function () {
     // ALERT WHEN CLICK ON THE CROSS 
 
     $(".close").click(function() {
-        $(".css_background_alert").show();
-        $(".alert").show();   
+        $(".css_background_alert").fadeIn("slow"); 
     });
 
     $(".btn-close").click(function() {
-        $(".alert").hide();
-        $(".css_background_alert").hide();
+        $(".css_background_alert").fadeOut("slow");
     });
 
     $(".continue_creating").click(function(){
-        $(".alert").hide();
-        $(".css_background_alert").hide();
+        $(".css_background_alert").fadeOut("slow");
     });
 
     // $(".css_background_alert").click(function(){

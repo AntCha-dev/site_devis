@@ -489,13 +489,9 @@ a {
 
 /* Fin Menu estimation */
 
-/* Fin Menu estimation */
-
-
 /* Start Alert delete project */
 
 .alert {
-    display: none;
     max-width: 40rem;
     margin-top: 1rem;
     position: fixed;
@@ -527,7 +523,6 @@ a {
     z-index: 999;
     visibility: visible;
     opacity: 1;
-    transition: opacity 0.3s ease-in-out 0s, visibility 0.3s ease-in-out 0s;
 }
 
 .css_alert_delete_project h2 {
@@ -563,6 +558,9 @@ a {
     border: 0;
     font-size: 15px;
     font-family: "Moderat-Bold","Helvetica Neue",Arial,sans-serif;
+}
+.btn-close:focus {
+    box-shadow: 0 0 0 0
 }
 
 
