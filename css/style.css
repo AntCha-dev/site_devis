@@ -85,7 +85,7 @@ html {
 #msform .action-button {
     align-content: center;
     width: 100px;
-    background: #418aca;
+    background: #4764af;
     font-weight: bold;
     color: white;
     border: 0 none;
@@ -168,7 +168,7 @@ html {
 }
 
 .progress-bar {
-    background-color: #418aca
+    background-color: #4764af;
 }
 
 .fit-image {
@@ -404,7 +404,7 @@ html {
 
 .icon-item {
     position: relative;
-    margin: 0 55px;
+    margin: 0 20px;
     width: 60px;
     height: 60px;
     box-shadow: 0 0.5rem 1rem lightgrey;
@@ -666,6 +666,52 @@ transform: translate(-.5em, -50%);
     left: calc(100% + 5px);
     transform: translate(.5em, -50%);
   }
+ [tooltip][flow^="down"]::before {
+  top: 100%;
+  border-top-width: 0;
+  border-bottom-color: #333;
+}
+[tooltip][flow^="down"]::after {
+  top: calc(100% + 5px);
+}
+[tooltip][flow^="down"]::before,
+[tooltip][flow^="down"]::after {
+  left: 50%;
+  transform: translate(-50%, .5em);
+}
+/* FLOW: DOWN */
+[tooltip][flow^="down"]::before {
+    top: 100%;
+    border-top-width: 0;
+    border-bottom-color: #333;
+  }
+  [tooltip][flow^="down"]::after {
+    top: calc(100% + 5px);
+  }
+  [tooltip][flow^="down"]::before,
+  [tooltip][flow^="down"]::after {
+    left: 50%;
+    transform: translate(-50%, .5em);
+  }
+/* FLOW: UP */
+[tooltip]:not([flow])::before,
+[tooltip][flow^="up"]::before {
+  bottom: 100%;
+  border-bottom-width: 0;
+  border-top-color: #333;
+}
+[tooltip]:not([flow])::after,
+[tooltip][flow^="up"]::after {
+  bottom: calc(100% + 5px);
+}
+[tooltip]:not([flow])::before,
+[tooltip]:not([flow])::after,
+[tooltip][flow^="up"]::before,
+[tooltip][flow^="up"]::after {
+  left: 50%;
+  transform: translate(-50%, -.5em);
+}
+  
 
 /* KEYFRAMES */
 @keyframes tooltips-vert {
