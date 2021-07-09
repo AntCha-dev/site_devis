@@ -507,7 +507,7 @@ a {
     top: 50%;
     left: 50%;
     width: 640px;
-    height: 377px;
+    height: auto;
     transform: translate(-50%, -50%);
 }
 
@@ -543,8 +543,7 @@ a {
 .css_alert_delete_project .delete_project {
     color: rgb(255, 255, 255);
     background-color: #418ACA;
-    margin: 4rem 0px;
-    
+    margin: 4rem 0 1rem;   
 }
 
 .css_alert_delete_project .continue_creating {
