@@ -12,6 +12,11 @@ html {
     height: 100%
 }
 
+body {
+    font-family: lato;
+    font-size: 16px;
+}
+
 #heading {
     text-transform: uppercase;
     color: #673AB7;
@@ -229,12 +234,12 @@ html {
 
 
 .checkbox:checked~.card {
-    border: 1px solid var(--primary) !important;
+    border: 2px solid var(--primary) !important;
     box-shadow: 0 0 0.5rem var(--primary) !important
 }  
 
 .checked {
-    color: var(--secondary);
+    color: var(--primary);
 }
 
 .unchecked {
@@ -266,9 +271,9 @@ html {
 }
 
 .validation_card {
-    position: absolute !important;
-    top: 5px !important;
-    right: 5px !important;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 }
 
 /* Sectionx */
@@ -315,6 +320,7 @@ html {
     width: 165px !important;
     height: 165px !important;
     margin: 10px 10px;
+    padding:  20px;
     cursor: pointer;
     background-color: var(--primary) !important;
     box-shadow: 0 0.5rem 1rem lightgray !important;
@@ -327,11 +333,12 @@ html {
 
 .card_choices {
     background-color: white !important;
-    border: 1px solid lightgrey !important;
+    border: 2px solid white !important;
 
 }
 
 .card_choices:hover {
+    border: 2px solid var(--primary) !important;
     box-shadow: 0 0 0.5rem var(--primary) !important
 }
 
@@ -344,6 +351,10 @@ html {
     color: white;
 }
 
+.card img {
+    width: 60%;
+}
+
 .card-body p {
     font-size: 16px !important;
     padding: -20px;
@@ -351,7 +362,9 @@ html {
 }
 
 .card-body {
-    padding: 1rem 0rem 0rem 0rem !important;
+    font-family: Lato;
+    flex: 0;
+    padding-top: 0rem !important;
 }
 
 .card {
@@ -359,10 +372,6 @@ html {
     border: none;
     position: relative;
 
-}
-
-.card img {
-    padding-top: 10px;
 }
 
 .card p .fs-title {
@@ -381,8 +390,6 @@ html {
 
 .choix_card:hover {
     box-shadow: 0 1rem 3rem lightgrey;
-    /* width: 180px !important;
-    height: 180px !important; */
 }
 
 .row-choices {
