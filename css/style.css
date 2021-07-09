@@ -233,6 +233,13 @@ html {
     box-shadow: 0 0 0.5rem var(--primary) !important
 }  
 
+.checked {
+    color: var(--secondary);
+}
+
+.unchecked {
+    color: lightgrey;
+}
 .fa-check-circle {
     display: none;
 }
@@ -489,13 +496,9 @@ a {
 
 /* Fin Menu estimation */
 
-/* Fin Menu estimation */
-
-
 /* Start Alert delete project */
 
 .alert {
-    display: none;
     max-width: 40rem;
     margin-top: 1rem;
     position: fixed;
@@ -504,7 +507,7 @@ a {
     top: 50%;
     left: 50%;
     width: 640px;
-    height: 377px;
+    height: auto;
     transform: translate(-50%, -50%);
 }
 
@@ -527,7 +530,6 @@ a {
     z-index: 999;
     visibility: visible;
     opacity: 1;
-    transition: opacity 0.3s ease-in-out 0s, visibility 0.3s ease-in-out 0s;
 }
 
 .css_alert_delete_project h2 {
@@ -541,8 +543,7 @@ a {
 .css_alert_delete_project .delete_project {
     color: rgb(255, 255, 255);
     background-color: #418ACA;
-    margin: 4rem 0px;
-    
+    margin: 4rem 0 1rem;   
 }
 
 .css_alert_delete_project .continue_creating {
@@ -563,6 +564,9 @@ a {
     border: 0;
     font-size: 15px;
     font-family: "Moderat-Bold","Helvetica Neue",Arial,sans-serif;
+}
+.btn-close:focus {
+    box-shadow: 0 0 0 0
 }
 
 
