@@ -12,6 +12,11 @@ html {
     height: 100%
 }
 
+body {
+    font-family: lato;
+    font-size: 16px;
+}
+
 #heading {
     text-transform: uppercase;
     color: #673AB7;
@@ -230,10 +235,17 @@ html {
 
 
 .checkbox:checked~.card {
-    border: 1px solid var(--primary) !important;
+    border: 2px solid var(--primary) !important;
     box-shadow: 0 0 0.5rem var(--primary) !important
 }  
 
+.checked {
+    color: var(--primary);
+}
+
+.unchecked {
+    color: lightgrey;
+}
 .fa-check-circle {
     display: none;
 }
@@ -260,9 +272,9 @@ html {
 }
 
 .validation_card {
-    position: absolute !important;
-    top: 5px !important;
-    right: 5px !important;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 }
 
 /* Sectionx */
@@ -309,6 +321,7 @@ html {
     width: 165px !important;
     height: 165px !important;
     margin: 10px 10px;
+    padding:  20px;
     cursor: pointer;
     background-color: var(--primary) !important;
     box-shadow: 0 0.5rem 1rem lightgray !important;
@@ -321,11 +334,12 @@ html {
 
 .card_choices {
     background-color: white !important;
-    border: 1px solid lightgrey !important;
+    border: 2px solid white !important;
 
 }
 
 .card_choices:hover {
+    border: 2px solid var(--primary) !important;
     box-shadow: 0 0 0.5rem var(--primary) !important
 }
 
@@ -338,6 +352,10 @@ html {
     color: white;
 }
 
+.card img {
+    width: 60%;
+}
+
 .card-body p {
     font-size: 16px !important;
     padding: -20px;
@@ -345,7 +363,9 @@ html {
 }
 
 .card-body {
-    padding: 1rem 0rem 0rem 0rem !important;
+    font-family: Lato;
+    flex: 0;
+    padding-top: 0rem !important;
 }
 
 .card {
@@ -353,10 +373,6 @@ html {
     border: none;
     position: relative;
 
-}
-
-.card img {
-    padding-top: 10px;
 }
 
 .card p .fs-title {
@@ -375,8 +391,6 @@ html {
 
 .choix_card:hover {
     box-shadow: 0 1rem 3rem lightgrey;
-    /* width: 180px !important;
-    height: 180px !important; */
 }
 
 .row-choices {
@@ -490,13 +504,9 @@ a {
 
 /* Fin Menu estimation */
 
-/* Fin Menu estimation */
-
-
 /* Start Alert delete project */
 
 .alert {
-    display: none;
     max-width: 40rem;
     margin-top: 1rem;
     position: fixed;
@@ -505,7 +515,7 @@ a {
     top: 50%;
     left: 50%;
     width: 640px;
-    height: 377px;
+    height: auto;
     transform: translate(-50%, -50%);
 }
 
@@ -528,7 +538,6 @@ a {
     z-index: 999;
     visibility: visible;
     opacity: 1;
-    transition: opacity 0.3s ease-in-out 0s, visibility 0.3s ease-in-out 0s;
 }
 
 .css_alert_delete_project h2 {
@@ -542,8 +551,7 @@ a {
 .css_alert_delete_project .delete_project {
     color: rgb(255, 255, 255);
     background-color: #418ACA;
-    margin: 4rem 0px;
-    
+    margin: 4rem 0 1rem;   
 }
 
 .css_alert_delete_project .continue_creating {
@@ -564,6 +572,9 @@ a {
     border: 0;
     font-size: 15px;
     font-family: "Moderat-Bold","Helvetica Neue",Arial,sans-serif;
+}
+.btn-close:focus {
+    box-shadow: 0 0 0 0
 }
 
 
