@@ -146,11 +146,11 @@ $(document).ready(function () {
 
     //function to toogle choice
     function toggle_project_choice(id1, id2) {
-        $("#"+id1+"_choice").toggle(1000);
+        $("#"+id1+"_choice").toggle(600);
         $("#"+id1+"_choice").css("display", "flex", "!important");
         $("#"+id1+"_choice").css("justify-content", "center", "!important");
-        $("#"+id2).toggle(1000);
-        $(".next").toggle(1000);
+        $("#"+id2).toggle(600);
+        $(".next").toggle(600);
         $("#"+id2+"_choice").find(':input').each(function(index,element) {  //reset input
             element.checked = false;
         });
@@ -159,7 +159,7 @@ $(document).ready(function () {
 
      $(".choice").click(function (e) {
         console.log(this);
-        $("#list_" + this.id).toggle(1000);
+        $("#list_" + this.id).toggle(600);
         $("#list_" + this.id).css("display", "flex", "!important");
         $("#list_" + this.id).css("justify-content", "center", "!important");
         $("#list_" + this.id).css("flex-wrap", "wrap", "!important");
