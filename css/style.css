@@ -296,6 +296,19 @@ body {
     right: 1rem;
 }
 
+.info_bulle {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.info_bulle:hover {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color:#ff7f00;
+}
+
 /* Sectionx */
 
 .row {
@@ -595,18 +608,616 @@ a {
     box-shadow: 0 0 0 0
 }
 
-
-
-
-
-
-
-
-    
-
-
 /* End Alert delete project */
 
+/* debut infobulle */
+
+/* Categorie : carte_langues */
+
+
+.infobulle_langues{
+    transform: scale(0);
+    position: absolute;
+    background-color: #c2d4e5 !important;
+    color: black;
+    border:2px solid #4764af;
+    /* border-radius: 5px; */
+    padding: 8px;
+    margin-bottom: -10px;
+ }
+
+.infobulle_langues::before{
+    content:"";
+    position: relative;
+}
+.info_bulle:hover~ .infobulle_langues{
+    transform:translateX(-300px);
+    width:740px;
+    margin-top:300px;
+    padding: 12px;
+    text-align: start;
+    font-size: 16px;
+}
+
+/* carte domaine */
+
+.infobulle_domaine{
+    transform: scale(0);
+    position: absolute;
+    background-color: #c2d4e5 !important;
+    color: black;
+    border:2px solid #4764af;
+    /* border-radius: 5px; */
+    padding: 8px;
+    margin-bottom: -10px;
+ }
+
+.infobulle_domaine::before{
+    content:"";
+    position: relative;
+}
+.info_bulle:hover~ .infobulle_domaine{
+    transform:translateX(-485px);
+    width:430px;
+    margin-top:300px;
+    padding: 12px;
+    text-align: start;
+    font-size: 16px;
+}
+
+/* Sous categorie:
+ carte vente */
+
+.infobulle_vente{
+    transform: scale(0);
+    position: absolute;
+    background-color: #c2d4e5 !important;
+    color: black;
+    border:2px solid #4764af;
+    /* border-radius: 5px; */
+    padding: 8px;
+    margin-bottom: -10px;
+ }
+
+.infobulle_vente::before{
+    content:"";
+    position: relative;
+}
+.info_bulle:hover> .infobulle_vente{
+    transform:translateX(-79px);
+    width:650px;
+    margin-top:460px;
+    padding: 12px;
+    text-align: start;
+    font-size: 16px;
+}
+
+/* carte vitrine  */
+
+.infobulle_vitrine{
+    transform: scale(0);
+    position: absolute;
+    background-color: #c2d4e5 !important;
+    color: black;
+    border:2px solid #4764af;
+    /* border-radius: 5px; */
+    padding: 8px;
+    margin-bottom: -10px;
+ }
+
+.infobulle_vitrine::before{
+    content:"";
+    position: relative;
+}
+.info_bulle:hover> .infobulle_vitrine{
+    transform:translateX(-264px);
+    width:700px;
+    margin-top:460px;
+    padding: 12px;
+    text-align: start;
+    font-size: 16px;
+}
+
+/* carte contenu  */
+
+.infobulle_contenu{
+    transform: scale(0);
+    position: absolute;
+    background-color: #c2d4e5 !important;
+    color: black;
+    border:2px solid #4764af;
+    /* border-radius: 5px; */
+    padding: 8px;
+    margin-bottom: -10px;
+ }
+
+.infobulle_contenu::before{
+    content:"";
+    position: relative;
+}
+.info_bulle:hover> .infobulle_contenu{
+    transform:translateX(-449px);
+    width:680px;
+    margin-top:460px;
+    padding: 12px;
+    text-align: start;
+    font-size: 16px;
+}
+
+/* carte relation  */
+
+.infobulle_relation{
+    transform: scale(0);
+    position: absolute;
+    background-color: #c2d4e5 !important;
+    color: black;
+    border:2px solid #4764af;
+    /* border-radius: 5px; */
+    padding: 8px;
+    margin-bottom: -10px;
+ }
+
+.infobulle_relation::before{
+    content:"";
+    position: relative;
+}
+.info_bulle:hover> .infobulle_relation{
+    transform:translateX(-634px);
+    width:420px;
+    margin-top:460px;
+    padding: 12px;
+    text-align: start;
+    font-size: 16px;
+}
+
+/* carte presenter  */
+
+.infobulle_presenter{
+    transform: scale(0);
+    position: absolute;
+    background-color: #c2d4e5 !important;
+    color: black;
+    border:2px solid #4764af;
+    /* border-radius: 5px; */
+    padding: 8px;
+    margin-bottom: -10px;
+ }
+
+.infobulle_presenter::before{
+    content:"";
+    position: relative;
+}
+.info_bulle:hover> .infobulle_presenter{
+    transform:translateX(-264px);
+    width:580px;
+    margin-top:275px;
+    padding: 12px;
+    text-align: start;
+    font-size: 16px;
+}
+
+/* carte recruter  */
+
+.infobulle_recruter{
+    transform: scale(0);
+    position: absolute;
+    background-color: #c2d4e5 !important;
+    color: black;
+    border:2px solid #4764af;
+    /* border-radius: 5px; */
+    padding: 8px;
+    margin-bottom: -10px;
+ }
+
+.infobulle_recruter::before{
+    content:"";
+    position: relative;
+}
+.info_bulle:hover> .infobulle_recruter{
+    transform:translateX(-449px);
+    width:680px;
+    margin-top:275px;
+    padding: 12px;
+    text-align: start;
+    font-size: 16px;
+}
+
+/* carte statistiques  */
+
+.infobulle_statistiques{
+    transform: scale(0);
+    position: absolute;
+    background-color: #c2d4e5 !important;
+    color: black;
+    border:2px solid #4764af;
+    /* border-radius: 5px; */
+    padding: 8px;
+    margin-bottom: -10px;
+ }
+
+.infobulle_recruter::before{
+    content:"";
+    position: relative;
+}
+.info_bulle:hover> .infobulle_statistiques{
+    transform:translateX(-79px);
+    width:680px;
+    margin-top:275px;
+    padding: 12px;
+    text-align: start;
+    font-size: 16px;
+}
+
+/* carte technique  */
+
+.infobulle_technique{
+    transform: scale(0);
+    position: absolute;
+    background-color: #c2d4e5 !important;
+    color: black;
+    border:2px solid #4764af;
+    /* border-radius: 5px; */
+    padding: 8px;
+    margin-bottom: -10px;
+ }
+
+.infobulle_technique::before{
+    content:"";
+    position: relative;
+}
+#carte_technique:hover> .infobulle_technique{
+    transform:translateX(-264px);
+    width:680px;
+    margin-top:275px;
+    padding: 12px;
+    text-align: start;
+    font-size: 16px;
+}
+
+/* carte referencement  */
+
+.infobulle_referencement{
+    transform: scale(0);
+    position: absolute;
+    background-color: #c2d4e5 !important;
+    color: black;
+    border:2px solid #4764af;
+    /* border-radius: 5px; */
+    padding: 8px;
+    margin-bottom: -10px;
+ }
+
+.infobulle_referencement::before{
+    content:"";
+    position: relative;
+}
+#carte_referencement:hover> .infobulle_referencement{
+    transform:translateX(-449px);
+    width:680px;
+    margin-top:275px;
+    padding: 12px;
+    text-align: start;
+    font-size: 16px;
+}
+
+.infobulle_redaction{
+    transform: scale(0);
+    position: absolute;
+    background-color: #c2d4e5 !important;
+    color: black;
+    border:2px solid #4764af;
+    /* border-radius: 5px; */
+    padding: 8px;
+    margin-bottom: -10px;
+ }
+
+.infobulle_redaction::before{
+    content:"";
+    position: relative;
+}
+#carte_redaction:hover> .infobulle_redaction{
+    transform:translateX(-634px);
+    width:680px;
+    margin-top:275px;
+    padding: 12px;
+    text-align: start;
+    font-size: 16px;
+}
+
+/* carte statistiques  */
+
+.infobulle_statistiques{
+    transform: scale(0);
+    position: absolute;
+    background-color: #c2d4e5 !important;
+    color: black;
+    border:2px solid #4764af;
+    /* border-radius: 5px; */
+    padding: 8px;
+    margin-bottom: -10px;
+ }
+
+.infobulle_statistiques::before{
+    content:"";
+    position: relative;
+}
+#carte_statistiques:hover> .infobulle_statistiques{
+    transform:translateX(-79px);
+    width:680px;
+    margin-top:275px;
+    padding: 12px;
+    text-align: start;
+    font-size: 16px;
+}
+
+/* carte technique  */
+
+.infobulle_technique{
+    transform: scale(0);
+    position: absolute;
+    background-color: #c2d4e5 !important;
+    color: black;
+    border:2px solid #4764af;
+    /* border-radius: 5px; */
+    padding: 8px;
+    margin-bottom: -10px;
+ }
+
+.infobulle_technique::before{
+    content:"";
+    position: relative;
+}
+#carte_technique:hover> .infobulle_technique{
+    transform:translateX(-264px);
+    width:680px;
+    margin-top:275px;
+    padding: 12px;
+    text-align: start;
+    font-size: 16px;
+}
+
+/* carte referencement  */
+
+.infobulle_referencement{
+    transform: scale(0);
+    position: absolute;
+    background-color: #c2d4e5 !important;
+    color: black;
+    border:2px solid #4764af;
+    /* border-radius: 5px; */
+    padding: 8px;
+    margin-bottom: -10px;
+ }
+
+.infobulle_referencement::before{
+    content:"";
+    position: relative;
+}
+#carte_referencement:hover> .infobulle_referencement{
+    transform:translateX(-449px);
+    width:680px;
+    margin-top:275px;
+    padding: 12px;
+    text-align: start;
+    font-size: 16px;
+}
+
+/* carte redaction */
+
+.infobulle_redaction{
+    transform: scale(0);
+    position: absolute;
+    background-color: #c2d4e5 !important;
+    color: black;
+    border:2px solid #4764af;
+    /* border-radius: 5px; */
+    padding: 8px;
+    margin-bottom: -10px;
+ }
+
+.infobulle_redaction::before{
+    content:"";
+    position: relative;
+}
+#carte_redaction:hover> .infobulle_redaction{
+    transform:translateX(-634px);
+    width:680px;
+    margin-top:275px;
+    padding: 12px;
+    text-align: start;
+    font-size: 16px;
+}
+
+/* carte reseaux sociaux  */
+
+.infobulle_sociaux{
+    transform: scale(0);
+    position: absolute;
+    background-color: #c2d4e5 !important;
+    color: black;
+    border:2px solid #4764af;
+    /* border-radius: 5px; */
+    padding: 8px;
+    margin-bottom: -10px;
+ }
+
+.infobulle_sociaux::before{
+    content:"";
+    position: relative;
+}
+#carte_sociaux:hover> .infobulle_sociaux{
+    transform:translateX(-79px);
+    width:680px;
+    margin-top:460px;
+    padding: 12px;
+    text-align: start;
+    font-size: 16px;
+}
+
+/* carte slider  */
+
+.infobulle_slider{
+    transform: scale(0);
+    position: absolute;
+    background-color: #c2d4e5 !important;
+    color: black;
+    border:2px solid #4764af;
+    /* border-radius: 5px; */
+    padding: 8px;
+    margin-bottom: -10px;
+ }
+
+.infobulle_slider::before{
+    content:"";
+    position: relative;
+}
+#carte_slider:hover> .infobulle_slider{
+    transform:translateX(-264px);
+    width:680px;
+    margin-top:460px;
+    padding: 12px;
+    text-align: start;
+    font-size: 16px;
+}
+
+/* carte newsletter  */
+
+.infobulle_newsletter{
+    transform: scale(0);
+    position: absolute;
+    background-color: #c2d4e5 !important;
+    color: black;
+    border:2px solid #4764af;
+    /* border-radius: 5px; */
+    padding: 8px;
+    margin-bottom: -10px;
+ }
+
+.infobulle_newsletter::before{
+    content:"";
+    position: relative;
+}
+#carte_newsletter:hover> .infobulle_newsletter{
+    transform:translateX(-449px);
+    width:680px;
+    margin-top:460px;
+    padding: 12px;
+    text-align: start;
+    font-size: 16px;
+}
+
+/* carte articles */
+
+.infobulle_articles{
+    transform: scale(0);
+    position: absolute;
+    background-color: #c2d4e5 !important;
+    color: black;
+    border:2px solid #4764af;
+    /* border-radius: 5px; */
+    padding: 8px;
+    margin-bottom: -10px;
+ }
+
+.infobulle_articles::before{
+    content:"";
+    position: relative;
+}
+#carte_articles:hover> .infobulle_articles{
+    transform:translateX(-634px);
+    width:680px;
+    margin-top:460px;
+    padding: 12px;
+    text-align: start;
+    font-size: 16px;
+}
+
+/* carte calendrier  */
+
+.infobulle_calendar{
+    transform: scale(0);
+    position: absolute;
+    background-color: #c2d4e5 !important;
+    color: black;
+    border:2px solid #4764af;
+    /* border-radius: 5px; */
+    padding: 8px;
+    margin-bottom: -10px;
+ }
+
+.infobulle_calendar::before{
+    content:"";
+    position: relative;
+}
+#carte_calendar:hover> .infobulle_calendar{
+    transform:translateX(-171px);
+    width:680px;
+    margin-top:275px;
+    padding: 12px;
+    text-align: start;
+    font-size: 16px;
+}
+
+/* carte recherche  */
+
+.infobulle_search{
+    transform: scale(0);
+    position: absolute;
+    background-color: #c2d4e5 !important;
+    color: black;
+    border:2px solid #4764af;
+    /* border-radius: 5px; */
+    padding: 8px;
+    margin-bottom: -10px;
+ }
+
+.infobulle_search::before{
+    content:"";
+    position: relative;
+}
+#carte_search:hover> .infobulle_search{
+    transform:translateX(-356px);
+    width:680px;
+    margin-top:275px;
+    padding: 12px;
+    text-align: start;
+    font-size: 16px;
+}
+
+/* carte Gallerie */
+
+.infobulle_gallery{
+    transform: scale(0);
+    position: absolute;
+    background-color: #c2d4e5 !important;
+    color: black;
+    border:2px solid #4764af;
+    /* border-radius: 5px; */
+    padding: 8px;
+    margin-bottom: -10px;
+ }
+
+.infobulle_gallery::before{
+    content:"";
+    position: relative;
+}
+#carte_gallery:hover> .infobulle_gallery{
+    transform:translateX(-541px);
+    width:680px;
+    margin-top:275px;
+    padding: 12px;
+    text-align: start;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+/* fin infobulle */
 
 
 [tooltip] {
