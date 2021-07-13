@@ -99,6 +99,7 @@ body {
     cursor: pointer;
     padding: 10px 5px;
     margin: 40px 0px 10px 5px;
+    margin-right: 1200px;
 }
 
 .next {
@@ -1202,6 +1203,8 @@ a {
 
 [tooltip] {
 position: relative; /* opinion 1 */
+
+
 }
 
 /* Applies to all tooltips */
@@ -1215,6 +1218,7 @@ pointer-events: none;
 position: absolute;
 display: none;
 opacity: 0;
+
 }
 [tooltip]::before {
 content: '';
@@ -1245,6 +1249,7 @@ border: 2px solid var(--primary);
 /* height: 50px; */
 padding: 15px;
 /* text-align:start; */
+
 color:black;
 z-index: 1000; /* absurdity 2 */
 }
@@ -1268,6 +1273,7 @@ border-right-width: 0;
 border-left-color: #333;
 left: calc(0em - 5px);
 transform: translate(-.5em, -50%);
+
 }
 [tooltip][flow^="left"]::after {
 top: 50%;
@@ -1339,6 +1345,7 @@ transform: translate(-.5em, -50%);
 to {
 opacity: .9;
 transform: translate(-50%, 0);
+
 }
 }
 
