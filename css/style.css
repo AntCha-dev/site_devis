@@ -609,6 +609,7 @@ a {
 
 /* Categorie : carte_langues */
 
+
 .infobulle_langues{
     transform: scale(0);
     position: absolute;
@@ -624,7 +625,7 @@ a {
     content:"";
     position: relative;
 }
-#carte_langues:hover> .infobulle_langues{
+.info_bulle:hover~ .infobulle_langues{
     transform:translateX(-300px);
     width:740px;
     margin-top:300px;
@@ -650,9 +651,9 @@ a {
     content:"";
     position: relative;
 }
-#carte_domaine:hover> .infobulle_domaine{
+.info_bulle:hover~ .infobulle_domaine{
     transform:translateX(-485px);
-    width:516px;
+    width:430px;
     margin-top:300px;
     padding: 12px;
     text-align: start;
@@ -677,7 +678,7 @@ a {
     content:"";
     position: relative;
 }
-#carte_vente:hover> .infobulle_vente{
+.info_bulle:hover> .infobulle_vente{
     transform:translateX(-79px);
     width:650px;
     margin-top:460px;
@@ -703,7 +704,7 @@ a {
     content:"";
     position: relative;
 }
-#carte_vitrine:hover> .infobulle_vitrine{
+.info_bulle:hover> .infobulle_vitrine{
     transform:translateX(-264px);
     width:700px;
     margin-top:460px;
@@ -729,7 +730,7 @@ a {
     content:"";
     position: relative;
 }
-#carte_contenu:hover> .infobulle_contenu{
+.info_bulle:hover> .infobulle_contenu{
     transform:translateX(-449px);
     width:680px;
     margin-top:460px;
@@ -755,7 +756,7 @@ a {
     content:"";
     position: relative;
 }
-#carte_relation:hover> .infobulle_relation{
+.info_bulle:hover> .infobulle_relation{
     transform:translateX(-634px);
     width:420px;
     margin-top:460px;
@@ -781,7 +782,7 @@ a {
     content:"";
     position: relative;
 }
-#carte_presenter:hover> .infobulle_presenter{
+.info_bulle:hover> .infobulle_presenter{
     transform:translateX(-264px);
     width:580px;
     margin-top:275px;
@@ -807,7 +808,7 @@ a {
     content:"";
     position: relative;
 }
-#carte_recruter:hover> .infobulle_recruter{
+.info_bulle:hover> .infobulle_recruter{
     transform:translateX(-449px);
     width:680px;
     margin-top:275px;
@@ -833,7 +834,7 @@ a {
     content:"";
     position: relative;
 }
-#carte_statistiques:hover> .infobulle_statistiques{
+.info_bulle:hover> .infobulle_statistiques{
     transform:translateX(-79px);
     width:680px;
     margin-top:275px;
