@@ -118,7 +118,7 @@ body {
     border-radius: 0px;
     cursor: pointer;
     padding: 10px 5px;
-    margin: 30px 0px 10px 5px;;
+    margin: 30px 0px 10px 0px;;
 }
 
 .next {
@@ -320,6 +320,11 @@ body {
 #design_site_choice
  {
     display: none;
+}
+
+.choice_container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .question {

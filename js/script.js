@@ -144,18 +144,6 @@ $(document).ready(function () {
 
     });
 
-/*    //function to toogle choice
-    function toggle_project_choice(id1, id2) {
-        $("#"+id1+"_choice").toggle(600);
-        $("#"+id1+"_choice").css("display", "flex", "!important");
-        $("#"+id1+"_choice").css("justify-content", "center", "!important");
-        $("#"+id2).toggle(600);
-        $(".next").toggle(600);
-        $("#"+id2+"_choice").find(':input').each(function(index,element) {  //reset input
-            element.checked = false;
-        });
-    }*/
-
     //function to toogle choice
     function toggle_project_choice(id1, id2) {
         $("#"+id1+"_choice").fadeToggle("slow");
@@ -178,6 +166,14 @@ $(document).ready(function () {
     $(".btn-close").click(function() {
         $(".css_background_alert").fadeOut("slow");
     });
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        var modal = document.getElementById("modal-alert") ;
+        if (event.target == modal) {
+            $(".css_background_alert").fadeOut("slow");
+        }
+    }
 
     $(".continue_creating").click(function(){
         $(".css_background_alert").fadeOut("slow");

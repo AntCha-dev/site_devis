@@ -41,7 +41,10 @@
                 <!-- START - icon bar -->
                 <div id="icon-bar">
                     <div class="icon-item">
-                        <img src="icon/globe.svg">
+                        <img src="icon/ICONE_FORM-nouveau.svg">
+                    </div>
+                    <div class="icon-item">
+                        <img src="icon/ICONE_FORM-refonte.svg">
                     </div>
                     <div class="icon-item">
                         <img src="icon/ICONE_FORM-nom-de-domaine.svg">
@@ -78,9 +81,8 @@
                             <div class="row">
                                 <h5>Quelle est la nature de votre projet ?</h5>
                                 <!-- project choice -->
-                                <div class="choice" id="project_choice">
-                                        
-                                    <div id="new_site" class ="animated" tooltip="Boostez votre activité grâce à un site internet vitrine ou e-commerce clés en main." flow="left">   
+                                <div class="choice">        
+                                    <div id="new_site" tooltip="Boostez votre activité grâce à un site internet vitrine ou e-commerce clés en main." flow="left">   
                                         <div class="card_choice card container-fluid">
                                             <img src="icon/ICONE_FORM-nouveau.svg" class="card-img-top align-self-center mt-3">
                                             <div class="card-body">
@@ -141,7 +143,7 @@
                                             <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/rouleau-de-peinture.svg" class="card-img-top align-self-center mt-3" alt="...">
                                             <div class="card-body">
-                                                <p class="card-text">Graphisme</a>
+                                                <p class="card-text">Graphisme</p>
                                             </div>
                                         </div>
                                     </label>
@@ -165,19 +167,17 @@
                         <fieldset>
                             <div class="row">
                                 <!-- goal choice -->
-                                <div class="choice" id="goal_choice">
-                                    <div id="new_site">
-                                        <div class="card_choice card container-fluid" tooltip="Définir les objectifs d’un projet de création de site internet" flow="left">
-                                            <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" alt="...">
-                                            <div class="card-body">
-                                                <p class="card-text">Objectif du site</p>
-                                            </div>
+                                <div class="choice">                                   
+                                    <div class="card_choice card container-fluid" tooltip="Définir les objectifs d’un projet de création de site internet" flow="left">
+                                        <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text">Objectif du site</p>
                                         </div>
-                                    </div>
+                                    </div>                                   
                                 </div>
                                 <p>Quels sont les différents objectifs de votre site ?</p>
                                 <!-- list goal choice -->
-                                <div id="list_goal_choice">
+                                <div class="choice_container">
                                     <label class="choixx">
                                         <input type="checkbox" name="carte_vente" class="checkbox">
                                         <div class="card_choice card_choices card" tooltip="Augmenter le nombre de personnes qui se rendent sur votre plateforme de vente en ligne" flow="left">
@@ -255,19 +255,17 @@
                         <fieldset>
                             <div class="row">
                                 <!-- goal choice -->
-                                <div class="choice" id="help_choice">
-                                    <div id="new_site">
-                                        <div class="card_choice card container-fluid" tooltip="Suivre les performances du site web et analyser les données" flow="left">
-                                            <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" alt="...">
-                                            <div class="card-body">
-                                                <p class="card-text">Suivi souhaité</p>
-                                            </div>
+                                <div class="choice">    
+                                    <div class="card_choice card container-fluid" tooltip="Suivre les performances du site web et analyser les données" flow="left">
+                                        <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text">Suivi souhaité</p>
                                         </div>
-                                    </div>
+                                    </div>    
                                 </div>
                                 <p>Le suivi mensuel que vous souhaitez sur votre site :</p>
                                 <!-- list goal choice -->
-                                <div id="list_help_choice">
+                                <div class="choice_container">
                                     <label class="choixx">
                                         <input type="checkbox" name="carte_statistiques" class="checkbox">
                                         <div class="card_choice card_choices card" tooltip="Dresser un constat du trafic existant sur votre site et de l’origine de ce trafic" flow="left">
@@ -323,19 +321,17 @@
                         <fieldset>
                             <div class="row">
                                 <!-- cible choice -->
-                                <div class="choice" id="cible_choice">
-                                    <div id="new_site">
-                                        <div class="card_choice card container-fluid" tooltip="Votre site doit il etre traduit en plusieurs langues ?" flow="left">
-                                            <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" alt="...">
-                                            <div class="card-body">
-                                                <p class="card-text">Cible de votre site</p>
-                                            </div>
+                                <div class="choice">     
+                                    <div class="card_choice card container-fluid" tooltip="Votre site doit il etre traduit en plusieurs langues ?" flow="left">
+                                        <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text">Cible de votre site</p>
                                         </div>
                                     </div>
                                 </div>
                                 <p>La ou les cibles pricipales de viotre site</p>
                                 <!-- list cible choice -->
-                                <div id="list_cible_choice">
+                                <div class="choice_container">
                                     <label class="choixx">
                                         <input type="checkbox" name="carte_tout_publique" class="checkbox">
                                         <div class="card_choice card_choices card" tooltip="Votre site doit il etre traduit en plusieurs langues ?" flow="left">
@@ -402,19 +398,17 @@
                         <fieldset>
                             <div class="row">
                                 <!-- goal choice -->
-                                <div class="choice" id="content_choice">
-                                    <div id="new_site">
-                                        <div class="card_choice card container-fluid" tooltip="Votre site doit il etre traduit en plusieurs langues ?" flow="left">
-                                            <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" alt="...">
-                                            <div class="card-body">
-                                                <p class="card-text">Votre site doit contenir</p>
-                                            </div>
+                                <div class="choice">    
+                                    <div class="card_choice card container-fluid" tooltip="Votre site doit il etre traduit en plusieurs langues ?" flow="left">
+                                        <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text">Votre site doit contenir</p>
                                         </div>
-                                    </div>
+                                    </div>   
                                 </div>
                                 <p>Les différents éléments que votre site doit contenir :</p>
                                 <!-- list goal choice -->
-                                <div id="list_content_choice">
+                                <div class="choice_container">
                                     <label class="choixx">
                                         <input type="checkbox" name="carte_statistiques" class="checkbox">
                                         <div class="card_choice card_choices card" tooltip="Votre site doit il etre traduit en plusieurs langues ?" flow="left">
@@ -521,7 +515,7 @@
                     </form>
                     
                     <!-- ALERT WHEN CLICK ON THE CROSS -->
-                    <div class="css_background_alert">
+                    <div class="css_background_alert" id="modal-alert">
                         <div class="alert alert-danger alert-dismissible fade show" role="alert">
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                             <section class="css_alert_delete_project">
