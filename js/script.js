@@ -183,6 +183,14 @@ $(document).ready(function () {
         $(".css_background_alert").fadeOut("slow");
     });
 
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        var modal = document.getElementById("modal_alert");
+        if (event.target == modal) {
+            $(".css_background_alert").fadeOut("slow");
+        }
+      }
+
     // $(".css_background_alert").click(function(){
     //     $(".alert").hide();
     //     $(".css_background_alert").hide();
