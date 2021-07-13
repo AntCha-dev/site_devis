@@ -144,7 +144,7 @@ $(document).ready(function () {
 
     });
 
-    //function to toogle choice
+/*    //function to toogle choice
     function toggle_project_choice(id1, id2) {
         $("#"+id1+"_choice").toggle(600);
         $("#"+id1+"_choice").css("display", "flex", "!important");
@@ -154,16 +154,19 @@ $(document).ready(function () {
         $("#"+id2+"_choice").find(':input').each(function(index,element) {  //reset input
             element.checked = false;
         });
+    }*/
+
+    //function to toogle choice
+    function toggle_project_choice(id1, id2) {
+        $("#"+id1+"_choice").fadeToggle("slow");
+        $("#"+id1+"_choice").css("display", "flex", "!important");
+        $("#"+id1+"_choice").css("justify-content", "center", "!important");
+        $("#"+id2).toggle(600);
+        $(".next").fadeToggle("slow");
+        $("#"+id2+"_choice").find(':input').each(function(index,element) {  //reset input
+            element.checked = false;
+        });
     }
-
-
-     $(".choice").click(function (e) {
-        console.log(this);
-        $("#list_" + this.id).toggle(600);
-        $("#list_" + this.id).css("display", "flex", "!important");
-        $("#list_" + this.id).css("justify-content", "center", "!important");
-        $("#list_" + this.id).css("flex-wrap", "wrap", "!important");
-    })
 
 
     // ALERT WHEN CLICK ON THE CROSS 

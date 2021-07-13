@@ -8,15 +8,34 @@
     padding: 0;
 }
 
+*, :after, :before {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 html {
     height: 100%
 }
 
 body {
     font-family: lato;
-    font-size: 16px;
+    font-size: 16px !important
 }
 
+@media (min-width: 1200px) {
+    .col-xl-5 {
+        width: 740px;
+        max-width: 740px;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-5 {
+         width: 740px;
+        max-width: 740px;
+    }
+}
 #heading {
     text-transform: uppercase;
     color: #673AB7;
@@ -72,7 +91,7 @@ body {
     margin-top: 2px;
     width: 100%;
     box-sizing: border-box;
-    font-family: montserrat;
+    font-family: lato;
     color: #2C3E50;
     background-color: #ECEFF1;
     font-size: 16px;
@@ -89,6 +108,7 @@ body {
 }
 
 #msform .action-button {
+    float: left;
     align-content: center;
     width: 100px;
     background: var(--primary);
@@ -98,8 +118,7 @@ body {
     border-radius: 0px;
     cursor: pointer;
     padding: 10px 5px;
-    margin: 40px 0px 10px 5px;
-    margin-right: 1200px;
+    margin: 30px 0px 10px 5px;;
 }
 
 .next {
@@ -311,15 +330,9 @@ body {
 /* LISTE CHOIX PROJET */
 
 #new_site_choice,
-#design_site_choice,
-#list_goal_choice,
-#list_help_choice,
-#list_goal_choice,
-#list_cible_choice,
-#list_content_choice {
+#design_site_choice
+ {
     display: none;
-    /* justify-content: center;
-    flex-wrap: wrap; */
 }
 
 .question {
@@ -376,7 +389,7 @@ body {
 }
 
 .card-body {
-    font-family: Lato;
+    font-family: lato;
     flex: 0;
     padding-top: 0rem !important;
 }
@@ -1229,7 +1242,7 @@ z-index: 1001; /* absurdity 1 */
 content: attr(tooltip); /* magic! */
 
 /* most of the rest of this is opinion */
-font-family: Helvetica, sans-serif;
+font-family: lato;
 text-align: center;
 
 /* 
