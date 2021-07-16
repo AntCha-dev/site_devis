@@ -36,10 +36,13 @@ $(document).ready(function () {
             },
             duration: 500
         });
-        var n=current - 1;
-        console.log(n);
-        $("#icon-bar div:nth-child(" + current + ")").css({
-            'display': 'block'});
+        
+        if (current != 1) {
+            $("#icon-bar div:nth-child(" + (current + 1) + ")").css({
+                'display': 'block'});
+        }
+
+        
         setProgressBar(++current);
         $(".steps").text("Étape " + current + " sur " + steps);
         //replace fa-circle by fa-check
@@ -154,7 +157,10 @@ $(document).ready(function () {
         $("#"+id2+"_choice").find(':input').each(function(index,element) {  //reset input
             element.checked = false;
         });
-    }
+
+        $("#icon-bar #"+id1+"_icon").fadeToggle(300);
+    
+    };
 
 
     // ALERT WHEN CLICK ON THE CROSS 
