@@ -102,8 +102,16 @@ $(document).ready(function () {
         current_fs = $("fieldset:nth-child(" + current + ")")
         console.log(current_fs);
         previous_fs = current_fs.prev();
+        
+        if (current == 1) {
+            
+            toggle_project_choice("new_site", "design_site");
 
-        //show the previous fieldset
+        } 
+
+        else {
+            
+            //show the previous fieldset
         previous_fs.show();
 
         //hide the current fieldset with style
@@ -128,6 +136,11 @@ $(document).ready(function () {
         if (current = 1) $(".previous").css({
             'display': 'none'
         });
+
+        }
+
+
+        
     });
 
 
@@ -168,6 +181,7 @@ $(document).ready(function () {
         });
 
         $("#icon-bar #"+id1+"_icon").fadeToggle(300);
+        $(".previous").toggle();
     
     };
 
