@@ -92,6 +92,7 @@ $(document).ready(function () {
 
     $(".previous").click(function () {
         current_fs = $("fieldset:nth-child(" + current + ")")
+        console.log(current_fs);
         previous_fs = current_fs.prev();
 
         //show the previous fieldset
@@ -116,7 +117,7 @@ $(document).ready(function () {
         });
         setProgressBar(--current); // curent = current-1
         $(".steps").text("Étape " + current + " sur " + steps);
-        if (current == 1) $(".previous").css({
+        if (current = 1) $(".previous").css({
             'display': 'none'
         });
     });

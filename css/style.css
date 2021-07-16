@@ -184,9 +184,9 @@ body {
     transform: translateY(0.125rem);
 }
 
-.previous {
+/* .previous {
     display: none;
-}
+} */
 
 .progress {
     height: 3px;
