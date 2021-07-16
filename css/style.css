@@ -1396,3 +1396,13 @@ animation: tooltips-horz 300ms ease-out forwards;
 .choixx {
     position: relative;
 }
+
+.error_choice{
+    display: none;
+    color: red; 
+    background-color: rgb(255, 174, 174);
+    border: 1px solid red;
+    width: 70%;
+    border-radius: 10px;
+    font-weight: bold;
+}

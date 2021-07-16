@@ -17,35 +17,43 @@ $(document).ready(function () {
             'display': 'block'
         });
 
-        //show the next fieldset
-        next_fs.show();
-        //hide the current fieldset with style
-        current_fs.animate({
-            opacity: 0
-        }, {
-            step: function (now) {
-                opacity = 1 - now;
+        var check = current_fs.find(":checkbox");
 
-                current_fs.css({
-                    'display': 'none',
-                    'position': 'relative'
-                });
-                next_fs.css({
-                    'opacity': opacity
-                });
-            },
-            duration: 500
-        });
-        
-        if (current != 1) {
-            $("#icon-bar div:nth-child(" + (current + 1) + ")").css({
-                'display': 'block'});
-        }
+        if(check.filter(":checked").length == 0){
+            $(".error_choice").show().fadeOut(3000);
+            $(".error_choice").css("display", "table");
+            $(".error_choice").css("margin", "0 auto");
+        }else{
+            console.log("C'est bon")
 
-        
-        setProgressBar(++current);
-        $(".steps").text("Étape " + current + " sur " + steps);
-        //replace fa-circle by fa-check
+                //show the next fieldset
+                next_fs.show();
+                //hide the current fieldset with style
+                current_fs.animate({
+                    opacity: 0
+                }, {
+                    step: function (now) {
+                        opacity = 1 - now;
+
+                        current_fs.css({
+                            'display': 'none',
+                            'position': 'relative'
+                        });
+                        next_fs.css({
+                            'opacity': opacity
+                        });
+                    },
+                    duration: 500
+                });
+                var n=current - 1;
+                console.log(n);
+                $("#icon-bar div:nth-child(" + current + ")").css({
+                    'display': 'block'});
+                setProgressBar(++current);
+                $(".steps").text("Étape " + current + " sur " + steps);
+                //replace fa-circle by fa-check
+
+        };
 
     });
 
