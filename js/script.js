@@ -62,57 +62,11 @@ $(document).ready(function () {
     $("#icon-bar .icon-item").click(function () {
         var n = $(this).index() + 1;
         
-            current_fs = $("fieldset:nth-child(" + current + ")");
-            step_fs = $("fieldset:nth-child(" + n + ")");
+        current_fs = $("fieldset:nth-child(" + current + ")");
+        step_fs = $("fieldset:nth-child(" + n + ")");
 
-            //show the previous fieldset
-            step_fs.show();
-
-            //hide the current fieldset with style
-            current_fs.animate({
-                opacity: 0
-            }, {
-                step: function (now) {
-                    // for making fielset appear animation
-                    opacity = 1 - now;
-                    current_fs.css({
-                        'display': 'none',
-                        'position': 'relative'
-                    });
-                    step_fs.css({
-                        'opacity': opacity
-                    });
-                },
-                duration: 500
-            });
-            current = n;
-            //setProgressBar(n);
-            $(".steps").text("Étape " + n + " sur " + steps);
-            if (n == 1) $(".previous").css({
-                'display': 'none'
-            });
-        
-    });
-
-
-
-    // FUNCTION QUI PERMET DE RETOURNER EN ARRIERE AVEC LE BOUTTON RETOUR (<)
-
-    $(".previous").click(function () {
-        current_fs = $("fieldset:nth-child(" + current + ")")
-        console.log(current_fs);
-        previous_fs = current_fs.prev();
-        
-        if (current == 1) {
-            
-            toggle_project_choice("new_site", "design_site");
-
-        } 
-
-        else {
-            
-            //show the previous fieldset
-        previous_fs.show();
+        //show the previous fieldset
+        step_fs.show();
 
         //hide the current fieldset with style
         current_fs.animate({
@@ -125,18 +79,62 @@ $(document).ready(function () {
                     'display': 'none',
                     'position': 'relative'
                 });
-                previous_fs.css({
+                step_fs.css({
                     'opacity': opacity
                 });
             },
             duration: 500
         });
-        setProgressBar(--current); // curent = current-1
-        $(".steps").text("Étape " + current + " sur " + steps);
-        if (current = 1) $(".previous").css({
+        current = n;
+        $(".steps").text("Étape " + n + " sur " + steps);
+        if (n == 1) $(".previous").css({
             'display': 'none'
         });
+        
+    });
 
+
+
+    // FUNCTION QUI PERMET DE RETOURNER EN ARRIERE AVEC LE BOUTTON RETOUR (<)
+
+    $(".previous").click(function () {
+        current_fs = $("fieldset:nth-child(" + current + ")")
+        console.log(current_fs);
+        previous_fs = current_fs.prev();
+        
+        if (current == 1) { 
+            if ($('input#project').val()== "new_site")          
+                toggle_project_choice("new_site", "design_site");
+            if ($('input#project').val()== "design_site")          
+                toggle_project_choice("design_site","new_site");
+        } 
+
+        else {            
+            //show the previous fieldset
+            previous_fs.show();
+
+            //hide the current fieldset with style
+            current_fs.animate({
+                opacity: 0
+            }, {
+                step: function (now) {
+                    // for making fielset appear animation
+                    opacity = 1 - now;
+                    current_fs.css({
+                        'display': 'none',
+                        'position': 'relative'
+                    });
+                    previous_fs.css({
+                        'opacity': opacity
+                    });
+                },
+                duration: 500
+            });
+            setProgressBar(--current); // curent = current-1
+            $(".steps").text("Étape " + current + " sur " + steps);
+            if (current = 1) $(".previous").css({
+                'display': 'none'
+            });
         }
 
 
@@ -162,10 +160,12 @@ $(document).ready(function () {
 
     $("#new_site").click(function () {
         toggle_project_choice("new_site", "design_site");
+        $('input#project').val("new_site");
     })
 
     $("#design_site").click(function () {
         toggle_project_choice("design_site", "new_site");
+         $('input#project').val("design_site");
 
     });
 
