@@ -55,8 +55,6 @@ $(document).ready(function() {
 
     });
 
-
-
     // FUNCTION QUI PERMET DE RETOURNER EN ARRIERE AVEC LE BOUTTON RETOUR (<)
 
     $(".previous").click(function() {
@@ -107,7 +105,6 @@ $(document).ready(function() {
 
             //show the n fieldset
             step_fs.show();
-
             //hide the current fieldset with style
             current_fs.animate({
                 opacity: 0
