@@ -11,15 +11,13 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
     <script src="https://kit.fontawesome.com/065a94aab4.js" crossorigin="anonymous"></script>
     <link rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Lato' type='text/css' media='all' />
-    <!-- animation.css chargé sur le site de exher -->
-    <link rel='stylesheet' id='htmega-animation-css'  href='https://www.exher.fr/wp-content/plugins/ht-mega-for-elementor/assets/css/animation.css?ver=1.5.7' type='text/css' media='all' />
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col- col-sm-10 col-md-10 col-lg-5 col-xl-5 p-0 mt-3 mb-2">
+            <div class="col-xs-11 col-sm-10 col-md-10 col-lg-5 col-xl-5 p-0 mt-3 mb-2">
                 <header class="form-header">
                     <button type="button" aria-label="Retour à l'étape précédente" class="previous">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" height="24" aria-hidden="true">
@@ -64,7 +62,7 @@
                 </div>
                 <!-- END - icon bar -->
 
-                
+
                 <!-- START - progressbar -->
                 <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
@@ -73,16 +71,17 @@
 
                 <!-- multistep-form -->
                 <div class="card">
-                    <form id="msform" method="POST" action="script.php">
-                        
+                    <form id="msform">
+
                         <!-- fieldsets -->
                         <!-- Field project -->
                         <fieldset>
                             <div class="row">
                                 <h5>Quelle est la nature de votre projet ?</h5>
                                 <!-- project choice -->
-                                <div class="choice">        
-                                    <div id="new_site" tooltip="Boostez votre activité grâce à un site internet vitrine ou e-commerce clés en main." flow="left">   
+                                <input type="hidden" id="project" name="project" value="">
+                                <div class="choice">
+                                    <div id="new_site" tooltip="Boostez votre activité grâce à un site internet vitrine ou e-commerce clés en main." flow="left">
                                         <div class="card_choice card container-fluid">
                                             <img src="icon/ICONE_FORM-nouveau.svg" class="card-img-top align-self-center mt-3">
                                             <div class="card-body">
@@ -101,8 +100,8 @@
                                 </div>
                                 <div id="new_site_choice">
                                     <!-- comment -->
- 
-                                        <label class="choixx">
+
+                                    <label class="choix">
                                         <input type="checkbox" name="carte_langues" class="checkbox">
                                         <div class="card_choice card_choices card">
                                             <i class="info_bulle far fa-question-circle unchecked"></i>
@@ -117,8 +116,8 @@
                                             </div>
                                         </div>
                                     </label>
- 
-                                    <label class="choixx">
+
+                                    <label class="choix">
                                         <input type="checkbox" name="carte_domaine" class="checkbox">
                                         <div class="card_choice card_choices card">
                                             <i class="info_bulle far fa-question-circle unchecked"></i>
@@ -135,7 +134,7 @@
                                     </label>
                                 </div>
                                 <div id="design_site_choice">
-                                    <label class="choixx">
+                                    <label class="choix">
                                         <input type="checkbox" name="carte_techno" class="checkbox">
                                         <div class="card_choice card_choices card">
                                             <i class="info_bulle far fa-question-circle unchecked"></i>
@@ -152,8 +151,8 @@
                                             </div>
                                         </div>
                                     </label>
- 
-                                    <label class="choixx">
+
+                                    <label class="choix">
                                         <input type="checkbox" name="carte_graphismes" class="checkbox">
                                         <div class="card_choice card_choices card">
                                             <i class="info_bulle far fa-question-circle unchecked"></i>
@@ -170,8 +169,8 @@
                                             </div>
                                         </div>
                                     </label>
- 
-                                    <label class="choixx">
+
+                                    <label class="choix">
                                         <input type="checkbox" name="carte_repositionnement" class="checkbox">
                                         <div class="card_choice card_choices card">
                                             <i class="info_bulle far fa-question-circle unchecked"></i>
@@ -191,26 +190,25 @@
                                 </div>
                             </div>
                             <span class="error_choice">Veuillez choisir au moins une option</span>
-
-                            <input type="button" name="next" class="action-button next" value="Suivant" />
+                            <input type="button" name="next" class="next action-button" value="Suivant" />
                         </fieldset>
 
                         <!-- Field goal -->
                         <fieldset>
                             <div class="row">
                                 <!-- goal choice -->
-                                <div class="choice">                                   
+                                <div class="choice">
                                     <div class="card_choice card container-fluid" tooltip="Définir les objectifs d'un projet de création de site internet" flow="left">
                                         <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" alt="...">
                                         <div class="card-body">
                                             <p class="card-text">Objectif du site</p>
                                         </div>
-                                    </div>                                   
+                                    </div>
                                 </div>
                                 <p>Quels sont les différents objectifs de votre site ?</p>
                                 <!-- list goal choice -->
                                 <div class="choice_container">
-                                    <label class="choixx">
+                                    <label class="choix">
                                         <input type="checkbox" name="carte_vente" class="checkbox">
                                         <div class="card_choice card_choices card">
                                             <i class="info_bulle far fa-question-circle unchecked"></i>
@@ -225,8 +223,8 @@
                                             </div>
                                         </div>
                                     </label>
- 
-                                    <label class="choixx">
+
+                                    <label class="choix">
                                         <input type="checkbox" name="carte_vitrine" class="checkbox">
                                         <div class="card_choice card_choices card">
                                             <i class="info_bulle far fa-question-circle unchecked"></i>
@@ -241,8 +239,8 @@
                                             </div>
                                         </div>
                                     </label>
- 
-                                    <label class="choixx">
+
+                                    <label class="choix">
                                         <input type="checkbox" name="carte_contenu" class="checkbox">
                                         <div class="card_choice card_choices card">
                                             <i class="info_bulle far fa-question-circle unchecked"></i>
@@ -257,8 +255,8 @@
                                             </div>
                                         </div>
                                     </label>
- 
-                                    <label class="choixx">
+
+                                    <label class="choix">
                                         <input type="checkbox" name="carte_relation" class="checkbox">
                                         <div class="card_choice card_choices card">
                                             <i class="info_bulle far fa-question-circle unchecked"></i>
@@ -273,8 +271,8 @@
                                             </div>
                                         </div>
                                     </label>
- 
-                                    <label class="choixx">
+
+                                    <label class="choix">
                                         <input type="checkbox" name="carte_presenter" class="checkbox">
                                         <div class="card_choice card_choices card">
                                             <i class="info_bulle far fa-question-circle unchecked"></i>
@@ -290,8 +288,8 @@
                                             </div>
                                         </div>
                                     </label>
- 
-                                    <label class="choixx">
+
+                                    <label class="choix">
                                         <input type="checkbox" name="carte_recruter" class="checkbox">
                                         <div class="card_choice card_choices card">
                                             <i class="info_bulle far fa-question-circle unchecked"></i>
@@ -311,7 +309,6 @@
 
                             </div>
                             <span class="error_choice">Veuillez choisir au moins une option</span>
-
                             <input type="button" name="next" class="next action-button" value="Suivant" />
                         </fieldset>
 
@@ -319,18 +316,18 @@
                         <fieldset>
                             <div class="row">
                                 <!-- goal choice -->
-                                <div class="choice">    
+                                <div class="choice">
                                     <div class="card_choice card container-fluid" tooltip="Suivre les performances du site web et analyser les données" flow="left">
                                         <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" alt="...">
                                         <div class="card-body">
                                             <p class="card-text">Suivi souhaité</p>
                                         </div>
-                                    </div>    
+                                    </div>
                                 </div>
                                 <p>Le suivi mensuel que vous souhaitez sur votre site :</p>
                                 <!-- list goal choice -->
                                 <div class="choice_container">
-                                    <label class="choixx">
+                                    <label class="choix">
                                         <input type="checkbox" name="carte_statistiques" class="checkbox">
                                         <div class="card_choice card_choices card">
                                             <i class="info_bulle far fa-question-circle unchecked"></i>
@@ -345,8 +342,8 @@
                                             </div>
                                         </div>
                                     </label>
- 
-                                    <label class="choixx">
+
+                                    <label class="choix">
                                         <input type="checkbox" name="carte_technique" class="checkbox">
                                         <div class="card_choice card_choices card">
                                             <i class="info_bulle far fa-question-circle unchecked"></i>
@@ -362,8 +359,8 @@
                                             </div>
                                         </div>
                                     </label>
- 
-                                    <label class="choixx">
+
+                                    <label class="choix">
                                         <input type="checkbox" name="carte_referencement" class="checkbox">
                                         <div class="card_choice card_choices card">
                                             <i class="info_bulle far fa-question-circle unchecked"></i>
@@ -376,8 +373,8 @@
                                             </div>
                                         </div>
                                     </label>
- 
-                                    <label class="choixx">
+
+                                    <label class="choix">
                                         <div class="infobulle_redaction">
                                             Adapter le style rédactionnel à votre domaine d'activité et à vos lecteurs
                                          </div>
@@ -394,11 +391,8 @@
                                         </div>
                                     </label>
                                 </div>
-
-
                             </div>
                             <span class="error_choice">Veuillez choisir au moins une option</span>
-
                             <input type="button" name="next" class="next action-button" value="Suivant" />
                         </fieldset>
 
@@ -406,7 +400,7 @@
                         <fieldset>
                             <div class="row">
                                 <!-- cible choice -->
-                                <div class="choice">     
+                                <div class="choice">
                                     <div class="card_choice card container-fluid" tooltip="Votre site doit il etre traduit en plusieurs langues ?" flow="left">
                                         <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" alt="...">
                                         <div class="card-body">
@@ -417,7 +411,7 @@
                                 <p>La ou les cibles pricipales de viotre site</p>
                                 <!-- list cible choice -->
                                 <div class="choice_container">
-                                    <label class="choixx">
+                                    <label class="choix">
                                         <input type="checkbox" name="carte_tout_publique" class="checkbox">
                                         <div class="card_choice card_choices card "tooltip="Votre site doit il etre traduit en plusieurs langues ? " flow="left">
                                             <span><i class="info_bulle far fa-question-circle unchecked"></i></span>
@@ -430,8 +424,8 @@
                                             </div>
                                         </div>
                                     </label>
- 
-                                    <label class="choixx">
+
+                                    <label class="choix">
                                         <input type="checkbox" name="carte_particulier" class="checkbox">
                                         <div class="card_choice card_choices card "tooltip="Votre site doit il etre traduit en plusieurs langues ? " flow="down">
                                             <span><i class="info_bulle far fa-question-circle unchecked"></i></span>
@@ -444,8 +438,8 @@
                                             </div>
                                         </div>
                                     </label>
- 
-                                    <label class="choixx">
+
+                                    <label class="choix">
                                         <input type="checkbox" name="carte_partenaire" class="checkbox">
                                         <div class="card_choice card_choices card "tooltip="Votre site doit il etre traduit en plusieurs langues ? " flow="down">
                                             <span><i class="info_bulle far fa-question-circle unchecked"></i></span>
@@ -458,8 +452,8 @@
                                             </div>
                                         </div>
                                     </label>
- 
-                                    <label class="choixx">
+
+                                    <label class="choix">
                                         <input type="checkbox" name="carte_pro" class="checkbox">
                                         <div class="card_choice card_choices card "tooltip="Votre site doit il etre traduit en plusieurs langues ? " flow="down">
                                             <span><i class="info_bulle far fa-question-circle unchecked"></i></span>
@@ -472,8 +466,8 @@
                                             </div>
                                         </div>
                                     </label>
- 
-                                    <label class="choixx">
+
+                                    <label class="choix">
                                         <input type="checkbox" name="carte_interne" class="checkbox">
                                         <div class="card_choice card_choices card "tooltip="Votre site doit il etre traduit en plusieurs langues ? " flow="right">
                                             <span><i class="info_bulle far fa-question-circle unchecked"></i></span>
@@ -491,7 +485,6 @@
 
                             </div>
                             <span class="error_choice">Veuillez choisir au moins une option</span>
-
                             <input type="button" name="next" class="next action-button" value="Suivant" />
                         </fieldset>
 
@@ -499,18 +492,18 @@
                         <fieldset>
                             <div class="row">
                                 <!-- goal choice -->
-                                <div class="choice">    
+                                <div class="choice">
                                     <div class="card_choice card container-fluid" tooltip="Votre site doit il etre traduit en plusieurs langues ?" flow="left">
                                         <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" alt="...">
                                         <div class="card-body">
                                             <p class="card-text">Votre site doit contenir</p>
                                         </div>
-                                    </div>   
+                                    </div>
                                 </div>
                                 <p>Les différents éléments que votre site doit contenir :</p>
                                 <!-- list goal choice -->
                                 <div class="choice_container">
-                                    <label class="choixx">
+                                    <label class="choix">
                                         <div class="infobulle_sociaux">
                                             Le suivi de votre site web est l'élément déterminant dans la réussite de votre projet web
                                          </div>
@@ -526,8 +519,8 @@
                                             </div>
                                         </div>
                                     </label>
- 
-                                    <label class="choixx">
+
+                                    <label class="choix">
                                         <div class="infobulle_slider">
                                             Le suivi de votre site web est l'élément déterminant dans la réussite de votre projet web
                                          </div>
@@ -543,13 +536,13 @@
                                             </div>
                                         </div>
                                     </label>
- 
-                                    <label class="choixx">
-                                        <input type="checkbox" name="carte_newsletter" class="checkbox">
+
+                                    <label class="choix"> 
                                         <div class=infobulle_newsletter>
                                             Le suivi de votre site web est l'élément déterminant dans la réussite de votre projet web
                                          </div>
-                                        <div class="card_choice card_choices carD">
+                                        <input type="checkbox" name="carte_newsletter" class="checkbox">
+                                        <div class="card_choice card_choices card">
                                             <span><i class="info_bulle far fa-question-circle unchecked"></i></span>
                                             </span>
                                             <span><i class="validation_card far fa-check-circle checked "></i></span> 
@@ -560,8 +553,8 @@
                                             </div>
                                         </div>
                                     </label>
- 
-                                    <label class="choixx">
+
+                                    <label class="choix">
                                         <div class="infobulle_articles">
                                             Le suivi de votre site web est l'élément déterminant dans la réussite de votre projet web
                                          </div>
@@ -577,8 +570,8 @@
                                             </div>
                                         </div>
                                     </label>
- 
-                                    <label class="choixx">
+
+                                    <label class="choix">
                                         <div class="infobulle_calendar">
                                             Le suivi de votre site web est l'élément déterminant dans la réussite de votre projet web
                                          </div>
@@ -594,8 +587,8 @@
                                             </div>
                                         </div>
                                     </label>
- 
-                                    <label class="choixx">
+
+                                    <label class="choix">
                                         <div class="infobulle_search">
                                             Le suivi de votre site web est l'élément déterminant dans la réussite de votre projet web
                                          </div>
@@ -611,8 +604,8 @@
                                             </div>
                                         </div>
                                     </label>
- 
-                                    <label class="choixx">
+
+                                    <label class="choix">
                                         <div class="infobulle_gallery">
                                             Le suivi de votre site web est l'élément déterminant dans la réussite de votre projet web
                                          </div>
@@ -633,40 +626,60 @@
 
                             </div>
                             <span class="error_choice">Veuillez choisir au moins une option</span>
-
-                            <input type="button" name="next" class="next action-button" value="Suivant"/>
+                            <input type="button" name="next" class="next action-button" value="Suivant" />
                         </fieldset>
 
                         <!-- Field contact -->
                         <fieldset>
-                            <div class="form-card">
-                                <label class="fieldlabels">Nom du site / de l'entreprise souhaitée :</label> <input
-                                    type="text" name="nom_du_site" placeholder="Ex : EXHER" /> <label
-                                    class="fieldlabels">Nom :</label> <input type="text" name="nom"
-                                    placeholder="Nom de famille" /> <label class="fieldlabels">Prénom
-                                    :</label>
-                                <input type="text" name="prenom" placeholder="Prénom" /> <label
-                                    class="fieldlabels">Adresse mail :
-                                </label> <input type="text" name="email" placeholder="Votre adresse mail de contact" />
-                                <label class="fieldlabels">Votre situation : </label> <input type="text" name="email"
-                                    placeholder="Particulier / Association / Entreprise" />
-                                <label class="fieldlabels">Numéro de téléphone : </label> <input type="text"
-                                    name="email" placeholder="06 XX XX XX XX" />
-                                <label class="fieldlabels">Présentation de l'entreprise : </label> <input type="text"
-                                    name="email" placeholder="Votre projet" />
-                            </div> <input type="submit" class="next action-button" value="Envoyer"/>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <label for="site" class="fieldlabels">Nom du site / de l'entreprise * :</label>
+                                    <input type="text" class="form-control" name="site" placeholder="Ex : EXHER" required/>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="nom" class="fieldlabels">Nom* :</label>
+                                    <input type="text" name="nom" placeholder="Nom de famille" required/>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="prenom" class="fieldlabels">Prénom :</label>
+                                    <input type="text" name="prenom" placeholder="Prénom" />
+                                </div>
+                                <div class="col-sm-12">
+                                    <label for="email" class="fieldlabels">Adresse mail* :</label>
+                                    <input type="email" name="email" placeholder="Votre adresse mail" required />
+                                </div>
+                                <div class="col-sm-12">
+                                    <label for="type" class="fieldlabels">Votre situation* : </label>
+                                    <select name="type" required>
+                                        <option value>---Veuillez sélectionner</option>
+                                        <option value="particulier">Particulier</option>
+                                        <option value="association">Association</option>
+                                        <option value="entreprise">Entreprise</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-12">
+                                    <label for="telephone" class="fieldlabels">Numéro de téléphone : </label>
+                                    <input type="tel" name="telephone" />
+                                </div>
+                                <div class="col-sm-12">
+                                    <label for="projet" class="fieldlabels">Présentation de l'entreprise : </label>
+                                    <textarea name="message" placeholder="Votre message" rows="5"></textarea>
+                                </div>
+                            </div>
+                            <div id="div1"></div>
+                            <span class="ajax-loader"></span>
+                            <input type="submit" id="submit" class="action-button" value="Envoyer" />
                         </fieldset>
                     </form>
-                    
                     <!-- ALERT WHEN CLICK ON THE CROSS -->
                     <div class="css_background_alert" id="modal_alert">
                         <div class="alert alert-danger alert-dismissible fade show" role="alert">
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                             <section class="css_alert_delete_project">
-                            <h2>Êtes-vous sûr de vouloir supprimer votre projet ?</h2>
-                            <a href="https://www.exher.fr/"><button data-appearance="start" data-size="large" class="css_bouton delete_project">Oui, je souhaite effacer ce projet</button></a>
-                            <button data-appearance="guide" data-size="large" class="css_bouton continue_creating">Non, je souhaite continuer à le compléter</button>
-                            </section>    
+                                <h2>Êtes-vous sûr de vouloir supprimer votre projet ?</h2>
+                                <a href="https://www.exher.fr/"><button data-appearance="start" data-size="large" class="css_bouton delete_project">Oui, je souhaite effacer ce projet</button></a>
+                                <button data-appearance="guide" data-size="large" class="css_bouton continue_creating">Non, je souhaite continuer à le compléter</button>
+                            </section>
                         </div>
                     </div>
                 </div>
@@ -674,7 +687,8 @@
         </div>
     </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>    
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
+
 
 </html>
