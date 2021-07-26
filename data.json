@@ -1,0 +1,55 @@
+{
+    "base": 10000,
+    "total": 37,
+
+    "project": {
+        "new_site": [3, "nouveau site"],
+        "design_site": [1, "refonte de site"]
+    },
+
+    "new_site_option": {
+        "carte_langues": [1, "le site doit être traduit en plusieur langue"],
+        "carte_domaine": [1, "vous n'avez pas encore un nom de domaine"]
+    },
+
+    "design_site_option": {
+        "carte_techno": [2, "technoligie absolète"],
+        "carte_graphismes": [2, "graphismes dépassés"],
+        "carte_repositionnement": [2, "repositionnement de l'entreprise"]
+    },
+
+    "objective": {
+        "carte_vente": [3, "vente"],
+        "carte_vitrine": [2, "site vitrine"],
+        "carte_contenu": [1, "monétiser du contenu"],
+        "carte_relation": [1, "mise en relation"],
+        "carte_presenter": [1, "présenter son activité"],
+        "carte_recruter": [1, "recruter, faciliter les échanges"]
+    },
+
+    "options": {
+        "carte_statistiques": [1, "rapport mensuel sur les statistiques"],
+        "carte_technique": [2, "assistance technique mensuelle"],
+        "carte_referencement": [1, "aide au référencement"],
+        "carte_redaction": [1, "rédaction web"]
+    },
+
+    "target": {
+        "carte_tout_publique": [0, "grand public"],
+        "carte_particulier": [0, "clients particuliers"],
+        "carte_partenaire": [0, "partenaires/ spécialistes du secteur"],
+        "carte_pro": [0, "clients professionels"],
+        "carte_interne": [0, "personnel de l'entreprise"]
+    },
+
+    "content": {
+        "carte_sociaux": [1, "Des liens vers vos réseaux sociaux"],
+        "carte_slider": [1, "animation de type slider"],
+        "carte_newsletter": [1, "formulaire d'inscription à la newsletter"],
+        "carte_articles": [1, "des articles"],
+        "carte_calendar": [1, "un calendrier"],
+        "carte_search": [1, "un moteur de recherche interne"],
+        "carte_gallery": [2, "une gallerie de photos"],
+        "page_number": [1, "nombre de page maximum"]
+    }
+}
