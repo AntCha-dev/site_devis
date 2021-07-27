@@ -110,7 +110,7 @@
                 </td>
                 <td align="right">
                     <p class="client">
-                        <strong>Energies54</strong><br> Réf. Client <em>C00022</em><br> 12 Rue de Verdun<br> 54250 JARNY
+                        <strong><?php echo $data['site']; ?></strong><br> Réf. Client <em>C00022</em><br> 12 Rue de Verdun<br> 54250 JARNY
                     </p>
                 </td>
             </tr>
@@ -222,7 +222,7 @@
             <tr>
                 <td width="60%"></td>
                 <td style="background-color:#ff7f00 ; color:#fff"><strong>Total TTC</strong></td>
-                <td class="text-end " style="background-color:#ff7f00; color:#fff ">4 440,00€</td>
+                <td class="text-end " style="background-color:#ff7f00; color:#fff "><?php echo $cost . ' €'?></td>
             </tr>
         </table>
 

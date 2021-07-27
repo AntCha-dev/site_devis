@@ -8,6 +8,8 @@ $src = json_decode($json, true);
 $base  = $src["base"];
 $total = $src["total"];
 $data = array();
+$data['site']= $_POST['site'];
+
 $cumul = 0;
 if (isset($_POST['project'])) {
     foreach($src as $key => $value) {
@@ -24,6 +26,7 @@ if (isset($_POST['project'])) {
             } 
         }
     }
+    $cost = intval($cumul*$base/$total);
 
     $dompdf = new Dompdf();
     ob_start();
@@ -44,7 +47,8 @@ if (isset($_POST['project'])) {
     $filename = 'tmp/' . $num . '.pdf';
     file_put_contents($filename, $file);
     //var_dump($data);
-    echo intval($cumul*$base/$total);
+    //var_dump($_POST);
+    echo $cost;
 }
 else {
     echo 0;
