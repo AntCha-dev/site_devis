@@ -1,5 +1,5 @@
 node_modules
-dompdf/*
+dompdf
 package.json
 package-lock.json
 webpack.config.js

@@ -1201,6 +1201,9 @@
      font-size: 16px;
  }
  /* fin infobulle */
+
+ /* After click on Submit */
+
  
  [tooltip] {
      position: relative;
