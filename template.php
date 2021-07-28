@@ -79,8 +79,8 @@
         }
         
         .conditions {
-            font-size: 0.7em;
-            color: #666;
+            font-size: 1.2em;
+            color: #ccc;
         }
     </style>
 </head>
@@ -104,7 +104,7 @@
             <tr>
                 <td width="60%">
                     <p>
-                        <strong>Société Exher</strong><br>1 rue de terre neuve, Bât C <br> ZA Courtaboeuf, 91940 les Ulis <br> Tel: 01 00 00 00 00<br> Mail : contact@exher.fr
+                        <strong>Société Exher</strong><br>1 rue de terre neuve, Bât C <br> ZA Courtaboeuf, 91940 les Ulis <br> Tel: +33 9 52 86 09 09<br> Mail : contact@exher.fr
                     </p>
 
                 </td>
@@ -115,9 +115,9 @@
                         <?= $data['nom'] ." ".$data['prenom']; ?><br>
                         <?php if(isset($data['telephone']) && $data['telephone'] !="" )
                         {
-                            echo $data['telephone'] . "<br>";
+                            echo 'Téléphone: ' . $data['telephone'] . "<br>";
                         }?>
-                        <?= $data['email'];?>
+                        <?= 'E-mail: ' . $data['email'];?>
                     </p>
                 </td>
             </tr>
@@ -144,7 +144,7 @@
 
                 <tr>
                     <td class="text-center ">1.1</td>
-                    <td class="text-center "><?php echo $data['project'][1];?></td>
+                    <td class="text-center "><?php echo ucfirst($data['project'][1]);?></td>
                 </tr>
 
                         
@@ -158,13 +158,13 @@
                     if ($data['new_site_option']){
                      foreach($data['new_site_option'] as $key => $value){
                         echo '<tr><td class="text-center "> 2.' .$index . '</td>';
-                        echo '<td class="text-center ">' .$value[1] . '</td> </tr>';
+                        echo '<td class="text-center ">' .  ucfirst($value[1]) . '</td> </tr>';
                         $index++;
                      }
                     }else{
                         foreach($data['design_site_option'] as $key => $value){
                             echo '<tr><td class="text-center "> 2.' .$index . '</td>';
-                            echo '<td class="text-center ">' .$value[1] . '</td> </tr>'; 
+                            echo '<td class="text-center ">' .  ucfirst($value[1]) . '</td> </tr>'; 
                             $index++;
                         };
                      }; 
@@ -182,7 +182,7 @@
                     $index = 1;
                     foreach($data['objective'] as $key => $value){
                         echo '<tr><td class="text-center "> 3.' .$index . '</td>';
-                        echo '<td class="text-center ">' .$value[1] . '</td> </tr>';
+                        echo '<td class="text-center ">' .ucfirst($value[1]) . '</td> </tr>';
                         $index++;
 
                     };
@@ -199,7 +199,7 @@
                     $index = 1;
                     foreach($data['options'] as $key => $value){
                         echo '<tr><td class="text-center "> 4.' .$index . '</td>';
-                        echo '<td class="text-center ">' .$value[1] . '</td> </tr>';
+                        echo '<td class="text-center ">' .ucfirst($value[1]) . '</td> </tr>';
                         $index++;
 
                     };
@@ -216,7 +216,7 @@
                     $index = 1;
                     foreach($data['target'] as $key => $value){
                         echo '<tr><td class="text-center "> 5.' .$index . '</td>';
-                        echo '<td class="text-center ">' .$value[1] . '</td> </tr>';
+                        echo '<td class="text-center ">' .ucfirst($value[1]) . '</td> </tr>';
                         $index++;
 
                     };
@@ -233,7 +233,7 @@
                     $index = 1;
                     foreach($data['content'] as $key => $value){
                         echo '<tr><td class="text-center "> 6.' .$index . '</td>';
-                        echo '<td class="text-center ">' .$value[1] . '</td> </tr>';
+                        echo '<td class="text-center ">' .ucfirst($value[1]) . '</td> </tr>';
                         $index++;
 
                     };
@@ -259,7 +259,7 @@
             </tr>
         </table>
 
-        <p class="conditions ">
+        <p class="conditions">
             Et avec nos remerciements pour votre estimation.
         </p>
 
