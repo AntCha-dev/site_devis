@@ -214,6 +214,7 @@ $(document).ready(function() {
         $("#" + id2 + "_choice").find(':input').each(function(index, element) { //reset input
             element.checked = false;
         });
+        $("#icon-bar #" + id2 + "_icon").removeClass("show");
         $("#icon-bar #" + id1 + "_icon").addClass("show");
         $(".previous").toggle();
     }
