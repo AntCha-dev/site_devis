@@ -130,7 +130,20 @@
                                             </div>
                                         </div>
                                     </label>
+                                    <!-- START - RANGE_SLIDER -->
+                                   <div class="range"> 
+                                    <p style="position: relative">Combien de page voulez-vous ?</p>
+                                    <div class="range-slider" style='--min:0; --max:30; --step:5; --value:30; --text-value:"30";width: 30rem;'>
+
+                                        <input type="range" min="0" max="30" step="1" value="30" oninput="this.parentNode.style.setProperty('--value',this.value); this.parentNode.style.setProperty('--text-value', JSON.stringify(this.value))">
+                                        <output></output>
+                                        <div class='range-slider__progress'></div>
+                                    </div>
                                 </div>
+                                    
+                                     <!-- END - RANGE_SLIDER -->
+                                    </div>
+                                    
                                 <div id="design_site_choice">
                                     <label class="choix">
                                         <input type="checkbox" name="carte_techno" class="checkbox">
@@ -677,12 +690,14 @@
 
                         <!-- Field end page -->
                         <fieldset>
-                            <h1>Votre estimation s'élève à</h1>
-                            <br>
-                            <div id="div1"></div>
-                            <br>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo facilis magnam qui totam, dolorem officia similique molestiae. Dignissimos accusantium harum ex quidem neque! Eos est neque at odit ipsam doloremque.</p>
-                            <button>Merci!</button>
+                            <div class="row">
+                                <h1>Votre estimation s'élève à</h1>
+                                <br>
+                                <div id="div1" class="w-25 p-3 mb-2 text-white" style="height: 115px; margin-top: 5%; font-size: xxx-large; background-color: #4764AF;"></div>
+                                <br>
+                                <p style="margin-top: 5%; margin-bottom: 5rem;">Votre demande a bien été prise en compte. L'équipe d'Exher va traiter cette dernière dans les plus brefs délais, le récapitulatif de votre demande vous seras envoyé par email.</p>
+                                <button style="background-color: #4764AF;" class="w-25 p-3 mb-2"><a href="index.html" style="color: white;">Saisir une nouvelle estimation</a></button>
+                            </div>
                         </fieldset>
                     </form>
 
@@ -703,6 +718,7 @@
             </div>
         </div>
     </div>
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
