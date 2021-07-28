@@ -5,7 +5,7 @@ $(document).ready(function() {
     var current_fs, next_fs, previous_fs, step_fs; //fieldsets
     var opacity;
     var current = 1;
-    var steps = $("fieldset").length; //=4
+    var steps = $("fieldset").length-1; //=4
 
 
     setProgressBar(current);
@@ -214,6 +214,7 @@ $(document).ready(function() {
         $("#" + id2 + "_choice").find(':input').each(function(index, element) { //reset input
             element.checked = false;
         });
+        $("#icon-bar #" + id2 + "_icon").removeClass("show");
         $("#icon-bar #" + id1 + "_icon").addClass("show");
         $(".previous").toggle();
     }
