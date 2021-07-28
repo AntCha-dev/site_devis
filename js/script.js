@@ -5,7 +5,7 @@ $(document).ready(function() {
     var current_fs, next_fs, previous_fs, step_fs; //fieldsets
     var opacity;
     var current = 1;
-    var steps = $("fieldset").length; //=4
+    var steps = $("fieldset").length-1; //=4
 
 
     setProgressBar(current);
