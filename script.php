@@ -33,7 +33,8 @@ if (isset($_POST['project'])) {
             } 
         }
     }
-    $cost = intval($cumul*$base/$total);
+     $cost1 = intval($cumul*$base/$total);
+    $cost = number_format($cost1, 2, '.', ' ')." €";
 
     $dompdf = new Dompdf();
     ob_start();

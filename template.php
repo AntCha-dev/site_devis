@@ -255,7 +255,7 @@
             <tr>
                 <td width="60%"></td>
                 <td align="center" style="background-color:#ff7f00 ; color:#fff">Montant Total<br>de l'Estimation </td>
-                <td align="center" class="text-end " style="background-color:#ff7f00; color:#fff "><strong><?php echo $cost . ' € TTC'?></strong></td>
+                <td align="center" class="text-end " style="background-color:#ff7f00; color:#fff "><strong><?php echo $cost; ?></strong></td>
             </tr>
         </table>
 
