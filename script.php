@@ -8,7 +8,14 @@ $src = json_decode($json, true);
 $base  = $src["base"];
 $total = $src["total"];
 $data = array();
-$data['site']= $_POST['site'];
+$data['site']= strtoupper($_POST['site']);
+$data['type']= $_POST['type'];
+$data['nom']= strtoupper($_POST['nom']);
+$data['prenom']= ucfirst($_POST['prenom']);
+$data['email']= $_POST['email'];
+$data['telephone']= $_POST['telephone'];
+$data['email']= $_POST['email'];
+$project = $_POST['project'];
 
 $cumul = 0;
 if (isset($_POST['project'])) {
@@ -46,6 +53,7 @@ if (isset($_POST['project'])) {
     $file = $dompdf->output();
     $filename = 'tmp/' . $num . '.pdf';
     file_put_contents($filename, $file);
+    //var_dump($data['project'][1]);
     //var_dump($data);
     //var_dump($_POST);
     echo $cost;
