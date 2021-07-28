@@ -1,3 +1,7 @@
+
+
+console.log(presentation);
+
 $(document).ready(function() {
 
     // FUNCTION QUI PERMET L'AFFICHAGE DES ICONES BAR APRES AVOIR CLIQUER SUR NEXT
@@ -141,23 +145,23 @@ $(document).ready(function() {
             .css("width", percent + "%")
     }
 
-    $("#submit").on('click', function(e) {
-        e.preventDefault();
-        $.ajax({
-            url: 'script.php',
-            type: 'post',
-            data: $("#msform").serialize(),
-            beforeSend: function() {
-                $('.ajax-loader').css({ "visibility": "visible" });
-            },
-            success: function(result) {
-                $('.ajax-loader').css({ "visibility": "hidden" });
-                console.log(result);
-                $("#div1").html(result);
-            }
-        });
+    // $("#submit").on('click', function(e) {
+    //     e.preventDefault();
+    //     $.ajax({
+    //         url: 'script.php',
+    //         type: 'post',
+    //         data: $("#msform").serialize(),
+    //         beforeSend: function() {
+    //             $('.ajax-loader').css({ "visibility": "visible" });
+    //         },
+    //         success: function(result) {
+    //             $('.ajax-loader').css({ "visibility": "hidden" });
+    //             console.log(result);
+    //             $("#div1").html(result);
+    //         }
+    //     });
 
-    });
+    // });
 
     // TOGGLE ANIMATION WHEN CLICK ON SECTION
     $("#new_site").click(function() {
@@ -219,4 +223,65 @@ $(document).ready(function() {
     $(".checkbox").change(function() {
         $(".error_choice").hide();
     });
+
+
+
+    // Validation form
+
+let myForm = $("#msform");
+
+
+
+myForm.submit(function(e){
+    let form_valid = true;
+    for(let input of $("#last_field input, #last_field select, #last_field textarea")){
+        let input_valid = validation(input);
+            if(input_valid == false){
+                form_valid = false
+            }
+    }
+    if(form_valid == false){
+        e.preventDefault();
+    }else{
+        $.ajax({
+            url: 'script.php',
+            type: 'post',
+            data: $("#msform").serialize(),
+            beforeSend: function() {
+                $('.ajax-loader').css({ "visibility": "visible" });
+            },
+            success: function(result) {
+                $('.ajax-loader').css({ "visibility": "hidden" });
+                console.log(result);
+                $("#div1").html(result);
+            }
+        });
+    } 
 });
+
+$("#last_field input, #last_field select, #last_field textarea").blur(function(e){
+    validation(e.target);
+});
+
+function validation(input){
+    let myError = $("#error_" + input.id);
+    let resultat = true;
+
+    if(input.checkValidity() == false){
+        resultat = false;
+        myError.html(input.validationMessage);
+        console.log(myError);
+        console.log(input.validationMessage);
+        input.classList.add("is-invalid");
+        input.classList.remove("is-valid");
+    }else{
+        input.classList.add("is-valid");
+        input.classList.remove("is-invalid");
+        myError.html(input.validationMessage);
+    }
+    return resultat;
+}
+});
+
+
+
