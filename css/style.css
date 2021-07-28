@@ -1760,43 +1760,13 @@
         content: var(--prefix, "") var(--text-value-b) var(--suffix, "");
         font: var(--value-font);
       }
-      
-      body {
-        height: 100vh;
-        display: grid;
-        place-content: space-evenly;
-        place-items: center;
-        gap: 10%;
-        padding: 0;
+      .range-slider{
+        width: 30rem;
       }
-      @media screen and (max-width: 500px) {
-        body {
-          padding-top: 2em;
-          gap: 8%;
-        }
-      }
-      
-      a {
-        position: fixed;
-        top: 1em;
-        left: 1em;
-        display: inline-block;
-        height: 2em;
-      }
-      @media screen and (max-width: 500px) {
-        a {
-          position: static;
-          order: -1;
-        }
-      }
-      a > img {
-        display: inherit;
-        height: 100%;
-      }
-      
       body > .range-slider,
       label[dir=rtl] .range-slider {
         width: clamp(300px, 50vw, 800px);
         min-width: 200px;
+        
       }
       /* END - RANGE_SLIDER */
