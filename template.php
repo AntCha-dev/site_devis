@@ -96,9 +96,9 @@
                 </td>
                 <td align="right">
                     <h4 class="title">Devis</h4><br>
-                    <p><strong>N° DEV01-<?php echo date('d-m-Y'); ?></strong></p>
-                    <p>Date de creation :<?php echo date('d/m/Y', ) ?>; <br>
-                     Valable jusqu'au : <?php echo date('d/m/Y', strtotime("+1 month")) ?></p>
+                    <p><strong>N° DEV01-<?php echo date('d-m-Y');?></strong></p>
+                    <p>Date de creation :<?php echo date('d/m/Y', ); ?> <br>
+                     Valable jusqu'au : <?php echo date('d/m/Y', strtotime("+1 month")); ?></p>
                 </td>
             </tr>
             <tr>
@@ -110,7 +110,14 @@
                 </td>
                 <td align="right">
                     <p class="client">
-                        <strong><?php echo $data['site']; ?></strong><br> Réf. Client <em>C00022</em><br> 12 Rue de Verdun<br> 54250 JARNY
+                        <strong><?= $data['site'];?></strong><br>
+                        <?= $data['type']; ?><br>
+                        <?= $data['nom'] ." ".$data['prenom']; ?><br>
+                        <?php if(isset($data['telephone']) && $data['telephone'] !="" )
+                        {
+                            echo $data['telephone'] . "<br>";
+                        }?>
+                        <?= $data['email'];?>
                     </p>
                 </td>
             </tr>
@@ -121,108 +128,134 @@
 
         <table class="table">
             <thead style="background-color: #4764af; color:white ">
+
                 <tr>
                     <th>Etape</th>
-                    <th>Nature de projet</th>
-                    <th class="text-end ">Prix HT</th>
+                    <th>Déscription</th>
                 </tr>
+
             </thead>
+
             <tbody>
                 <tr style="background-color: #d2defd ">
                     <td><b>1</b></td>
-                    <td><b>Creation de site</b></td>
-                    <td class="text-end "></td>
+                    <td><b>Type de projet</b></td>
                 </tr>
 
                 <tr>
                     <td class="text-center ">1.1</td>
-                    <td class="text-center ">plusieur langues</td>
-                    <td class="text-end ">150,00€</td>
+                    <td class="text-center "><?php echo $data['project'][1];?></td>
                 </tr>
 
+                        
                 <tr style="background-color: #d2defd ">
                     <td><b>2</b></td>
-                    <td><b>Objectif de site</b></td>
-                    <td class="text-end "></td>
+                    <td><b>Nature de projet</b></td>
                 </tr>
 
-                <tr>
-                    <td class="text-center ">2.1</td>
-                    <td class="text-center ">Vendre</td>
-                    <td class="text-end ">150,00€</td>
-                </tr>
+                    <?php
+                    $index = 1;
+                    if ($data['new_site_option']){
+                     foreach($data['new_site_option'] as $key => $value){
+                        echo '<tr><td class="text-center "> 2.' .$index . '</td>';
+                        echo '<td class="text-center ">' .$value[1] . '</td> </tr>';
+                        $index++;
+                     }
+                    }else{
+                        foreach($data['design_site_option'] as $key => $value){
+                            echo '<tr><td class="text-center "> 2.' .$index . '</td>';
+                            echo '<td class="text-center ">' .$value[1] . '</td> </tr>'; 
+                            $index++;
+                        };
+                     }; 
+                      
+                    ?>
+
 
                 <tr style="background-color: #d2defd ">
                     <td><b>3</b></td>
-                    <td><b>Options</b></td>
-                    <td class="text-end "></td>
+                    <td><b>Objectif de site</b></td>
+            
                 </tr>
 
-                <tr>
-                    <td class="text-center ">3.1</td>
-                    <td class="text-center ">Assistance technique</td>
-                    <td class="text-end ">150,00€</td>
-                </tr>
+                    <?php
+                    $index = 1;
+                    foreach($data['objective'] as $key => $value){
+                        echo '<tr><td class="text-center "> 3.' .$index . '</td>';
+                        echo '<td class="text-center ">' .$value[1] . '</td> </tr>';
+                        $index++;
 
-                <tr>
-                    <td class="text-center ">3.2</td>
-                    <td class="text-center ">Redaction</td>
-                    <td class="text-end ">150,00€</td>
-                </tr>
-
-                <tr>
-                    <td class="text-center ">3.2</td>
-                    <td class="text-center ">SEO naturel</td>
-                    <td class="text-end ">150,00€</td>
-                </tr>
+                    };
+                    ?>
+                    
+              
 
                 <tr style="background-color: #d2defd ">
                     <td><b>4</b></td>
-                    <td><b>Cible</b></td>
-                    <td class="text-end "></td>
+                    <td><b>Options</b></td>
                 </tr>
 
-                <tr>
-                    <td class="text-center ">4.1</td>
-                    <td class="text-center ">Particulier</td>
-                    <td class="text-end ">150,00€</td>
-                </tr>
+                <?php
+                    $index = 1;
+                    foreach($data['options'] as $key => $value){
+                        echo '<tr><td class="text-center "> 4.' .$index . '</td>';
+                        echo '<td class="text-center ">' .$value[1] . '</td> </tr>';
+                        $index++;
+
+                    };
+                    ?>
+
 
                 <tr style="background-color: #d2defd ">
                     <td><b>5</b></td>
+                    <td><b>Cible</b></td>
+                  
+                </tr>
+
+                <?php
+                    $index = 1;
+                    foreach($data['target'] as $key => $value){
+                        echo '<tr><td class="text-center "> 5.' .$index . '</td>';
+                        echo '<td class="text-center ">' .$value[1] . '</td> </tr>';
+                        $index++;
+
+                    };
+                    ?>
+
+
+                <tr style="background-color: #d2defd ">
+                    <td><b>6</b></td>
                     <td><b>Contenu</b></td>
-                    <td class="text-end "></td>
+         
                 </tr>
 
-                <tr>
-                    <td class="text-center ">5.1</td>
-                    <td class="text-center ">Nombre de page : 5</td>
-                    <td class="text-end ">150,00€</td>
-                </tr>
+                <?php
+                    $index = 1;
+                    foreach($data['content'] as $key => $value){
+                        echo '<tr><td class="text-center "> 6.' .$index . '</td>';
+                        echo '<td class="text-center ">' .$value[1] . '</td> </tr>';
+                        $index++;
 
-                <tr>
-                    <td class="text-center ">5.2</td>
-                    <td class="text-center ">Article</td>
-                    <td class="text-end ">150,00€</td>
-                </tr>
-
+                    };
+                    ?>
+                    
             </tbody>
         </table>
         <table class="table table-sm text-end ">
-            <tr>
+            <!-- <tr>
                 <td width="60%"></td>
                 <td><strong>Total HT</strong></td>
                 <td class="text-end ">3 700,00€</td>
-            </tr>
-            <tr>
+            </tr> -->
+            <!-- <tr>
                 <td width="60%"></td>
                 <td>TVA 20%</td>
                 <td class="text-end ">740,00€</td>
-            </tr>
+            </tr> -->
             <tr>
                 <td width="60%"></td>
-                <td style="background-color:#ff7f00 ; color:#fff"><strong>Total TTC</strong></td>
-                <td class="text-end " style="background-color:#ff7f00; color:#fff "><?php echo $cost . ' €'?></td>
+                <td align="center" style="background-color:#ff7f00 ; color:#fff">Montant Total<br>de l'Estimation </td>
+                <td align="center" class="text-end " style="background-color:#ff7f00; color:#fff "><strong><?php echo $cost . ' € TTC'?></strong></td>
             </tr>
         </table>
 
