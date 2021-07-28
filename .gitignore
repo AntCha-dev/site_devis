@@ -1,7 +1,9 @@
 node_modules
+dompdf/*
 package.json
 package-lock.json
 webpack.config.js
-src-1
+tmp
+src
 dist
 .DS_Store

@@ -145,23 +145,23 @@ $(document).ready(function() {
             .css("width", percent + "%")
     }
 
-    // $("#submit").on('click', function(e) {
-    //     e.preventDefault();
-    //     $.ajax({
-    //         url: 'script.php',
-    //         type: 'post',
-    //         data: $("#msform").serialize(),
-    //         beforeSend: function() {
-    //             $('.ajax-loader').css({ "visibility": "visible" });
-    //         },
-    //         success: function(result) {
-    //             $('.ajax-loader').css({ "visibility": "hidden" });
-    //             console.log(result);
-    //             $("#div1").html(result);
-    //         }
-    //     });
+    $("#submit").on('click', function(e) {
+        e.preventDefault();
+        $.ajax({
+            url: 'script.php',
+            type: 'post',
+            data: $("#msform").serialize(),
+            beforeSend: function() {
+                $('.ajax-loader').css({ "visibility": "visible" });
+            },
+            success: function(result) {
+                $('.ajax-loader').css({ "visibility": "hidden" });
+                console.log(result);
+                $("#div1").html(result);
+            }
+        });
 
-    // });
+    });
 
     // TOGGLE ANIMATION WHEN CLICK ON SECTION
     $("#new_site").click(function() {
