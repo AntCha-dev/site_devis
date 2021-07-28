@@ -141,6 +141,8 @@ $(document).ready(function() {
             .css("width", percent + "%")
     }
 
+    // AFTER CLICK ON SUBMIT : END PAGE 
+
     $("#submit").on('click', function(e) {
         e.preventDefault();
         $.ajax({
@@ -149,15 +151,40 @@ $(document).ready(function() {
             data: $("#msform").serialize(),
             beforeSend: function() {
                 $('.ajax-loader').css({ "visibility": "visible" });
+                
             },
             success: function(result) {
                 $('.ajax-loader').css({ "visibility": "hidden" });
-                console.log(result);
-                $("#div1").html(result);
+                $("#div1").html(result)
+                current_fs = $(this).parent();
+                next_fs = current_fs.next();
+                $(".form-header").css({'display': 'none'});
+                $("#icon-bar").css({'display': 'none'});
+                $(".progress").css({'display': 'none'});
+
+                next_fs.show();
+                current_fs.animate({
+                    opacity: 0
+                }, {
+                    step: function(now) {
+                        opacity = 1 - now;
+
+                        current_fs.css({
+                            'display': 'none',
+                            'position': 'relative'
+                        });
+                        next_fs.css({
+                            'opacity': opacity
+                        });
+                    },
+                    duration: 500
+                });
+    
             }
         });
 
     });
+
 
     // TOGGLE ANIMATION WHEN CLICK ON SECTION
     $("#new_site").click(function() {
