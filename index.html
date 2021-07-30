@@ -97,15 +97,10 @@
                                     </div>
                                 </div>
                                 <div id="new_site_choice">
-                                    <!-- comment -->
 
-                                    <label class="choix">
+                                    <label class="choix" tooltip="Créer un site ou des pages en plusieurs langues représente une opportunité de croissance considérable" flow="left">
                                         <input type="checkbox" name="carte_langues" class="checkbox">
-                                        <div class="card_choice card_choices card">
-                                            <i class="info_bulle far fa-question-circle unchecked"></i>
-                                            <div class="infobulle_langues">
-                                                Créer un site ou des pages en plusieurs langues représente une opportunité de croissance considérable
-                                            </div>
+                                        <div class="card_choice card_choices card" >
                                             <span><i class="validation_card far fa-check-circle checked "></i></span> 
                                             <span><i class="validation_card far fa-circle unchecked"></i></span>
                                             <img src="icon/ICONE_FORM-translate.svg" class="card-img-top align-self-center mt-3">
@@ -115,10 +110,9 @@
                                         </div>
                                     </label>
 
-                                    <label class="choix">
+                                    <label class="choix" tooltip="Renouveler mon nom de domaine et mes services associés" flow="right">
                                         <input type="checkbox" name="carte_domaine" class="checkbox">
                                         <div class="card_choice card_choices card">
-                                            <i class="info_bulle far fa-question-circle unchecked"></i>
                                             <div class="infobulle_domaine">
                                                 Renouveler mon nom de domaine et mes services associés
                                             </div>
@@ -131,73 +125,63 @@
                                         </div>
                                     </label>
                                     <!-- START - RANGE_SLIDER -->
-                                   <div class="range"> 
-                                    <p style="position: relative">Combien de page voulez-vous ?</p>
-                                    <div class="range-slider" style='--min:0; --max:30; --step:5; --value:30; --text-value:"30";width: 30rem;'>
-
-                                        <input type="range" min="0" max="30" step="1" value="30" oninput="this.parentNode.style.setProperty('--value',this.value); this.parentNode.style.setProperty('--text-value', JSON.stringify(this.value))">
-                                        <output></output>
-                                        <div class='range-slider__progress'></div>
+                                    <div class="range langue">
+                                        <p>Dans combien de langues le contenu sera-t-il traduit?</p>
+                                        <input type="range" name="langue" min="1" class="form-range" max="3" step="1" list="steplist">
+                                        <div class="range-steps">
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                        <datalist id="steplist">
+                                            <option>1 langue</option>
+                                            <option>2 langues </option>
+                                            <option>3 langues</option>
+                                        </datalist>
                                     </div>
+                                    <!-- END - RANGE_SLIDER -->
                                 </div>
-                                    
-                                     <!-- END - RANGE_SLIDER -->
-                                    </div>
-                                    
+
                                 <div id="design_site_choice">
-                                    <label class="choix">
-                                        <input type="checkbox" name="carte_techno" class="checkbox">
-                                        <div class="card_choice card_choices card">
-                                            <i class="info_bulle far fa-question-circle unchecked"></i>
-                                            <!-- <div class="infobulle_techno">
-                                                Renouveler mon nom de domaine et mes services associés
-                                            </div> -->
-                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
-                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
-                                            <img src="icon/ICONE_FORM - techno.png"
-                                                class="card-img-top align-self-center mt-3"
-                                                alt="..."> 
-                                            <div class="card-body">
-                                                <p class="card-text">Techno</p>
+                                    <label class="choix" tooltip="technoligie absolète?" flow="left">
+                                            <input type="checkbox" name="carte_techno" class="checkbox">
+                                            <div class="card_choice card_choices card">
+                                                <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                                <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
+                                                <img src="icon/ICONE_FORM - techno.png"
+                                                    class="card-img-top align-self-center mt-3"
+                                                    alt="..."> 
+                                                <div class="card-body">
+                                                    <p class="card-text">Techno</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </label>
+                                        </label>
 
-                                    <label class="choix">
-                                        <input type="checkbox" name="carte_graphismes" class="checkbox">
-                                        <div class="card_choice card_choices card">
-                                            <i class="info_bulle far fa-question-circle unchecked"></i>
-                                            <!-- <div class="infobulle_graphismes">
-                                                Renouveler mon nom de domaine et mes services associés
-                                            </div> -->
-                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
-                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
-                                            <img src="icon/ICONE_FORM - Graphisme2.svg"
-                                                class="card-img-top align-self-center mt-3"
-                                                alt="..."> 
-                                            <div class="card-body">
-                                                <p class="card-text">Graphisme</p>
+                                    <label class="choix" tooltip="graphismes dépassés?" flow="down">
+                                            <input type="checkbox" name="carte_graphismes" class="checkbox">
+                                            <div class="card_choice card_choices card">
+                                                <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                                <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
+                                                <img src="icon/ICONE_FORM - Graphisme2.svg"
+                                                    class="card-img-top align-self-center mt-3"
+                                                    alt="..."> 
+                                                <div class="card-body">
+                                                    <p class="card-text">Graphisme</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </label>
+                                        </label>
 
-                                    <label class="choix">
-                                        <input type="checkbox" name="carte_repositionnement" class="checkbox">
-                                        <div class="card_choice card_choices card">
-                                            <i class="info_bulle far fa-question-circle unchecked"></i>
-                                            <!-- <div class="infobulle_repositionnement">
-                                                Augmentez votre trafic grâce au référencement naturel (SEO)
-                                            </div> -->
-                                            <span><i class="validation_card far fa-check-circle checked "></i></span>
-                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
-                                            <img src="icon/ICONE_FORM - seo.svg"
-                                                class="card-img-top align-self-center mt-3"
-                                                alt="..."> 
-                                            <div class="card-body">
-                                                <p class="card-text">Repositionnement</p>
+                                    <label class="choix" tooltip="Augmentez votre trafic grâce au référencement naturel (SEO)?" flow="right">
+                                            <input type="checkbox" name="carte_repositionnement" class="checkbox">
+                                            <div class="card_choice card_choices card">
+                                                <span><i class="validation_card far fa-check-circle checked "></i></span>
+                                                <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
+                                                <img src="icon/ICONE_FORM - seo.svg"
+                                                    class="card-img-top align-self-center mt-3"
+                                                    alt="..."> 
+                                                <div class="card-body">
+                                                    <p class="card-text">Repositionnement</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </label>
+                                        </label>
                                 </div>
                             </div>
                             <span class="error_choice">Veuillez choisir au moins une option</span>
@@ -219,13 +203,9 @@
                                 <p>Quels sont les différents objectifs de votre site ?</p>
                                 <!-- list goal choice -->
                                 <div class="choice_container">
-                                    <label class="choix">
+                                    <label class="choix" tooltip="vendre et/ou mettre en relation" flow="left">
                                         <input type="checkbox" name="carte_vente" class="checkbox">
                                         <div class="card_choice card_choices card">
-                                            <i class="info_bulle far fa-question-circle unchecked"></i>
-                                            <div class=infobulle_vente>
-                                                Augmenter le nombre de personnes qui se rendent sur votre plateforme de vente en ligne
-                                             </div>
                                             <span><i class="validation_card far fa-check-circle checked "></i></span> 
                                             <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" alt="...">
@@ -235,11 +215,10 @@
                                         </div>
                                     </label>
 
-                                    <label class="choix">
+                                    <label class="choix" tooltip="Un site vitrine réussi c'est un site qui correspond au mieux à votre clientèle et à votre entreprise" flow="down">
                                         <input type="checkbox" name="carte_vitrine" class="checkbox">
                                         <div class="card_choice card_choices card">
-                                            <i class="info_bulle far fa-question-circle unchecked"></i>
-                                        <div class=infobulle_vitrine>
+                                            <div class=infobulle_vitrine>
                                             Un site vitrine réussi c'est un site qui correspond au mieux à votre clientèle et à votre entreprise
                                          </div>
                                             <span><i class="validation_card far fa-check-circle checked "></i></span> 
@@ -251,42 +230,24 @@
                                         </div>
                                     </label>
 
-                                    <label class="choix">
+                                    <label class="choix" tooltip="monétiser mon contenu" flow="down">
                                         <input type="checkbox" name="carte_contenu" class="checkbox">
                                         <div class="card_choice card_choices card">
-                                            <i class="info_bulle far fa-question-circle unchecked"></i>
-                                        <div class=infobulle_contenu>
+                                            <div class=infobulle_contenu>
                                             Exher-Rédaction est votre service de rédaction sur mesure. Nous prenons en charge la rédaction de tous vos contenus
                                          </div>
                                             <span><i class="validation_card far fa-check-circle checked "></i></span> 
                                             <span><i class="validation_card far fa-circle unchecked"></i></span>                                      
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" alt="...">
                                             <div class="card-body">
-                                                <p class="card-text">Contenu</p>
+                                                <p class="card-text">Monétiser</p>
                                             </div>
                                         </div>
                                     </label>
 
-                                    <label class="choix">
-                                        <input type="checkbox" name="carte_relation" class="checkbox">
-                                        <div class="card_choice card_choices card">
-                                            <i class="info_bulle far fa-question-circle unchecked"></i>
-                                        <div class=infobulle_relation>
-                                            Votre plateforme de mise en relation en quelques clics
-                                         </div>
-                                            <span><i class="validation_card far fa-check-circle checked "></i></span> 
-                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
-                                            <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" alt="...">
-                                            <div class="card-body">
-                                                <p class="card-text">Mise en relation</p>
-                                            </div>
-                                        </div>
-                                    </label>
-
-                                    <label class="choix">
+                                    <label class="choix" tooltip="Un site de présentation est l'une des meilleures façons de se lancer sur le web" flow="right">
                                         <input type="checkbox" name="carte_presenter" class="checkbox">
                                         <div class="card_choice card_choices card">
-                                            <i class="info_bulle far fa-question-circle unchecked"></i>
                                             </span>
                                             <div class=infobulle_presenter>
                                                 Un site de présentation est l'une des meilleures façons de se lancer sur le web
@@ -296,22 +257,6 @@
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" alt="...">
                                             <div class="card-body">
                                                 <p class="card-text">Présenter</p>
-                                            </div>
-                                        </div>
-                                    </label>
-
-                                    <label class="choix">
-                                        <input type="checkbox" name="carte_recruter" class="checkbox">
-                                        <div class="card_choice card_choices card">
-                                            <i class="info_bulle far fa-question-circle unchecked"></i>
-                                            <div class=infobulle_recruter>
-                                                Un site de recrutement,le seul endroit où vous pouvez gérer à 100% les contenus de vos campagnes de recrutement en ligne
-                                             </div>
-                                            <span><i class="validation_card far fa-check-circle checked "></i></span> 
-                                            <span><i class="validation_card far fa-circle unchecked"></i></span>                                      
-                                            <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" alt="...">
-                                            <div class="card-body">
-                                                <p class="card-text">Recruter</p>
                                             </div>
                                         </div>
                                     </label>
@@ -338,11 +283,10 @@
                                 <p>Le suivi mensuel que vous souhaitez sur votre site :</p>
                                 <!-- list goal choice -->
                                 <div class="choice_container">
-                                    <label class="choix">
+                                    <label class="choix" tooltip="Dresser un constat du trafic existant sur votre site et de l'origine de ce trafic" flow="left">
                                         <input type="checkbox" name="carte_statistiques" class="checkbox">
                                         <div class="card_choice card_choices card">
-                                            <i class="info_bulle far fa-question-circle unchecked"></i>
-                                        <div class=infobulle_statistiques>
+                                            <div class=infobulle_statistiques>
                                             Dresser un constat du trafic existant sur votre site et de l'origine de ce trafic
                                          </div>
                                             <span><i class="validation_card far fa-check-circle checked "></i></span> 
@@ -354,10 +298,9 @@
                                         </div>
                                     </label>
 
-                                    <label class="choix">
+                                    <label class="choix" tooltip="Le suivi de votre site web est l'élément déterminant dans la réussite de votre projet web" flow="down">
                                         <input type="checkbox" name="carte_technique" class="checkbox">
                                         <div class="card_choice card_choices card">
-                                            <i class="info_bulle far fa-question-circle unchecked"></i>
                                             <div class=infobulle_technique>
                                             Le suivi de votre site web est l'élément déterminant dans la réussite de votre projet web
                                          </div>
@@ -371,11 +314,9 @@
                                         </div>
                                     </label>
 
-                                    <label class="choix">
+                                    <label class="choix" tooltip="Augmentez votre trafic grâce au référencement naturel (SEO)" flow="down">
                                         <input type="checkbox" name="carte_referencement" class="checkbox">
                                         <div class="card_choice card_choices card">
-                                            <i class="info_bulle far fa-question-circle unchecked"></i>
-                                            
                                             <span><i class="validation_card far fa-check-circle checked "></i></span> 
                                             <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" alt="...">
@@ -385,14 +326,12 @@
                                         </div>
                                     </label>
 
-                                    <label class="choix">
+                                    <label class="choix" tooltip="Adapter le style rédactionnel à votre domaine d'activité et à vos lecteurs" flow="right">
                                         <div class="infobulle_redaction">
                                             Adapter le style rédactionnel à votre domaine d'activité et à vos lecteurs
                                          </div>
                                         <input type="checkbox" name="carte_redaction" class="checkbox">
                                         <div class="card_choice card_choices card">
-                                            <span><i class="info_bulle far fa-question-circle unchecked"></i></span>
-                                            </span>
                                             <span><i class="validation_card far fa-check-circle checked "></i></span> 
                                             <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" alt="...">
@@ -401,6 +340,20 @@
                                             </div>
                                         </div>
                                     </label>
+                                    <!-- START - RANGE_SLIDER -->
+                                    <div class="range seo">
+                                        <p>Pendant quelle durrée souhaiteriez-vous nous confier le référencement de votre site?</p>
+                                        <input type="range" name="seo" min="1" class="form-range" max="3" step="1" list="steplist">
+                                        <div class="range-steps">
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                        <datalist id="steplist">
+                                            <option>1 à 3 mois</option>
+                                            <option>6 mois </option>
+                                            <option>1 an</option>
+                                        </datalist>
+                                    </div>
+                                    <!-- END - RANGE_SLIDER -->
                                 </div>
                             </div>
                             <span class="error_choice">Veuillez choisir au moins une option</span>
@@ -412,21 +365,19 @@
                             <div class="row">
                                 <!-- cible choice -->
                                 <div class="choice">
-                                    <div class="card_choice card container-fluid" tooltip="Votre site doit il etre traduit en plusieurs langues ?" flow="left">
+                                    <div class="card_choice card container-fluid" tooltip="La ou les cibles pricipales de votre site?" flow="left">
                                         <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" alt="...">
                                         <div class="card-body">
                                             <p class="card-text">Cible de votre site</p>
                                         </div>
                                     </div>
                                 </div>
-                                <p>La ou les cibles pricipales de viotre site</p>
+                                <p>La ou les cibles pricipales de votre site</p>
                                 <!-- list cible choice -->
                                 <div class="choice_container">
-                                    <label class="choix">
+                                    <label class="choix" tooltip="" flow="left">
                                         <input type="checkbox" name="carte_tout_publique" class="checkbox">
-                                        <div class="card_choice card_choices card "tooltip="Votre site doit il etre traduit en plusieurs langues ? " flow="left">
-                                            <span><i class="info_bulle far fa-question-circle unchecked"></i></span>
-                                            </span>
+                                        <div class="card_choice card_choices card">
                                             <span><i class="validation_card far fa-check-circle checked "></i></span> 
                                             <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" alt="...">
@@ -436,11 +387,9 @@
                                         </div>
                                     </label>
 
-                                    <label class="choix">
+                                    <label class="choix" tooltip="" flow="left">
                                         <input type="checkbox" name="carte_particulier" class="checkbox">
-                                        <div class="card_choice card_choices card "tooltip="Votre site doit il etre traduit en plusieurs langues ? " flow="down">
-                                            <span><i class="info_bulle far fa-question-circle unchecked"></i></span>
-                                            </span>
+                                        <div class="card_choice card_choices card">
                                             <span><i class="validation_card far fa-check-circle checked "></i></span> 
                                             <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" alt="...">
@@ -450,11 +399,9 @@
                                         </div>
                                     </label>
 
-                                    <label class="choix">
+                                    <label class="choix" tooltip="" flow="left">
                                         <input type="checkbox" name="carte_partenaire" class="checkbox">
-                                        <div class="card_choice card_choices card "tooltip="Votre site doit il etre traduit en plusieurs langues ? " flow="down">
-                                            <span><i class="info_bulle far fa-question-circle unchecked"></i></span>
-                                           </span>
+                                        <div class="card_choice card_choices card">
                                             <span><i class="validation_card far fa-check-circle checked "></i></span> 
                                             <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" alt="...">
@@ -464,11 +411,9 @@
                                         </div>
                                     </label>
 
-                                    <label class="choix">
+                                    <label class="choix" tooltip="" flow="left">
                                         <input type="checkbox" name="carte_pro" class="checkbox">
-                                        <div class="card_choice card_choices card "tooltip="Votre site doit il etre traduit en plusieurs langues ? " flow="down">
-                                            <span><i class="info_bulle far fa-question-circle unchecked"></i></span>
-                                            </span>
+                                        <div class="card_choice card_choices card" tooltip="" flow="down">
                                             <span><i class="validation_card far fa-check-circle checked "></i></span> 
                                             <span><i class="validation_card far fa-circle unchecked"></i></span>                                      
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" alt="...">
@@ -478,11 +423,9 @@
                                         </div>
                                     </label>
 
-                                    <label class="choix">
+                                    <label class="choix" tooltip="" flow="left">
                                         <input type="checkbox" name="carte_interne" class="checkbox">
-                                        <div class="card_choice card_choices card "tooltip="Votre site doit il etre traduit en plusieurs langues ? " flow="right">
-                                            <span><i class="info_bulle far fa-question-circle unchecked"></i></span>
-                                            </span>
+                                        <div class="card_choice card_choices card">
                                             <span><i class="validation_card far fa-check-circle checked "></i></span> 
                                             <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" alt="...">
@@ -504,7 +447,7 @@
                             <div class="row">
                                 <!-- goal choice -->
                                 <div class="choice">
-                                    <div class="card_choice card container-fluid" tooltip="Votre site doit il etre traduit en plusieurs langues ?" flow="left">
+                                    <div class="card_choice card container-fluid" tooltip="Quels sont es différents éléments que votre site doit contenir  ?" flow="left">
                                         <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" alt="...">
                                         <div class="card-body">
                                             <p class="card-text">Votre site doit contenir</p>
@@ -514,14 +457,12 @@
                                 <p>Les différents éléments que votre site doit contenir :</p>
                                 <!-- list goal choice -->
                                 <div class="choice_container">
-                                    <label class="choix">
+                                    <label class="choix" tooltip="" flow="left">
                                         <div class="infobulle_sociaux">
                                             Le suivi de votre site web est l'élément déterminant dans la réussite de votre projet web
                                          </div>
                                         <input type="checkbox" name="carte_sociaux" class="checkbox">
                                         <div class="card_choice card_choices card">
-                                            <span><i class="info_bulle far fa-question-circle unchecked"></i></span>
-                                            </span>
                                             <span><i class="validation_card far fa-check-circle checked "></i></span> 
                                             <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" alt="...">
@@ -531,14 +472,12 @@
                                         </div>
                                     </label>
 
-                                    <label class="choix">
+                                    <label class="choix" tooltip="" flow="left">
                                         <div class="infobulle_slider">
                                             Le suivi de votre site web est l'élément déterminant dans la réussite de votre projet web
                                          </div>
                                         <input type="checkbox" name="carte_slider" class="checkbox">
                                         <div class="card_choice card_choices card">
-                                            <span><i class="info_bulle far fa-question-circle unchecked"></i></span>
-                                            </span>
                                             <span><i class="validation_card far fa-check-circle checked "></i></span> 
                                             <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" alt="...">
@@ -548,14 +487,12 @@
                                         </div>
                                     </label>
 
-                                    <label class="choix"> 
+                                    <label class="choix" tooltip="" flow="left"> 
                                         <div class=infobulle_newsletter>
                                             Le suivi de votre site web est l'élément déterminant dans la réussite de votre projet web
                                          </div>
                                         <input type="checkbox" name="carte_newsletter" class="checkbox">
                                         <div class="card_choice card_choices card">
-                                            <span><i class="info_bulle far fa-question-circle unchecked"></i></span>
-                                            </span>
                                             <span><i class="validation_card far fa-check-circle checked "></i></span> 
                                             <span><i class="validation_card far fa-circle unchecked"></i></span>                                       
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" alt="...">
@@ -565,14 +502,12 @@
                                         </div>
                                     </label>
 
-                                    <label class="choix">
+                                    <label class="choix" tooltip="" flow="left">
                                         <div class="infobulle_articles">
                                             Le suivi de votre site web est l'élément déterminant dans la réussite de votre projet web
                                          </div>
                                         <input type="checkbox" name="carte_articles" class="checkbox">
                                         <div class="card_choice card_choices card">
-                                            <span><i class="info_bulle far fa-question-circle unchecked"></i></span>
-                                            </span>
                                             <span><i class="validation_card far fa-check-circle checked "></i></span> 
                                             <span><i class="validation_card far fa-circle unchecked"></i></span>                                      
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" alt="...">
@@ -582,14 +517,12 @@
                                         </div>
                                     </label>
 
-                                    <label class="choix">
+                                    <label class="choix" tooltip="" flow="left">
                                         <div class="infobulle_calendar">
                                             Le suivi de votre site web est l'élément déterminant dans la réussite de votre projet web
                                          </div>
                                         <input type="checkbox" name="carte_calendar" class="checkbox">
                                         <div class="card_choice card_choices card">
-                                            <span><i class="info_bulle far fa-question-circle unchecked"></i></span>
-                                            </span>
                                             <span><i class="validation_card far fa-check-circle checked "></i></span> 
                                             <span><i class="validation_card far fa-circle unchecked"></i></span>                                      
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" alt="...">
@@ -599,14 +532,12 @@
                                         </div>
                                     </label>
 
-                                    <label class="choix">
+                                    <label class="choix" tooltip="" flow="left">
                                         <div class="infobulle_search">
                                             Le suivi de votre site web est l'élément déterminant dans la réussite de votre projet web
                                          </div>
                                         <input type="checkbox" name="carte_search" class="checkbox">
                                         <div class="card_choice card_choices card">
-                                            <span><i class="info_bulle far fa-question-circle unchecked"></i></span>
-                                            </span>
                                             <span><i class="validation_card far fa-check-circle checked "></i></span> 
                                             <span><i class="validation_card far fa-circle unchecked"></i></span>                                      
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" alt="...">
@@ -616,14 +547,12 @@
                                         </div>
                                     </label>
 
-                                    <label class="choix">
+                                    <label class="choix" tooltip="" flow="left">
                                         <div class="infobulle_gallery">
                                             Le suivi de votre site web est l'élément déterminant dans la réussite de votre projet web
                                          </div>
                                         <input type="checkbox" name="carte_gallery" class="checkbox">
                                         <div class="card_choice card_choices card">
-                                            <span><i class="info_bulle far fa-question-circle unchecked"></i></span>
-                                            </span>
                                             <span><i class="validation_card far fa-check-circle checked "></i></span> 
                                             <span><i class="validation_card far fa-circle unchecked"></i></span>                                     
                                             <img src="icon/globe.svg" class="card-img-top align-self-center mt-3" alt="...">
@@ -632,9 +561,21 @@
                                             </div>
                                         </div>
                                     </label>
+                                    <!-- START - RANGE_SLIDER -->
+                                    <div class="range" style="display: block;">
+                                        <p>Nombre de pages sur le site?</p>
+                                        <input type="range" name="num-page" min="1" class="form-range" max="3" step="1" list="steplist">
+                                        <div class="range-steps">
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                        <datalist id="steplist">
+                                            <option>1 à 10 pages</option>
+                                            <option>10 à 30 pages </option>
+                                            <option>plus de 30 pages</option>
+                                        </datalist>
+                                    </div>
+                                    <!-- END - RANGE_SLIDER -->
                                 </div>
-
-
                             </div>
                             <span class="error_choice">Veuillez choisir au moins une option</span>
                             <input type="button" name="next" class="next action-button" value="Suivant" />
@@ -690,13 +631,13 @@
 
                         <!-- Field end page -->
                         <fieldset>
-                            <div class="row">
+                            <div class="row mt-5">
                                 <h1>Votre estimation s'élève à</h1>
                                 <br>
-                                <div id="div1" class="w-50 p-3 mb-2 text-white" style="height: 115px; margin-top: 5%; font-size: xxx-large;background-color: #4764AF;"></div>
+                                <div id="div1" class="w-50 p-3 mb-2 mt-5 text-white" style="background-color: #4764AF;"></div>
                                 <br>
-                                <p style="margin-top: 5%; margin-bottom: 5rem;">Votre demande a bien été prise en compte. L'équipe d'Exher va traiter cette dernière dans les plus brefs délais, le récapitulatif de votre demande vous seras envoyé par email.</p>
-                                <button style="background-color: #4764AF;" class="w-25 p-3 mb-2"><a href="index.html" style="color: white;">Saisir une nouvelle estimation</a></button>
+                                <h5 class="mt-3 mb-5 p-5 ">Votre demande a bien été prise en compte. L'équipe d'Exher va traiter cette dernière dans les plus brefs délais, le récapitulatif de votre demande vous seras envoyé par email.</h5>
+                                <button style="background-color: #4764AF;" class="w-50 p-3 mb-2"><a href="index.html" style="color: white;">Saisir une nouvelle estimation</a></button>
                             </div>
                         </fieldset>
                     </form>
